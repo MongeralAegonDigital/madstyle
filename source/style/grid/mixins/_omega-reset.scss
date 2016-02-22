@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Resets omega.
+///
+/// @param {List} $query [block]
+///   List of arguments. Supported arguments are `nth-child` selectors (targets a specific pseudo element) and `auto` (targets `last-child`). Context for different context of columns.
+///
+
+@mixin omega-reset($nth, $context: null) {
+  @if $context == null { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter(); } 
+  } @else { 
+    &:nth-child(#{$nth}) { margin-right: flex-gutter($context); } 
+  }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}

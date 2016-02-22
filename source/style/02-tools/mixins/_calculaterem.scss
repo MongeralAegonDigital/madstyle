@@ -1,0 +1,8 @@
+// h1 {
+//   @include fontSize(32px);
+// }
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}

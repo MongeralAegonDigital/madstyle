@@ -1,0 +1,97 @@
+$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// --------------------------------------------------------------------------
+// Base Button
+// --------------------------------------------------------------------------
+$button-font-family: $font-family-primary;
+$button-padding-x: 3rem;
+$button-padding-y: .875rem;
+$button-font-weight: bold;
+$button-border-width: 0;
+$button-font-size: 1rem;
+$button-height: 1rem;
+$button-border-radius: 0;
+
+//
+//Button Style
+//
+$btn-send-color: #C237D2;
+$btn-send-background: #ccc;
+$btn-send-color-hover: #C237D2;
+$btn-send-background-hover: #0C6CE3;
+
+$btn-action-color: #C237D2;
+$btn-action-background: #ccc;
+$btn-action-color-hover: #fff;
+$btn-action-background-hover: #000;
+
+
+%btn {
+  display: inline-block;
+  font-weight: $button-font-weight;
+  font-family: $button-font-family;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border: $button-border-width solid transparent;
+  padding: $button-padding-y $button-padding-x;
+  font-size: $button-font-size;
+  line-height: $button-height;
+  border-radius: $button-border-radius;
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {
+    background-image: none;
+    outline: 0;
+  }
+}
+
+$btn-types: (
+  //background,color,background-hover,color-hover
+  "send"  : ($btn-send-background, $btn-send-color, $btn-send-background-hover, $btn-send-color-hover),
+  "action": ($btn-action-background, $btn-action-color, $btn-action-background-hover, $btn-action-color-hover)
+);
+
+@each $btn-types, $btn-type in $btn-types {
+  $background: nth($btn-type, 1);
+  $color: nth($btn-type, 2);
+  $background-hover: nth($btn-type, 3);
+  $color-hover: nth($btn-type, 4);
+
+  .btn-#{$btn-types} {
+    @extend %btn;
+    background-color: $background;
+    color: $color;
+    &:hover{
+      background-color: $background-hover;
+      color: $color-hover;
+    }
+  }
+}
+
+//
+// Block button
+//
+%btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

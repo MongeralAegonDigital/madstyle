@@ -1,0 +1,95 @@
+$alert-border-radius: 0;
+$alert-margin-bottom: 20px;
+$alert-padding: 15px;
+$alert-border: 1px solid transparent;
+
+$alert-types: (
+          //background, color,  link
+  "default" : (#f2f2f4, #757575, #757575),
+  "success" : (#7cb342, #ffffff, #ffffff),
+  "info"    : (#66a7d1, #ffffff, #ffffff),
+  "warning" : (#ffb53e, #ffffff, #ffffff),
+  "danger"  : (#ff5252, #ffffff, #ffffff)
+);
+
+%alert {
+  border: $alert-border;
+  border-radius: $alert-border-radius;
+  padding: $alert-padding;
+  margin-bottom: $alert-margin-bottom;
+  box-shadow: 2px 2px 1px -1px #ccc;
+}
+%alert-dismissible {
+  padding-right: 35px;
+  button.close{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0
+  }
+  .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    &:focus,
+    &:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      filter: alpha(opacity=50);
+      opacity: .5
+    }
+  }
+}
+
+
+@each $types, $alert-type in $alert-types {
+  $background: nth($alert-type, 1);
+  $color: nth($alert-type, 2);
+  $link: nth($alert-type, 3);
+
+  %alert-#{$types} {
+    @extend %alert;
+    background-color: $background;
+    color: $color;
+    .alert-link {
+      color: $link;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//how to use the component alert
+.alert-default {
+  @extend %alert-default;
+}
+.alert-success {
+  @extend %alert-success;
+}
+.alert-danger {
+  @extend %alert-danger;
+}
+.alert-warning {
+  @extend %alert-warning;
+}
+.alert-info {
+  @extend %alert-info;
+}
+.alert-warning {
+  @extend %alert-warning;
+}
+.alert-dismissible {
+  @extend %alert-dismissible;
+}

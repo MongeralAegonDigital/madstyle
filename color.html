@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Color</title>
+
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  <style>
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+
+}
+
+table, th, td {
+    border: 0;
+    border-collapse: collapse;
+}
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 0 solid #ddd
+}
+
+.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+
+}
+
+.table>caption+thead>tr:first-child>td,.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>td,.table>thead:first-child>tr:first-child>th {
+    border-top: 0
+}
+
+</style>
+</head>
+<body>
+
+<br><br>
+
+<table class="table" border="0">
+      <thead>
+        <tr>
+
+          <th colspan="2">COLORS</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <th colspan="2" scope="row">COLOR PRIMARY</th>
+        </tr>
+        <tr class="primary">
+          <th scope="row">.primary</th>
+          <td>background-color: core-color('primary');</td>
+        </tr>
+        <tr class="aw90">
+          <th scope="row">.aw90</th>
+          <td>background-color: core-color('primary','aw90');</td>
+        </tr>
+        <tr class="aw60">
+          <th scope="row">.aw60</th>
+          <td>background-color: core-color('primary','aw60');</td>
+        </tr>
+        <tr class="aw40">
+          <th scope="row">.aw40</th>
+          <td>background-color: core-color('primary','aw40');</td>
+        </tr>
+        <tr class="aw20">
+          <th scope="row">.aw20</th>
+          <td>background-color: core-color('primary','aw20');</td>
+        </tr>
+        <tr class="aw10">
+          <th scope="row">.aw10</th>
+          <td>background-color: core-color('primary','aw10');</td>
+        </tr>
+        <tr class="ab5">
+          <th scope="row">.ab10</th>
+          <td>background-color: core-color('primary','ab5');</td>
+        </tr>
+        <tr class="ab10">
+          <th scope="row">.ab10</th>
+          <td>background-color: core-color('primary','ab10');</td>
+        </tr>
+        <tr class="ab20">
+          <th scope="row">.ab20</th>
+          <td>background-color: core-color('primary','ab20');</td>
+        </tr>
+        <tr class="ab40">
+          <th scope="row">.ab40</th>
+          <td>background-color: core-color('primary','ab40');</td>
+        </tr>
+        <tr class="ab60">
+          <th scope="row">.ab60</th>
+          <td>background-color: core-color('primary','ab60');</td>
+        </tr>
+        <tr>
+          <th  colspan="2" scope="row">blue</th>
+        </tr>
+        <tr class="aux-one">
+          <th scope="row">.aux-one</th>
+          <td>background-color: core-color('aux-one');</td>
+        </tr>
+        <tr class="aux-one-10">
+          <th scope="row">.aux-one-10</th>
+          <td>background-color: core-color('aux-one', 'aux-10');</td>
+        </tr>
+
+         <tr class="aux-one-40">
+          <th scope="row">.aux-one-40</th>
+          <td>background-color: core-color('aux-one', 'aux-40');</td>
+        </tr>
+           <tr class="aux-one-50">
+            <th scope="row">.aux-one-50</th>
+            <td>background-color: core-color('aux-one', 'aux-50');</td>
+          </tr>
+         <tr class="aux-one-70">
+          <th scope="row">.aux-one-70</th>
+          <td>background-color: core-color('aux-one', 'aux-70');</td>
+        </tr>
+
+         <tr>
+          <th  colspan="2" scope="row">red</th>
+        </tr>
+       <tr class="aux-two">
+          <th scope="row">.aux-two #f44336;</th>
+          <td>background-color: core-color('aux-two');</td>
+        </tr>
+        <tr class="aux-two-10">
+          <th scope="row">.aux-two-10 #ffcdd2</th>
+          <td>background-color: core-color('aux-two', 'aux-10');</td>
+        </tr>
+         <tr class="aux-two-20">
+          <th scope="row">.aux-two-20 #e57373</th>
+          <td>background-color: core-color('aux-two', 'aux-20');</td>
+        </tr>
+         <tr class="aux-two-30">
+          <th scope="row">.aux-two-30 #f44336</th>
+          <td>background-color: core-color('aux-two', 'aux-30');</td>
+        </tr>
+         <tr class="aux-two-40">
+          <th scope="row">.aux-two-40 #d32f2f</th>
+          <td>background-color: core-color('aux-two', 'aux-40');</td>
+        </tr>
+         <tr class="aux-two-50">
+          <th scope="row">.aux-two-50 #b71c1c</th>
+          <td>background-color: core-color('aux-two', 'aux-50');</td>
+        </tr>
+
+
+         <tr>
+          <th  colspan="2" scope="row">orange</th>
+        </tr>
+        <tr class="aux-three">
+          <th scope="row">.aux-three</th>
+          <td>background-color: core-color('aux-three');</td>
+        </tr>
+        <tr class="aux-three-10">
+          <th scope="row">.aux-three-10</th>
+          <td>background-color: core-color('aux-three', 'aux-10');</td>
+        </tr>
+         <tr class="aux-three-20">
+          <th scope="row">.aux-three-20</th>
+          <td>background-color: core-color('aux-three', 'aux-20');</td>
+        </tr>
+         <tr class="aux-three-30">
+          <th scope="row">.aux-three-30</th>
+          <td>background-color: core-color('aux-three', 'aux-30');</td>
+        </tr>
+         <tr class="aux-three-40">
+          <th scope="row">.aux-three-40</th>
+          <td>background-color: core-color('aux-three', 'aux-40');</td>
+        </tr>
+         <tr class="aux-three-50">
+          <th scope="row">.aux-three-50</th>
+          <td>background-color: core-color('aux-three', 'aux-50');</td>
+        </tr>
+
+
+         <tr>
+          <th  colspan="2" scope="row">green</th>
+        </tr>
+        <tr class="aux-four">
+          <th scope="row">.aux-four</th>
+          <td>background-color: core-color('aux-four');</td>
+        </tr>
+        <tr class="aux-four-10">
+          <th scope="row">.aux-four-10</th>
+          <td>background-color: core-color('aux-four', 'aux-10');</td>
+        </tr>
+         <tr class="aux-four-20">
+          <th scope="row">.aux-four-20</th>
+          <td>background-color: core-color('aux-four', 'aux-20');</td>
+        </tr>
+         <tr class="aux-four-30">
+          <th scope="row">.aux-four-30</th>
+          <td>background-color: core-color('aux-four', 'aux-30');</td>
+        </tr>
+         <tr class="aux-four-40">
+          <th scope="row">.aux-four-40</th>
+          <td>background-color: core-color('aux-four', 'aux-40');</td>
+        </tr>
+         <tr class="aux-four-50">
+          <th scope="row">.aux-four-50</th>
+          <td>background-color: core-color('aux-four', 'aux-50');</td>
+        </tr>
+
+         <tr>
+          <th  colspan="2" scope="row">gray</th>
+        </tr>
+        <tr class="aux-five">
+          <th scope="row">.aux-five</th>
+          <td>background-color: core-color('aux-five');</td>
+        </tr>
+        <tr class="aux-five-10">
+          <th scope="row">.aux-five-10</th>
+          <td>background-color: core-color('aux-five', 'aux-10');</td>
+        </tr>
+         <tr class="aux-five-20">
+          <th scope="row">.aux-five-20</th>
+          <td>background-color: core-color('aux-five', 'aux-20');</td>
+        </tr>
+         <tr class="aux-five-30">
+          <th scope="row">.aux-five-30</th>
+          <td>background-color: core-color('aux-five', 'aux-30');</td>
+        </tr>
+         <tr class="aux-five-40">
+          <th scope="row">.aux-five-40</th>
+          <td>background-color: core-color('aux-five', 'aux-40');</td>
+        </tr>
+         <tr class="aux-five-50">
+          <th scope="row">.aux-five-50</th>
+          <td>background-color: core-color('aux-five', 'aux-50');</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+</body>
+</html>
+

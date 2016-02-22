@@ -1,0 +1,258 @@
+// --------------------------------------------------------------------------
+// Color
+// --------------------------------------------------------------------------
+// background-color: core-color('aux-five');
+// background-color: core-color('aux-five', $opacity: 'light');
+// background-color: core-color('aux-five', 'aux-10');
+
+$color-primary: #006db2;
+$aux-one:   #00a7e5; //blue light
+$aux-two:   #f44336; //red
+$aux-three: #ff9800; //orange
+$aux-four:  #4caf50; //green
+$aux-five:  #9e9e9e; //gray
+$aux-six:   #c0c0c8; //gray light
+
+
+
+$core-color-key: 'base' !default;
+$core-colors: (
+  'primary': (
+    'base': $color-primary,
+    'aw90': mix(white, $color-primary, 90%),
+    'aw60': mix(white, $color-primary, 60%),
+    'aw40': mix(white, $color-primary, 40%),
+    'aw20': mix(white, $color-primary, 20%),
+    'aw10': mix(white, $color-primary, 10%),
+
+    'ab5' : mix(black, $color-primary, 5%),
+    'ab10': mix(black, $color-primary, 10%),
+    'ab20': mix(black, $color-primary, 20%),
+    'ab40': mix(black, $color-primary, 40%),
+    'ab60': mix(black, $color-primary, 60%)
+  ),
+  'aux-one': ( //blue light
+    'base': $aux-one,
+    'aux-10': #b2e4f7,
+    'aux-40': #99dcf5,
+    'aux-50': #7fd3f2,
+    'aux-70': #4cc1ed
+  ),
+  'aux-two': ( //red
+    'base': $aux-two,
+    'aux-10': #ffcdd2,
+    'aux-20': #e57373,
+    'aux-30': #f44336,
+    'aux-40': #d32f2f,
+    'aux-50': #b71c1c
+  ),
+  'aux-three': ( //orange
+    'base': $aux-three,
+    'aux-10': #ffe0b2,
+    'aux-20': #ffb74d,
+    'aux-30': #ff9800,
+    'aux-40': #f57c00,
+    'aux-50': #e65100
+  ),
+  'aux-four': ( //green
+    'base': $aux-four,
+    'aux-10': #c8e6c9,
+    'aux-20': #81c784,
+    'aux-30': #4caf50,
+    'aux-40': #388e3c,
+    'aux-50': #1b5e20
+  ),
+  'aux-five': ( //gray
+    'base': $aux-five,
+    'aux-10': #f5f5f5,
+    'aux-20': #e0e0e0,
+    'aux-30': #9e9e9e,
+    'aux-40': #616161,
+    'aux-50': #212121
+  ),
+  'aux-six': ( //gray light
+    'base': $aux-six,
+    'aux-10': #f2f2f4,
+    'aux-20': #e6e6e9,
+    'aux-30': #4cc1ed,
+    'aux-40': #cdcdd3,
+    'aux-50': #c0c0c8
+  )
+);
+
+
+
+
+
+
+$core-opacity: (
+  'light': 0.8, // opacity used with lighter colors
+  'dark': 0.4,  // opacity used with darker colors
+  // ... etc.
+);
+
+@function core-color(
+  $name: 'primary',
+  $variant: $core-color-key,
+  $opacity: 1
+) {
+  $color: null;
+
+  // Get the color spectrum
+  $color-spectrum: map-get($core-colors, $name);
+
+  // Get the color variant
+  @if $color-spectrum {
+    $color: map-get($color-spectrum, $variant);
+  }
+
+  // Get the alpha setting
+  $alpha: if(type-of($opacity) == 'number', $opacity, map-get($core-opacity, $opacity));
+
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $alpha);
+  }
+
+  @return $color;
+}
+
+
+
+
+
+.primary {
+  background-color: core-color('primary');
+}
+.aw90 {
+  background-color: core-color('primary', 'aw90');
+}
+.aw60 {
+  background-color: core-color('primary', 'aw60');
+}
+.aw40 {
+  background-color: core-color('primary', 'aw40');
+}
+.aw20 {
+  background-color: core-color('primary', 'aw20');
+}
+.aw10 {
+  background-color: core-color('primary', 'aw10');
+}
+
+
+.ab5 {
+  background-color: core-color('primary', 'ab5');
+}
+.ab10 {
+  background-color: core-color('primary', 'ab10');
+}
+.ab20 {
+  background-color: core-color('primary', 'ab20');
+}
+.ab40 {
+  background-color: core-color('primary', 'ab40');
+}
+.ab60 {
+  background-color: core-color('primary', 'ab60');
+}
+
+
+
+.aux-one {
+  background-color: core-color('aux-one');
+}
+.aux-one-10 {
+  background-color: core-color('aux-one', 'aux-10');
+}
+.aux-one-40 {
+  background-color: core-color('aux-one', 'aux-40');
+}
+.aux-one-50 {
+  background-color: core-color('aux-one', 'aux-50');
+}
+.aux-one-70 {
+  background-color: core-color('aux-one', 'aux-70');
+}
+
+
+
+.aux-two {
+  background-color: core-color('aux-two');
+}
+.aux-two-10 {
+  background-color: core-color('aux-two', 'aux-10');
+}
+.aux-two-20 {
+  background-color: core-color('aux-two', 'aux-20');
+}
+.aux-two-30 {
+  background-color: core-color('aux-two', 'aux-30');
+}
+.aux-two-40 {
+  background-color: core-color('aux-two', 'aux-40');
+}
+.aux-two-50 {
+  background-color: core-color('aux-two', 'aux-50');
+}
+
+.aux-three {
+  background-color: core-color('aux-three');
+}
+.aux-three-10 {
+  background-color: core-color('aux-three', 'aux-10');
+}
+.aux-three-20 {
+  background-color: core-color('aux-three', 'aux-20');
+}
+.aux-three-30 {
+  background-color: core-color('aux-three', 'aux-30');
+}
+.aux-three-40 {
+  background-color: core-color('aux-three', 'aux-40');
+}
+.aux-three-50 {
+  background-color: core-color('aux-three', 'aux-50');
+}
+
+.aux-four {
+  background-color: core-color('aux-four');
+}
+.aux-four-10 {
+  background-color: core-color('aux-four', 'aux-10');
+}
+.aux-four-20 {
+  background-color: core-color('aux-four', 'aux-20');
+}
+.aux-four-30 {
+  background-color: core-color('aux-four', 'aux-30');
+}
+.aux-four-40 {
+  background-color: core-color('aux-four', 'aux-40');
+}
+.aux-four-50 {
+  background-color: core-color('aux-four', 'aux-50');
+}
+
+
+
+.aux-five {
+  background-color: core-color('aux-five');
+}
+.aux-five-10 {
+  background-color: core-color('aux-five', 'aux-10');
+}
+.aux-five-20 {
+  background-color: core-color('aux-five', 'aux-20');
+}
+.aux-five-30 {
+  background-color: core-color('aux-five', 'aux-30');
+}
+.aux-five-40 {
+  background-color: core-color('aux-five', 'aux-40');
+}
+.aux-five-50 {
+  background-color: core-color('aux-five', 'aux-50');
+}
+
+
