@@ -42,9 +42,6 @@ Livereload
 npm install
 ```
 
-#### Para utilizar o livereload, verificar aqui
-[Click here](https://github.com/livereload/livereload-js#using-livereloadjs)
-
 #### Rodando o projeto
 
 ```
