@@ -5,15 +5,14 @@
 
 @import "01-settings/_variables";
 @import "01-settings/_typography";
-
-@import "02-tools/_functions";
-@import "02-tools/_mixins";
-
-
-@import "03-base/_typography";
-@import "03-base/_color";
-@import "03-base/_buttons"
-;
-@import "03-base/_alerts";
+@import "02-generic/_reset";
+@import "03-tools/_functions";
+@import "03-tools/_mixins";
 
 
+@import "04-base/typography/_typography";
+//@import "04-base/color/_color";
+//@import "04-base/buttons/_buttons";
+//@import "04-base/alerts/_alerts";
+
+@import "06-components/article/_article";
