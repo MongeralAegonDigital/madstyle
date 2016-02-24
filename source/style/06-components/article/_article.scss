@@ -1,110 +1,254 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0b1 | 201101
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* remember to define visible focus styles!
-:focus {
-  outline: ?????;
-} */
-
-/* remember to highlight inserts somehow! */
-ins {
-  text-decoration: none;
-}
-del {
-  text-decoration: line-through;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 // --------------------------------------------------------------------------
 // Component: Article
 // --------------------------------------------------------------------------
 
-.article {
-  &__image {  }
-  &__content {
-    &__title {
-      @extend %headings-1;
-    }
-    &__published {
-      .icon-published {}
-    }
-    &__social {}
 
-    &>p {
-      &>a {
+// Base elements for images within the article
+//
+// {.article img}
+// {.article figure}
+// --------------------------------------------------------------------------
+.article img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.article figure {
+  margin: 0;
+}
 
-      }
-      strong {
 
-      }
-    }
-    //lista ordenada
-    &>ul {
-      li {
-        a {
 
-        }
-      }
-    }
-    //lista não ordenada
-    &>ol {
-      li {
-        a {
-
-        }
-      }
-    }
-
+// Base Elements: Article - Image
+// .article
+//
+// insert the featured image
+// {.article__image}
+// --------------------------------------------------------------------------
+.article__image {
+  img {
+    width: 100%;
+  }
+  figcaption {
+    display: none;
   }
 }
 
 
+// Base Elements: Article - Content
+// .article
+//
+// inserting content width and centralizes
+// {.article__content}
+// --------------------------------------------------------------------------
+.article__content {
+  margin: -100px auto 100px auto;
+  position: relative;
+  width: 95%;
+  z-index: 1;
+}
+
+
+// Base Elements: Article Content - Category
+// .article .article__content
+//
+// format the article category
+// {.article__content__category}
+// --------------------------------------------------------------------------
+.article__content__category{
+  @extend %headings-4;
+  background-color: blue;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+
+// Base Elements: Article Content - Title
+// .article .article__content
+//
+// format the main title
+// {.article__content__title}
+// --------------------------------------------------------------------------
+.article__content__title {
+  @extend %headings-1;
+}
+
+
+// Base Elements: Article Content - Published
+// .article .article__content
+//
+// format the publication date
+// {.article__content__published}
+// --------------------------------------------------------------------------
+.article__content__published {
+  .icon-published {}
+}
+
+
+// Base Elements: Article Content - Social
+// .article .article__content
+//
+// {.article__content__social}
+// --------------------------------------------------------------------------
+.article__content__social {}
+
+
+// Base Elements: Article Title
+// .article .article__content
+//
+//
+// {.article__content__text}
+// --------------------------------------------------------------------------
+.article__content__text {
+  background-color: #fff;
+}
+
+
+
+// Base Elements: Article Content Text - Paragraph
+// .article .article__content .article__content__text
+//
+// format the paragraph within the article content
+// {.article__content__text>p}
+// {.article__content__text>p>a}
+// {.article__content__text>p strong}
+// {.article__content__text>p b}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>p {
+    @extend %base-text-1;
+    &>a {
+      @extend %link-default;
+    }
+    b,
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Ordered List
+// .article .article__content .article__content__text
+//
+// format the Ordered List within the article content
+// {.article__content__text ul...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>ul {
+    padding-left: 1em;
+    margin-bottom: 20px;
+    li {
+      @extend %base-text-1;
+      list-style-type: decimal;
+      a {
+        @extend %link-default;
+      }
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Unordered List
+// .article .article__content .article__content__text
+//
+// format the unordered list within the article content
+// {.article__content__text ol...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>ol {
+    padding-left: 1em;
+    margin-bottom: 20px;
+    li {
+      @extend %base-text-1;
+      list-style-type: disc;
+      a {
+        @extend %link-default;
+      }
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Heading
+// .article .article__content .article__content__text
+//
+// format titles in the article content
+// {.article__content__text h1...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  h1 {
+     @extend %headings-1;
+  }
+  h2 {
+     @extend %headings-2;
+  }
+  h3 {
+     @extend %headings-3;
+  }
+  h4 {
+     @extend %headings-4;
+  }
+  h5 {
+     @extend %headings-5;
+  }
+  h6 {
+     @extend %headings-6;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+     margin-top: 15px;
+  }
+}
+
+
+
+// Base Elements: Article Content Text - Photo
+// .article .article__content .article__content__text
+//
+// insert the image in the center of the content
+// {.article__content__text__photo}
+//
+// insert the image of the left side content
+// {.article__content__text__photo__photo--left}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &__photo {
+    max-width: 100%;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      max-width: 800px;
+    }
+    figcaption {
+      @extend %base-text-3;
+      margin-top: 10px;
+      text-align: left;
+      text-rendering: auto;
+      text-transform: uppercase;
+    }
+  }
+  &__photo--left div {
+    float: left;
+    margin: 10px 30px 10px 0;
+    position: relative;
+    img {
+        max-width: 300px;
+        height: inherit;
+    }
+  }
+}
 
 
 
