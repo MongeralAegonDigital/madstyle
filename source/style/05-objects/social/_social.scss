@@ -1,0 +1,56 @@
+// --------------------------------------------------------------------------
+// Objects: Social Media
+// --------------------------------------------------------------------------
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css";
+
+@mixin font-smoothing() {
+  // Font antialising on Mac OS X
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__link {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 5%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+    &:before {
+      font-family: FontAwesome;
+      @include font-smoothing();
+    }
+  }
+}
+
+
+
+// --------------------------------------------------------------------------
+// Variables: Social Media
+// Variable for the object of social media
+// --------------------------------------------------------------------------
+$social-icons: (
+  twitter :  (char: "\f099", color: #55acee, size: 1.5em, line-height: 1.75),
+  whatsapp:  (char: "\f099", color: #55acee, size: 1.5em, line-height: 1.75),
+  facebook:  (char: "\f099", color: #55acee, size: 1.5em, line-height: 1.75),
+  linkedin:  (char: "\f099", color: #55acee, size: 1.5em, line-height: 1.75),
+);
+
+@each $social-name, $social-icon in $social-icons {
+  .social-media {
+    .social-media__link--#{$social-name} {
+      background-color: map-get($social-icon, color);
+      &:before {
+        content: map-get($social-icon, char);
+        font-size: map-get($social-icon, size);
+        line-height: map-get($social-icon, line-height);
+      }
+    }
+  }
+}
