@@ -1,0 +1,30 @@
+// --------------------------------------------------------------------------
+// Objects: Heading Line
+// --------------------------------------------------------------------------
+
+.heading-primary__title {
+  @extend %headings-2;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    position: relative;
+  }
+  span:before,
+  span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-bottom: 2px solid #066db2;
+    top: 50%;
+    width: 100px;
+  }
+  span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+}
