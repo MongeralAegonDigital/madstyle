@@ -250,6 +250,62 @@
   }
 }
 
+// Base Elements: Article Content Text - Blockquote
+// .article .article__content .article__content__text
+//
+// insert the blockquote of the left side content
+// {.article__content__text blockquote}
+// --------------------------------------------------------------------------
+$blockquote-color: #000;
+$blockquote-font-family: Georgia, serif;
+$blockquote-font-size: 16px;
+$blockquote-color-aspas: #999;
+$blockquote-font-size-aspas: 120px;
+$blockquote-background: #fff;
+$blockquote-max-width: 300px;
+$blockquote-padding: 20px;
+$blockquote-margin: 10px 30px 10px 0;
 
 
+.article__content__text {
+  blockquote{
+    @include box-shadow (2px, 2px, 15px, 2px, rgba(204, 204, 204, 0.58));
+    max-width: $blockquote-max-width;
+    display:block;
+    background: $blockquote-background;
+    padding: $blockquote-padding;
+    float: left;
+    margin: 10px 30px 10px 0;
+    position: relative;
+    z-index: 1;
+    font-family: $blockquote-font-family;
+    font-size: $blockquote-font-size;
+    line-height: 1.2;
+    color: $blockquote-color;
+    text-align: justify;
+    &::before,
+    &::after {
+      position: absolute;
+      font-family: $blockquote-font-family;
+      font-size: $blockquote-font-size-aspas;
+      font-weight: bold;
+      color: $blockquote-color-aspas;
+      height: 65px;
+      z-index: -1;
+    }
+    &::before{
+      content: "\201C";
+      left: 0px;
+      top:-20px;
 
+    }
+    &::after{
+      content: "\201D";
+      right: 0px;
+      bottom:5px;
+    }
+    em{
+      font-style: italic;
+    }
+  }
+}
