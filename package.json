@@ -1,6 +1,6 @@
 {
-  "name": "MADStyle",
-  "version": "0.1.0",
+  "name": "madstyle",
+  "version": "1.0.0",
   "description": "Style Guide da Mongeral Aegon",
   "main": "watch.js",
   "devDependencies": {
