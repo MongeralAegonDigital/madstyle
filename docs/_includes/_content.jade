@@ -1,0 +1,14 @@
+- var atoms = public.source.style["04-base"]
+- var molecules = public.source.style["06-components"]
+
+main.mad-content
+	section
+		h2 Átomos
+			each value, key in atoms
+				!=partial("source/style/04-base/"+key+"/"+key)
+
+	section
+		h2 Moléculas
+			each value, key in atoms
+				!=partial("source/style/06-components/"+key+"/"+key)
+
