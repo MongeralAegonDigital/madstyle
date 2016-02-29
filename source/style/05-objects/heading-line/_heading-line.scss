@@ -1,10 +1,15 @@
 // --------------------------------------------------------------------------
 // Objects: Heading Line
 // --------------------------------------------------------------------------
-
+$mobile: new-breakpoint(max-width 500px);
 .heading-primary__title {
   @extend %headings-2;
+  margin-bottom: 15px;
   text-align: center;
+  @include media($mobile) {
+    font-size:   $headings-h3-font-size;
+    line-height: $headings-h3-line-height;
+  }
 
   span {
     display: inline-block;

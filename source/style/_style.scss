@@ -2,6 +2,8 @@
 //@import "00-generic/_normalize";
 //@import "00-generic/_box-sizing";
 //@import "00-generic/_page";
+@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css";
+
 @import "grid/_neat";
 
 @import "01-settings/_variables";
@@ -9,16 +11,18 @@
 @import "02-generic/_reset";
 @import "03-tools/_functions";
 @import "03-tools/_mixins";
-
+@import "grid/_neat";
 @import "04-base/typography/_links";
 @import "04-base/typography/_typography";
+@import "04-base/fonts/_fonts";
 //@import "04-base/color/_color";
 //@import "04-base/buttons/_buttons";
 @import "04-base/alerts/_alerts";
 
 
-
+@import "05-objects/card-category/_card-category";
 @import "05-objects/heading-line/_heading-line";
 @import "05-objects/social/_social";
 @import "06-components/article/_article";
 @import "06-components/card-overlay/_card-overlay";
+

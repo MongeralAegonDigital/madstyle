@@ -1,40 +1,7 @@
 // --------------------------------------------------------------------------
 // Components: Card Overlay
 // --------------------------------------------------------------------------
-%card-category {
-  @extend %base-text-3;
-  background-color: #066db2;
-  color: #fff;
-  padding: 2px 7px;
-  display: inline-block;
-  text-transform: uppercase;
-  vertical-align: top;
-}
 
-%card-category-triangle {
-  margin-bottom: 5px;
-  &::before,
-  &::after {
-    content: "";
-    border-style: solid;
-    display: inline-block;
-    top: 0;
-    height: 0;
-    width: 0;
-    position: relative;
-  }
-  &::before {
-    border-color: #066db2 transparent;
-    border-width: 0 0 22px 16px;
-    left: 4px;
-  }
-  &::after {
-    content: "";
-    border-color: transparent #066db2;
-    border-width: 0 0 22px 16px;
-    right: 4px;
-  }
-}
 $card-overlay-desc-title--color    : #fff;
 $card-overlay-desc-title--font-size: $headings-h2-font-size;
 
@@ -46,12 +13,12 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
 // {.card-overlay}
 // --------------------------------------------------------------------------
 .card-overlay {
-  width: 400px;
+  width: inherit;
   position: relative;
   display: block;
   margin-bottom: .75rem;
   a {
-    display: block;
+    display: inherit;
     text-decoration: none;
   }
   img {
@@ -61,10 +28,14 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
     width: 100%;
   }
 }
+
+
+// Description
+// --------------------------------------------------------------------------
 .card-overlay__desc {
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: inherit;
   right: 0;
   left: 0;
   padding: 0.8rem;
@@ -73,13 +44,10 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
     bottom: 10px;
   }
 }
+
+// Title
+// --------------------------------------------------------------------------
 .card-overlay__desc__title {
   color: $card-overlay-desc-title--color;
   font-size: $card-overlay-desc-title--font-size;
-}
-.card-overlay__desc__category__item {
-  @extend %card-category-triangle;
-}
-.card-overlay__desc__category__item__text {
-  @extend %card-category;
 }

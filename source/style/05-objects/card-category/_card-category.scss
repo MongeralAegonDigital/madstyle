@@ -1,0 +1,58 @@
+// --------------------------------------------------------------------------
+// Components: Card Category
+// --------------------------------------------------------------------------
+
+%card-category {
+  @extend %base-text-3;
+  background-color: #066db2;
+  color: #fff;
+  padding: 2px 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+%card-category-triangle {
+  margin-bottom: 5px;
+  text-decoration: none;
+  &::before,
+  &::after {
+    content: "";
+    border-style: solid;
+    display: inline-block;
+    top: 0;
+    height: 0;
+    width: 0;
+    position: relative;
+  }
+  &::before {
+    border-color: #066db2 transparent;
+    border-width: 0 0 22px 16px;
+    left: 4px;
+  }
+  &::after {
+    content: "";
+    border-color: transparent #066db2;
+    border-width: 0 0 22px 16px;
+    right: 5px;
+  }
+}
+
+
+.category {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.category__item {
+  display: inline-block;
+  width: 100%;
+}
+.category__link {
+  @extend %card-category-triangle;
+
+}
+.category__link__text {
+  @extend %card-category;
+}
