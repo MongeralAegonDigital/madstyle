@@ -9,12 +9,13 @@
 
 // Sidebar
 .mad-sidebar {
-	@include span-columns(3);
+	position: fixed;
 	padding: 2%;
 }
 
 // Content
 .mad-content {
 	@include span-columns(9);
+	@include shift(3);
 	padding: 2%;
 }
