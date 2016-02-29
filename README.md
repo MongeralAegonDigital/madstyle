@@ -1,8 +1,6 @@
 # MAD Style
 Style Guide utilizando o Harp.js com Livereload integrado.
 
-v0.1.0
-
 ## Como utilizar?
 
 ### Dependências
