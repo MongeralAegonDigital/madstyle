@@ -1,5 +1,6 @@
 - var atoms = public.source.style["04-base"]
-- var molecules = public.source.style["06-components"]
+- var molecules = public.source.style["05-objects"]
+- var organisms = public.source.style["06-components"]
 
 main.mad-content
 	section
@@ -12,5 +13,11 @@ main.mad-content
 		h2 Moléculas
 		each value, key in molecules
 			section.mad-molecule(id='#{key}')
+				!=partial("source/style/05-objects/"+key+"/"+key)
+
+	section
+		h2 Organismos
+		each value, key in organisms
+			section.mad-organism(id='#{key}')
 				!=partial("source/style/06-components/"+key+"/"+key)
 
