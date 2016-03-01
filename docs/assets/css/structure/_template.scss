@@ -1,0 +1,21 @@
+// Header
+.mad-header {
+	padding: 2%;
+}
+
+.mad-wrapper {
+	@include outer-container(100%);
+}
+
+// Sidebar
+.mad-sidebar {
+	position: fixed;
+	padding: 2%;
+}
+
+// Content
+.mad-content {
+	@include span-columns(9);
+	@include shift(3);
+	padding: 2%;
+}

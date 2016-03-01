@@ -1,0 +1,7 @@
+.category-list__link {
+	@extend %card-category__link;
+}
+
+.category-list__link__text {
+  @extend %card-category__text;
+}

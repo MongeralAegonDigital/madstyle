@@ -1,0 +1,53 @@
+// --------------------------------------------------------------------------
+// Components: Card Overlay
+// --------------------------------------------------------------------------
+
+$card-overlay-desc-title--color    : #fff;
+$card-overlay-desc-title--font-size: $headings-h2-font-size;
+
+
+
+
+// Base Elements: Card Overlay
+//
+// {.card-overlay}
+// --------------------------------------------------------------------------
+.card-overlay {
+  width: inherit;
+  position: relative;
+  display: block;
+  margin-bottom: .75rem;
+  a {
+    display: inherit;
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+
+// Description
+// --------------------------------------------------------------------------
+.card-overlay__desc {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  right: 0;
+  left: 0;
+  padding: 0.8rem;
+  &>div {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+// Title
+// --------------------------------------------------------------------------
+.card-overlay__desc__title {
+  color: $card-overlay-desc-title--color;
+  font-size: $card-overlay-desc-title--font-size;
+}

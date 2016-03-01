@@ -1,0 +1,568 @@
+// --------------------------------------------------------------------------
+// Component: Article
+// --------------------------------------------------------------------------
+
+// Grid Article
+//
+// --------------------------------------------------------------------------
+
+  article,
+  .article {
+    @include row();
+  }
+
+$mobile: new-breakpoint(max-width 500px);
+
+
+// Base elements for images within the article
+//
+// {.article img}
+// {.article figure}
+// --------------------------------------------------------------------------
+.article img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.article figure {
+  margin: 0;
+}
+
+
+
+// Base Elements: Article - Image
+// .article
+//
+// insert the featured image
+// {.article__image}
+// --------------------------------------------------------------------------
+.article__image {
+  img {
+    width: 100%;
+    @include media($mobile) {
+      width: 200%;
+      margin-left: -50%;
+      max-width: 200%;
+    }
+  }
+  figcaption {
+    display: none;
+  }
+}
+
+
+
+
+
+// Base Elements: Article - Content
+// .article
+//
+// inserting content width and centralizes
+// {.article__content}
+// --------------------------------------------------------------------------
+.article__content {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: -200px;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+
+// Base Elements: Article Content - Category
+// .article .article__content
+//
+// format the article category
+// {.article__content__category}
+// --------------------------------------------------------------------------
+.article__content__category{
+  @extend %headings-4;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+
+// Base Elements: Article Content - Title
+// .article .article__content .article__content__text
+//
+// format the main title
+// {.article__content__text__title}
+// --------------------------------------------------------------------------
+.article__content__text {
+  .article__content__text__title {
+    @extend %headings-1;
+    text-align: center;
+    @include media($mobile) {
+      font-size:   $headings-h3-font-size;
+      line-height: $headings-h3-line-height;
+    }
+  }
+}
+
+
+// Base Elements: Article Content - Published
+// .article .article__content
+//
+// format the publication date
+// {.article__content__published}
+// --------------------------------------------------------------------------
+.article__content__published {
+  .icon-published {}
+}
+
+
+// Base Elements: Article Content - Social
+// .article .article__content
+//
+// {.article__content__social}
+// --------------------------------------------------------------------------
+.article__content__social {}
+
+
+// Base Elements: Article Title
+// .article .article__content
+//
+//
+// {.article__content__text}
+// --------------------------------------------------------------------------
+.article__content__text {
+  background-color: #fff;
+  display: inline-block;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+// Base Elements: Article Content Text - Paragraph
+// .article .article__content .article__content__text
+//
+// format the paragraph within the article content
+// {.article__content__text>p}
+// {.article__content__text>p>a}
+// {.article__content__text>p strong}
+// {.article__content__text>p b}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>p {
+    @extend %base-text-1;
+    &>a {
+      @extend %link-default;
+    }
+    b,
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Ordered List
+// .article .article__content .article__content__text
+//
+// format the Ordered List within the article content
+// {.article__content__text ul...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>ul {
+    padding-left: 1em;
+    margin-bottom: 20px;
+    li {
+      @extend %base-text-1;
+      list-style-type: decimal;
+      a {
+        @extend %link-default;
+      }
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Unordered List
+// .article .article__content .article__content__text
+//
+// format the unordered list within the article content
+// {.article__content__text ol...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &>ol {
+    padding-left: 1em;
+    margin-bottom: 20px;
+    li {
+      @extend %base-text-1;
+      list-style-type: disc;
+      a {
+        @extend %link-default;
+      }
+    }
+  }
+}
+
+
+
+
+// Base Elements: Article Content Text - Heading
+// .article .article__content .article__content__text
+//
+// format titles in the article content
+// {.article__content__text h1...}
+// --------------------------------------------------------------------------
+.article__content__text {
+  h1 {
+     @extend %headings-1;
+  }
+  h2 {
+     @extend %headings-2;
+  }
+  h3 {
+     @extend %headings-3;
+  }
+  h4 {
+     @extend %headings-4;
+  }
+  h5 {
+     @extend %headings-5;
+  }
+  h6 {
+     @extend %headings-6;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+     margin-top: 15px;
+     word-wrap: break-word;
+  }
+}
+
+
+
+// Base Elements: Article Content Text - Photo
+// .article .article__content .article__content__text
+//
+// insert the image in the center of the content
+// {.article__content__text__photo}
+//
+// insert the image of the left side content
+// {.article__content__text__photo__photo--left}
+// --------------------------------------------------------------------------
+.article__content__text {
+  &__photo {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+      max-width: 800px;
+    }
+    figcaption {
+      @extend %base-text-3;
+      margin-top: 10px;
+      text-align: center;
+      text-rendering: auto;
+      text-transform: uppercase;
+    }
+  }
+  &__photo--left div {
+    float: left;
+    margin: 10px 30px 10px 0;
+    position: relative;
+    img {
+        max-width: 300px;
+        height: inherit;
+    }
+  }
+}
+
+// Base Elements: Article Content Text - Infos
+// .article .article__content .article__content__text
+//
+// {.article__content__text__infos}
+// --------------------------------------------------------------------------
+.article__content__text {
+  .article__content__text__infos {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  .article__content__text__author,
+  .article__content__text__published,
+  .article__content__text__like {
+    @extend %base-text-1;
+    margin-right: 15px;
+    @include media($mobile) {
+      font-size:  $base-text-3-font-size;
+      line-height: $base-text-3-line-height;
+    }
+  }
+  .article__content__text__author {
+    .icon-author {
+      &:before {
+        margin-right: 5px;
+      }
+    }
+  }
+  .article__content__text__published {
+    .icon-published {
+      &:before {
+         margin-right: 5px;
+      }
+    }
+  }
+  .article__content__text__like {
+    .icon-like  {
+      &:before {
+        color: #fa2a2a;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
+
+// Base Elements: Article Content Text - Blockquote
+// .article .article__content .article__content__text
+//
+// insert the blockquote of the left side content
+// {.article__content__text blockquote}
+// --------------------------------------------------------------------------
+$blockquote-color: #000;
+$blockquote-font-family: Georgia, serif;
+$blockquote-font-size: 16px;
+$blockquote-color-aspas: #999;
+$blockquote-font-size-aspas: 120px;
+$blockquote-background: #fff;
+$blockquote-max-width: 300px;
+$blockquote-padding: 20px;
+$blockquote-margin: 10px 30px 10px 0;
+
+
+.article__content__text {
+  blockquote{
+    @include box-shadow (2px, 2px, 15px, 2px, rgba(204, 204, 204, 0.58));
+    margin-bottom: 30px;
+    max-width: $blockquote-max-width;
+    display:block;
+    background: $blockquote-background;
+    padding: $blockquote-padding;
+    float: left;
+    margin: 10px 30px 10px 0;
+    position: relative;
+    z-index: 1;
+    font-family: $blockquote-font-family;
+    font-size: $blockquote-font-size;
+    line-height: 1.2;
+    color: $blockquote-color;
+    text-align: justify;
+    @include media($mobile) {
+      margin: 10px 0px 10px 0;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      font-family: $blockquote-font-family;
+      font-size: $blockquote-font-size-aspas;
+      font-weight: bold;
+      color: $blockquote-color-aspas;
+      height: 65px;
+      z-index: -1;
+    }
+    &::before{
+      content: "\201C";
+      left: 0px;
+      top:-20px;
+
+    }
+    &::after{
+      content: "\201D";
+      right: 0px;
+      bottom:5px;
+    }
+    em{
+      font-style: italic;
+    }
+  }
+}
+
+// Base Elements: Article Content - Tags
+// .article .article__content
+//
+// {.article__content__tags}
+// --------------------------------------------------------------------------
+.article__content__tags {
+  margin-top: 40px;
+  @extend %base-text-1;
+}
+.article__content__tags__link {
+  @extend %link-default;
+
+}
+
+
+
+
+
+// Base Elements: Article Content - Social
+// .article .article__content
+//
+// {.article__content__text__social}
+// --------------------------------------------------------------------------
+.article__content__text__social {
+  @include outer-container;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+// @import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css";
+
+
+// // --------------------------------------------------------------------------
+// // Variables: Social Media
+// // Variable for the object of social media
+// // --------------------------------------------------------------------------
+// .social-media {
+//     list-style: none;
+//     width: 370px;
+//     margin: 0 auto;
+//     padding: 15px 0;
+//     min-height: 1px;
+//     position: relative;
+//   @include media($mobile) {
+//      width: 280px;
+//   }
+//   &:before {
+//     content: " ";
+//     border-top: 2px solid #dfdfdf;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     font-family: FontAwesome;
+//     position: absolute;
+//     width: 80%;
+//     left: 50%;
+//     margin-left: -40%;
+//     height: 100%;
+//     top: 0;
+//   }
+//   &:after{
+//     content: " ";
+//     border-bottom: 2px solid #dfdfdf;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     font-family: FontAwesome;
+//     position: absolute;
+//     width: 80%;
+//     left: 50%;
+//     margin-left: -40%;
+//     height: 100%;
+//     bottom: 0;
+//   }
+//   &__link {
+//     display: inline-block;
+//     width: 50px;
+//     height: 50px;
+//     border-radius: 18%;
+//     text-decoration: none;
+//     color: #fff;
+//     text-align: center;
+//     margin-right: 20px;
+//     margin-left: 20px;
+//     @include media($mobile) {
+//       width: 4em;
+//       height: 4em;
+//       margin-right: 4px;
+//       margin-left: 4px;
+//     }
+//   }
+//   .social-media__link--linkedin:before {
+//     @include media($mobile) {
+//       font-size: 2.5em;
+//     }
+//   }
+//   .social-media__link--twitter:before {
+//     @include media($mobile) {
+//       font-size: 2.7em;
+//       line-height: 1.5;
+//     }
+//   }
+//   .social-media__link--whatsapp:before {
+//     @include media($mobile) {
+//       font-size: 4.5em;
+//     }
+//   }
+//   .social-media__link--facebook:before {
+//     @include media($mobile) {
+//       font-size: 2.5em;
+//       line-height: 1.7;
+//     }
+//   }
+
+// }
+
+
+
+
+%article-category-link-text {
+  @extend %base-text-3;
+  background-color: #066db2;
+  color: #fff;
+  padding: 2px 7px;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+%article-category-link {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  &::before,
+  &::after {
+    content: "";
+    border-style: solid;
+    display: inline-block;
+    top: 0;
+    height: 0;
+    width: 0;
+    position: relative;
+  }
+  &::before {
+    border-color: #066db2 transparent;
+    border-width: 0 0 22px 16px;
+    left: 5px;
+  }
+  &::after {
+    content: "";
+    border-color: transparent #066db2;
+    border-width: 0 0 22px 16px;
+    right: 5px;
+  }
+}
+
+
+.article__content__category {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.article__content__category__item {
+  display: inline-block;
+  width: 100%;
+}
+.article__content__category__link {
+  @extend %article-category-link ;
+}
+.article__content__category__link__text {
+  @extend %article-category-link-text;
+}

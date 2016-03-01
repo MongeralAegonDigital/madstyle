@@ -1,17 +1,14 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset="utf-8")
-    block meta
-    title="Styleguide"
-    link(rel="icon", type="image/png", href="styleguide/structure/images/favicon.png")
-    block styles
-  body
-    main.container
-      block content
-        p HELLA! 
-    block scripts
-      if !process.env.STYLEGUIDE_COMPILE
-        script.
-          document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8374/livereload.js?snipver=1"></' + 'script>') 
+extends docs/_templates/_base
+block styles
+	link(href="docs/assets/css/main.css", rel="stylesheet")
 
+block content
+	include docs/_includes/_header.jade
+	.mad-wrapper
+		include docs/_includes/_sidebar.jade
+		include docs/_includes/_content.jade
+
+block scripts
+	if !process.env.STYLEGUIDE_COMPILE
+		script.
+			document.write("<script src='http://" + (location.host || "localhost").split(":")[0] + ":8374/livereload.js?snipver=1'></" + "script>")

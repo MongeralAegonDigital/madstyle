@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Social</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='../../style.css' type='text/css' media='all' />
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="{{-- Mongeral Aegon Facebook Share Test. --}}">
+  <meta property="og:site_name" content="{{-- Mongeral Aegon --}}">
+  <meta property="og:description" content="{{-- Compartilhar posts blog --}}">
+  <meta property="og:image" content="{{-- www.meusite.com.br/imagem.jpg --}}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+  <meta property="og:type" content="{{-- article --}}">
+  <meta property="article:author" content="{{-- Autor do artigo --}}">
+  <meta property="article:section" content="{{-- Seção do artigo --}}">
+  <meta property="article:tag" content="{{-- Tags do artigo --}}">
+  <meta property="article:published_time" content="{{-- date_time --}}">
+
+</head>
+
+<body>
+  <nav class="social-media">
+    <a class="social-media__link social-media__link--twitter" aria-label="Twitter" href="https://twitter.com/intent/tweet?url={{-- url aqui --}}/&amp;text={{-- Titulo aqui --}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter">
+    <a class="social-media__link social-media__link--whatsapp" href="whatsapp://send?text={{-- Texto de compartilhamento + url com escape + from%3Dwhatsapp--}}" data-href="url com escape + from%3Dwhatsapp">
+    <a class="social-media__link social-media__link--linkedin" href="https://www.linkedin.com/shareArticle?url={{-- url aqui --}}&?mini=true&source={{-- Fonte da Notícia --}}" onclick="window.open(this.href, 'Linkedin-share', 'width=550,height=620');return false;">
+    <a class="social-media__link social-media__link--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{-- url aqui --}}" onclick="window.open(this.href,'facebook-share', 'top=200, left=500, width=700, height=550'); return false;">
+  </nav>
+</body>
+</html>
+

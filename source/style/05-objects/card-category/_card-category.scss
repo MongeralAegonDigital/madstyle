@@ -1,0 +1,28 @@
+// Variables
+$card-category-color: #fff;
+$card-category-bg: #066db2;
+
+// --------------------------------------------------------------------------
+// Objects: Card Category
+// --------------------------------------------------------------------------
+
+%card-category__text {
+  @extend %base-text-3;
+  display: inline-block;
+  padding: 2px 7px;
+  color: $card-category-color;
+  text-transform: uppercase;
+  transform: skewX(25deg);
+  -o-transform: skewX(25deg);
+  -moz-transform: skewX(25deg);
+  -webkit-transform: skewX(25deg);
+}
+
+%card-category__link {
+  display: inline-block;
+  background-color: $card-category-bg;
+  transform: skewX(-25deg);
+  -o-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+  -webkit-transform: skewX(-25deg);
+}
