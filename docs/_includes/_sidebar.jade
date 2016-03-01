@@ -1,5 +1,6 @@
 - var atoms = public.source.style["04-base"]
-- var molecules = public.source.style["06-components"]
+- var molecules = public.source.style["05-objects"]
+- var organisms = public.source.style["06-components"]
 
 aside.mad-sidebar
 	nav
@@ -13,5 +14,12 @@ aside.mad-sidebar
 		p Moléculas
 		ul
 			each value, key in molecules
+				li
+					a(href="##{key}")=key
+
+	nav
+		p Organismos
+		ul
+			each value, key in organisms
 				li
 					a(href="##{key}")=key

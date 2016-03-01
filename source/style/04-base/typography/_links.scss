@@ -12,10 +12,12 @@ $link-color: #006db6;
 
 %link-hover {
 	text-decoration: none;
+	
 	&:hover {
 		text-decoration: underline;
 	}
 }
+
 %link-color {
 	color: $link-color;
 }
