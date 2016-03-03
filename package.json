@@ -2,12 +2,15 @@
   "name": "madstyle",
   "version": "1.0.1",
   "description": "Style Guide da Mongeral Aegon",
-  "main": "watch.js",
-  "devDependencies": {
-    "livereload": "^0.3.6"
-  },
-  "author": "Mongeral Aegon Team",
+  "main": "./source/javascript/_initial.js",
   "dependencies": {
-    "jquery": "^2.2.1"
-  }
+    "jquery": "^2.2.1",
+    "mediator-js": "^0.9.9"
+  },
+  "devDependencies": {
+    "livereload": "^0.3.6",
+    "browserify": "^13.0.0",
+    "watchify": "^3.7.0"
+  },
+  "author": "Mongeral Aegon Team"
 }
