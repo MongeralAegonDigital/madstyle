@@ -1,9 +1,14 @@
-'use strict';
+// Applicantion dependency
+MAD.Application = require('./_application');
 
-global.$ = global.jQuery = require('jquery');
+$(function(){
+  // Initialize an application instance.
+  // I must receive the body element as the container.
+  var app = new MAD.Application(
+    location.pathname,
+    document.body
+  );
 
-// Namespace
-global.MAG = global.MAG || {};
-
-var Mediator = require("mediator-js").Mediator;
-MAG.mediator = new Mediator();
+  // Just start the application.
+  app.init();
+});
