@@ -2,17 +2,12 @@
 // Placeholder: Link
 // --------------------------------------------------------------------------
 
-// Link Theme Variables
-// --------------------------------------------------------------------------
-
-$link-color: #006db6;
-
 // Link
 // --------------------------------------------------------------------------
 
 %link-hover {
 	text-decoration: none;
-	
+
 	&:hover {
 		text-decoration: underline;
 	}
@@ -25,5 +20,7 @@ $link-color: #006db6;
 %link-default {
 	@extend %link-color;
 	@extend %link-hover;
+   //para evitar conflito nos outros projetos
+  text-transform: inherit;
 }
 

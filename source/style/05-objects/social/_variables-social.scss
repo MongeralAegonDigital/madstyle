@@ -1,0 +1,16 @@
+// --------------------------------------------------------------------------
+// Objects: Social Media
+// --------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------
+// Variables: Social Media
+// Variable for the object of social media
+// --------------------------------------------------------------------------
+$social-icons: (
+  twitter :  (char: "\f099", background-color: #4679bb, color: #fff, size: 35px, line-height: 50px, size-mobile: 28px, line-height-mobile: 47px),
+  whatsapp:  (char: "\f232", background-color: transparent, color: #6cc784, size: 57px, line-height: 1, size-mobile: 42px, line-height-mobile: 40px),
+  facebook:  (char: "\f09a", background-color: #4d5ea8, color: #fff, size: 35px, line-height: 50px, size-mobile: 28px, line-height-mobile: 43px),
+  linkedin:  (char: "\f0e1", background-color: #4d5ea8, color: #fff, size: 35px, line-height: 50px, size-mobile: 30px, line-height-mobile: 40px),
+);
+
