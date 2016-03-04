@@ -30,7 +30,7 @@ $headings-font-color :    inherit !default;
 $headings-font-family:    $font-family-primary;
 $headings-font-weight:    500 !default;
 $headings-margin-bottom:  0.5rem !default;
-$headings-line-height:    1.1 !default;
+
 
 
 
@@ -44,6 +44,12 @@ $font-size-h3: 24px !default;
 $font-size-h4: 18px !default;
 $font-size-h5: 16px !default;
 $font-size-h6: 14px !default;
+
+
+
+// Link Theme Variables
+// --------------------------------------------------------------------------
+$link-color: #006db6;
 
 
 // Heading
@@ -75,6 +81,10 @@ $headings-h7-line-height: 18px;
 $base-text-color : #000;
 $base-font-family: inherit !default;
 $base-font-weight: 500;
+
+$base-text-0-font-size    : 21px;
+$base-text-0-line-height  : 33px;
+
 $base-text-1-font-size    : 16px;
 $base-text-1-line-height  : 22px;
 

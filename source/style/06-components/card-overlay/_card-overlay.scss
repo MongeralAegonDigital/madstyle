@@ -2,10 +2,6 @@
 // Components: Card Overlay
 // --------------------------------------------------------------------------
 
-$card-overlay-desc-title--color    : #fff;
-$card-overlay-desc-title--font-size: $headings-h2-font-size;
-
-
 
 
 // Base Elements: Card Overlay
@@ -13,19 +9,31 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
 // {.card-overlay}
 // --------------------------------------------------------------------------
 .card-overlay {
-  width: inherit;
+  width: 100%;
   position: relative;
   display: block;
   margin-bottom: .75rem;
   a {
     display: inherit;
     text-decoration: none;
+    overflow: hidden;
   }
-  img {
-    display: block;
-    height: auto;
-    vertical-align: middle;
-    width: 100%;
+  .card-overlay__link {
+    &:hover {
+      background-color: #ddd;
+    }
+    &:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
+      vertical-align: middle;
+      transition: -webkit-transform 350ms;
+      transition: transform 350ms;
+    }
   }
 }
 
@@ -39,6 +47,7 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
   right: 0;
   left: 0;
   padding: 0.8rem;
+  z-index: 1;
   &>div {
     position: absolute;
     bottom: 10px;
@@ -49,5 +58,50 @@ $card-overlay-desc-title--font-size: $headings-h2-font-size;
 // --------------------------------------------------------------------------
 .card-overlay__desc__title {
   color: $card-overlay-desc-title--color;
-  font-size: $card-overlay-desc-title--font-size;
+  font-size:   $headings-h2-font-size;
+  line-height: $headings-h4-line-height;
+  font-family: $headings-font-family;
+  text-shadow: 2px 1px 2px #000;
+}
+
+
+
+// Link
+// --------------------------------------------------------------------------
+.card-overlay__link {
+  &:hover {
+    .card-overlay__bg {
+      background-image: linear-gradient(to bottom, rgba(33,33,33,0.25) 0%, rgba(33,33,33,0.31) 12%, rgba(33,33,33,0.46) 42%, rgba(33,33,33,0.61) 71%, rgba(0,0,0,0.75) 100%);
+      // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+     }
+  }
+}
+
+
+// Overlay Card
+// --------------------------------------------------------------------------
+.card-overlay__bg {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-size: 100%;
+  opacity: .9;
+  &:after {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, rgba(33,33,33,0.25) 0%, rgba(33,33,33,0.31) 12%, rgba(33,33,33,0.46) 42%, rgba(33,33,33,0.61) 71%, rgba(0,0,0,0.75) 100%);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }
