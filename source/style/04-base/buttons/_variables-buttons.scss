@@ -1,0 +1,29 @@
+// --------------------------------------------------------------------------
+// Base Button
+// --------------------------------------------------------------------------
+$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$button-font-family: $font-family-primary;
+
+$button-padding-small-x: 3rem;
+$button-padding-small-y: .875rem;
+$button-font-size-small: 1rem;
+
+$button-padding-medium-x: 3rem;
+$button-padding-medium-y: .875rem;
+$button-font-size-medium: 1rem;
+
+$button-padding-large-x: 3rem;
+$button-padding-large-y: .875rem;
+$button-font-size-large: 1rem;
+
+$button-font-weight: bold;
+$button-border-width: 0;
+
+$button-font-size: 1rem;
+$button-height: 1rem;
+$button-border-radius: 0;
+
+$btn-types: (
+  "blue"   : (background-color: #066db2, color: #fff, background-color-hover: #066db2, color-hover: #fff, background-color-active: #066db2, color-active: #fff),
+  "red"    : (background-color: #066db2, color: #fff, background-color-hover: #066db2, color-hover: #fff, background-color-active: #066db2, color-active: #fff),
+);

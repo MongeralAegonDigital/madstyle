@@ -1,29 +1,16 @@
-$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
 // --------------------------------------------------------------------------
-// Base Button
-// --------------------------------------------------------------------------
-$button-font-family: $font-family-primary;
-$button-padding-x: 3rem;
-$button-padding-y: .875rem;
-$button-font-weight: bold;
-$button-border-width: 0;
-$button-font-size: 1rem;
-$button-height: 1rem;
-$button-border-radius: 0;
-
-//
 //Button Style
-//
-$btn-send-color: #C237D2;
-$btn-send-background: #ccc;
-$btn-send-color-hover: #C237D2;
-$btn-send-background-hover: #0C6CE3;
+// --------------------------------------------------------------------------
+//---------------------------------------------------------------------
+// HTML
+//---------------------------------------------------------------------
+// .nome-card {
+//   @include set-styles("blue");
+// }
+// .nome-card {
+//   @include set-styles("blue","large");
+// }
 
-$btn-action-color: #C237D2;
-$btn-action-background: #ccc;
-$btn-action-color-hover: #fff;
-$btn-action-background-hover: #000;
 
 
 %btn {
@@ -37,8 +24,6 @@ $btn-action-background-hover: #000;
   cursor: pointer;
   user-select: none;
   border: $button-border-width solid transparent;
-  padding: $button-padding-y $button-padding-x;
-  font-size: $button-font-size;
   line-height: $button-height;
   border-radius: $button-border-radius;
   &:active,
@@ -51,47 +36,48 @@ $btn-action-background-hover: #000;
   }
 }
 
-$btn-types: (
-  //background,color,background-hover,color-hover
-  "send"  : ($btn-send-background, $btn-send-color, $btn-send-background-hover, $btn-send-color-hover),
-  "action": ($btn-action-background, $btn-action-color, $btn-action-background-hover, $btn-action-color-hover)
-);
 
 @each $btn-types, $btn-type in $btn-types {
-  $background: nth($btn-type, 1);
-  $color: nth($btn-type, 2);
-  $background-hover: nth($btn-type, 3);
-  $color-hover: nth($btn-type, 4);
-
-  .btn-#{$btn-types} {
+  %btn-#{$btn-types} {
     @extend %btn;
-    background-color: $background;
-    color: $color;
+    background-color:  map-get($btn-type, background-color);
+    color: map-get($btn-type, color);
     &:hover{
-      background-color: $background-hover;
-      color: $color-hover;
+      background-color: map-get($btn-type, background-color-hover);
+      color: map-get($btn-type, color-hover);
+    }
+    &:active{
+      background-color: map-get($btn-type, background-color-active);
+      color: map-get($btn-type, color-active);
     }
   }
 }
 
-//
-// Block button
-//
-%btn-block {
-  display: block;
-  width: 100%;
-}
-
-// Vertically space out multiple block buttons
-.btn-block + .btn-block {
-  margin-top: 5px;
-}
-
-// Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  &.btn-block {
-    width: 100%;
+@mixin set-styles($btn-types, $btn-widht:false) {
+  @extend %btn-#{$btn-types};
+  @if $btn-widht == "large" {
+    padding: $button-padding-large-y $button-padding-large-x;
+    font-size: $button-font-size-large;
+  } @else if ($btn-widht == "small") {
+    font-size: $button-font-size-small;
+    padding:  $button-padding-small-y $button-padding-small-x;
+  } @else {
+    font-size: $button-font-size-medium;
+    padding: $button-padding-medium-y $button-padding-medium-x;
   }
 }
+
+//---------------------------------------------------------------------
+// Block button
+//---------------------------------------------------------------------
+%btn-block {
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  // Vertically space out multiple block buttons
+  .btn-block + .btn-block {
+    margin-top: 5px;
+  }
+}
+
