@@ -1,16 +1,10 @@
-MAD.Slider = (function(){
-	function Slider() {
+Slider = function(container){
 
-	}
+}
 
-	Slider.prototype.init = function() {
+Slider.prototype.init = function() {
 
-		console.log('SLIDER');
-	}
+	console.log('SLIDER');
+}
 
-	return Slider;
-})();
-
-module.exports = MAD.Slider;
-
-console.log(MAD);
+module.exports = Slider;

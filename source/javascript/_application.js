@@ -1,21 +1,20 @@
-Application = function(path, container) {
-		this.path = path;
+Application = function(modules, container) {
+		this.modules = modules;
 		this.container = $(container);
 }
 
 Application.prototype.init = function() {
 
-	$('[data-js-module]').each(function(){
-		var Controller = $(this).data('js-module');
-		
-		if (Controller) {
-			controller = new Controller(this.container);
+	this.modules.each(function(){
+		var module = window["MAD"][$(this).data('js-module')];
 
-      if (controller.init) {
-        controller.init();
-      }
-
-      return;
+		if (typeof module === "function") {
+      var initializer = new module(
+        $(this),
+        this.container
+      );
+      
+      initializer.init();
     }
 	});
 }
