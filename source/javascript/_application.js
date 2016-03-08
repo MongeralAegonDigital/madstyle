@@ -1,29 +1,23 @@
-MAD.Application = (function(){
-	function Application(path, container) {
+Application = function(path, container) {
 		this.path = path;
 		this.container = $(container);
-	}
+}
 
-	Application.prototype.init = function() {
+Application.prototype.init = function() {
 
-		$('[data-js-module]').each(function(){
-			var Module = $(this).data('js-module');
-			
-			if (Module) {
-	      var Controller = require('./vendor/_slider'); 
-				
-				controller = new Controller(this.container);
+	$('[data-js-module]').each(function(){
+		var Controller = $(this).data('js-module');
+		
+		if (Controller) {
+			controller = new Controller(this.container);
 
-	      if (controller.init) {
-	        controller.init();
-	      }
+      if (controller.init) {
+        controller.init();
+      }
 
-	      return;
-	    }
-		});
-	}
+      return;
+    }
+	});
+}
 
-	return Application;
-})();
-
-module.exports = MAD.Application;
+module.exports = Application;
