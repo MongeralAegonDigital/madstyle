@@ -2,12 +2,11 @@
 //@import "00-generic/_normalize";
 //@import "00-generic/_box-sizing";
 //@import "00-generic/_page";
-@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css";
 
 @import "grid/neat";
 
 @import "01-settings/variables";
-@import "01-settings/typography";
+@import "01-settings/placeholders";
 
 @import "02-generic/reset";
 @import "02-generic/general";
@@ -17,13 +16,16 @@
 
 @import "04-base/typography/links";
 @import "04-base/typography/typography";
-@import "04-base/fonts/fonts";
+@import "04-base/fonts/_fonts";
 @import "04-base/color/color";
 @import "04-base/buttons/buttons";
 @import "04-base/alerts/alerts";
 
 @import "05-objects/card-category/_variables-card-category";
 @import "05-objects/card-category/card-category";
+
+@import "05-objects/list/_variables-list";
+@import "05-objects/list/list";
 
 @import "05-objects/heading-line/_variables-heading-line";
 @import "05-objects/heading-line/heading-line";

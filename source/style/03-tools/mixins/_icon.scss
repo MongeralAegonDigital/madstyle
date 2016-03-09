@@ -1,0 +1,20 @@
+// Icon
+///
+///
+/// @access public
+///
+@mixin x-icon( $name: "", $position: "left" ) {
+  @if $position == "left" {
+    &:before {
+      @extend %icon;
+      @extend %#{$name};
+      margin-right: 10px;
+    }
+  } @else if $position == "right" {
+    &:after {
+      @extend %icon;
+      @extend %#{$name};
+      margin-left: 10px;
+    }
+  }
+}

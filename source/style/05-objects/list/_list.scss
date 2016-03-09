@@ -1,0 +1,50 @@
+// --------------------------------------------------------------------------
+// Objects: Social Media
+// --------------------------------------------------------------------------
+
+.nav-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav-list__item {
+  display: block;
+  float:left;
+  position: relative;
+
+}
+.nav-list__link {
+  color: #337ab7;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+
+
+@each $social-name, $social-icon in $social-icons {
+  .social-media {
+    .social-media__link--#{$social-name} {
+      vertical-align: top;
+      background-color: map-get($social-icon, background-color);
+      color: map-get($social-icon, color);
+      &:before {
+        @extend %icon;
+        content: map-get($social-icon, char);
+        font-size: map-get($social-icon, size);
+        line-height: map-get($social-icon, line-height);
+        @media (max-width: 600px) {
+          font-size: map-get($social-icon, size-mobile);
+          line-height: map-get($social-icon, line-height-mobile);
+        }
+      }
+    }
+  }
+}
+
+.social-media__link--whatsapp {
+  @include media($tablet) {
+    display: none;
+  }
+}
