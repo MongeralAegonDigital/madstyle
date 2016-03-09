@@ -1,3 +1,5 @@
+var Slider = MAD.Slider;
+
 Slider = function(container){
 
 }
