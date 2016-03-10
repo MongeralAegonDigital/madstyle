@@ -1,16 +1,6 @@
-$alert-border-radius: 0;
-$alert-margin-bottom: 20px;
-$alert-padding: 15px;
-$alert-border: 1px solid transparent;
-
-$alert-types: (
-          //background, color,  link
-  "default" : (#f2f2f4, #757575, #757575),
-  "success" : (#7cb342, #ffffff, #ffffff),
-  "info"    : (#66a7d1, #ffffff, #ffffff),
-  "warning" : (#ffb53e, #ffffff, #ffffff),
-  "danger"  : (#ff5252, #ffffff, #ffffff)
-);
+// --------------------------------------------------------------------------
+/// 04-base: Alerts
+// --------------------------------------------------------------------------
 
 %alert {
   border: $alert-border;
@@ -43,6 +33,7 @@ $alert-types: (
     &:focus,
     &:hover {
       color: #000;
+      cursor: pointer;
       text-decoration: none;
       cursor: pointer;
       filter: alpha(opacity=50);
@@ -65,31 +56,9 @@ $alert-types: (
       color: $link;
       text-decoration: none;
       &:hover {
+        cursor: pointer;
         text-decoration: underline;
       }
     }
   }
-}
-
-//how to use the component alert
-.alert-default {
-  @extend %alert-default;
-}
-.alert-success {
-  @extend %alert-success;
-}
-.alert-danger {
-  @extend %alert-danger;
-}
-.alert-warning {
-  @extend %alert-warning;
-}
-.alert-info {
-  @extend %alert-info;
-}
-.alert-warning {
-  @extend %alert-warning;
-}
-.alert-dismissible {
-  @extend %alert-dismissible;
 }

@@ -1,50 +1,65 @@
 // --------------------------------------------------------------------------
-// Objects: Social Media
+// Objects: Nav List
 // --------------------------------------------------------------------------
+/*
+  @include nav-list(
+    $list-name,
+    $list-inline: false
+  );
+*/
+/*
+// --------------------------------------------------------------------------
+  EXEMPLO CSS:
+  .nomedaclasse {
+    @include nav-list(nomedaclasse,  $list-inline: inline);
+  }
+// --------------------------------------------------------------------------
+*/
 
-.nav-list {
+%nav-list{
   padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
-}
-.nav-list__item {
-  display: block;
-  float:left;
-  position: relative;
-
-}
-.nav-list__link {
-  color: #337ab7;
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-
-
-@each $social-name, $social-icon in $social-icons {
-  .social-media {
-    .social-media__link--#{$social-name} {
-      vertical-align: top;
-      background-color: map-get($social-icon, background-color);
-      color: map-get($social-icon, color);
-      &:before {
-        @extend %icon;
-        content: map-get($social-icon, char);
-        font-size: map-get($social-icon, size);
-        line-height: map-get($social-icon, line-height);
-        @media (max-width: 600px) {
-          font-size: map-get($social-icon, size-mobile);
-          line-height: map-get($social-icon, line-height-mobile);
-        }
-      }
-    }
+  &:before,
+  &:after{
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
   }
 }
+%nav-list__item{
+  position: relative;
+}
+%nav-list__link{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+%nav-list__item--block{
+  float:none;
+  display: block;
+}
+%nav-list__item--inline{
+  float:left;
+  display: inline-block;
+}
 
-.social-media__link--whatsapp {
-  @include media($tablet) {
-    display: none;
+@mixin nav-list($list-name, $list-inline: false) {
+  @extend %nav-list;
+  .#{$list-name}__item {
+    @extend %nav-list__item;
+  }
+  .#{$list-name}__link {
+    @extend %nav-list__link;
+  }
+  @if $list-inline == "inline" {
+    .#{$list-name}__item {
+      @extend %nav-list__item--inline;
+    }
+  } @else {
+    .#{$list-name}__item {
+      @extend %nav-list__item--block;
+    }
   }
 }

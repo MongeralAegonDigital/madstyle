@@ -5,91 +5,8 @@
 // background-color: core-color('aux-five', $opacity: 'light');
 // background-color: core-color('aux-five', 'aux-10');
 
-$color-primary: #006db2;
-$aux-one:   #00a7e5; //blue light
-$aux-two:   #f44336; //red
-$aux-three: #ff9800; //orange
-$aux-four:  #4caf50; //green
-$aux-five:  #9e9e9e; //gray
-$aux-six:   #c0c0c8; //gray light
 
 
-
-$core-color-key: 'base' !default;
-$core-colors: (
-  'primary': (
-    'base': $color-primary,
-    'aw90': mix(white, $color-primary, 90%),
-    'aw60': mix(white, $color-primary, 60%),
-    'aw40': mix(white, $color-primary, 40%),
-    'aw20': mix(white, $color-primary, 20%),
-    'aw10': mix(white, $color-primary, 10%),
-
-    'ab5' : mix(black, $color-primary, 5%),
-    'ab10': mix(black, $color-primary, 10%),
-    'ab20': mix(black, $color-primary, 20%),
-    'ab40': mix(black, $color-primary, 40%),
-    'ab60': mix(black, $color-primary, 60%)
-  ),
-  'aux-one': ( //blue light
-    'base': $aux-one,
-    'aux-10': #b2e4f7,
-    'aux-40': #99dcf5,
-    'aux-50': #7fd3f2,
-    'aux-70': #4cc1ed
-  ),
-  'aux-two': ( //red
-    'base': $aux-two,
-    'aux-10': #ffcdd2,
-    'aux-20': #e57373,
-    'aux-30': #f44336,
-    'aux-40': #d32f2f,
-    'aux-50': #b71c1c
-  ),
-  'aux-three': ( //orange
-    'base': $aux-three,
-    'aux-10': #ffe0b2,
-    'aux-20': #ffb74d,
-    'aux-30': #ff9800,
-    'aux-40': #f57c00,
-    'aux-50': #e65100
-  ),
-  'aux-four': ( //green
-    'base': $aux-four,
-    'aux-10': #c8e6c9,
-    'aux-20': #81c784,
-    'aux-30': #4caf50,
-    'aux-40': #388e3c,
-    'aux-50': #1b5e20
-  ),
-  'aux-five': ( //gray
-    'base': $aux-five,
-    'aux-10': #f5f5f5,
-    'aux-20': #e0e0e0,
-    'aux-30': #9e9e9e,
-    'aux-40': #616161,
-    'aux-50': #212121
-  ),
-  'aux-six': ( //gray light
-    'base': $aux-six,
-    'aux-10': #f2f2f4,
-    'aux-20': #e6e6e9,
-    'aux-30': #4cc1ed,
-    'aux-40': #cdcdd3,
-    'aux-50': #c0c0c8
-  )
-);
-
-
-
-
-
-
-$core-opacity: (
-  'light': 0.8, // opacity used with lighter colors
-  'dark': 0.4,  // opacity used with darker colors
-  // ... etc.
-);
 
 @function core-color(
   $name: 'primary',
@@ -139,8 +56,6 @@ $core-opacity: (
 .aw10 {
   background-color: core-color('primary', 'aw10');
 }
-
-
 .ab5 {
   background-color: core-color('primary', 'ab5');
 }
@@ -165,16 +80,39 @@ $core-opacity: (
 .aux-one-10 {
   background-color: core-color('aux-one', 'aux-10');
 }
+.aux-one-20 {
+  background-color: core-color('aux-one', 'aux-20');
+}
+.aux-one-30 {
+  background-color: core-color('aux-one', 'aux-30');
+}
 .aux-one-40 {
   background-color: core-color('aux-one', 'aux-40');
 }
 .aux-one-50 {
   background-color: core-color('aux-one', 'aux-50');
 }
+.aux-one-60 {
+  background-color: core-color('aux-one', 'aux-60');
+}
 .aux-one-70 {
   background-color: core-color('aux-one', 'aux-70');
 }
-
+.aux-one-b5 {
+  background-color: core-color('aux-one', 'aux-b5');
+}
+.aux-one-b10 {
+  background-color: core-color('aux-one', 'aux-b10');
+}
+.aux-one-b20 {
+  background-color: core-color('aux-one', 'aux-b20');
+}
+.aux-one-b40 {
+  background-color: core-color('aux-one', 'aux-b40');
+}
+.aux-one-b60 {
+  background-color: core-color('aux-one', 'aux-b60');
+}
 
 
 .aux-two {
@@ -195,6 +133,28 @@ $core-opacity: (
 .aux-two-50 {
   background-color: core-color('aux-two', 'aux-50');
 }
+.aux-two-60 {
+  background-color: core-color('aux-two', 'aux-60');
+}
+.aux-two-70 {
+  background-color: core-color('aux-two', 'aux-70');
+}
+.aux-two-b5 {
+  background-color: core-color('aux-two', 'aux-b5');
+}
+.aux-two-b10 {
+  background-color: core-color('aux-two', 'aux-b10');
+}
+.aux-two-b20 {
+  background-color: core-color('aux-two', 'aux-b20');
+}
+.aux-two-b40 {
+  background-color: core-color('aux-two', 'aux-b40');
+}
+.aux-two-b60 {
+  background-color: core-color('aux-two', 'aux-b60');
+}
+
 
 .aux-three {
   background-color: core-color('aux-three');
@@ -214,6 +174,28 @@ $core-opacity: (
 .aux-three-50 {
   background-color: core-color('aux-three', 'aux-50');
 }
+.aux-three-60 {
+  background-color: core-color('aux-three', 'aux-60');
+}
+.aux-three-70 {
+  background-color: core-color('aux-three', 'aux-70');
+}
+.aux-three-b5 {
+  background-color: core-color('aux-three', 'aux-b5');
+}
+.aux-three-b10 {
+  background-color: core-color('aux-three', 'aux-b10');
+}
+.aux-three-b20 {
+  background-color: core-color('aux-three', 'aux-b20');
+}
+.aux-three-b40 {
+  background-color: core-color('aux-three', 'aux-b40');
+}
+.aux-three-b60 {
+  background-color: core-color('aux-three', 'aux-b60');
+}
+
 
 .aux-four {
   background-color: core-color('aux-four');
@@ -233,7 +215,27 @@ $core-opacity: (
 .aux-four-50 {
   background-color: core-color('aux-four', 'aux-50');
 }
-
+.aux-four-60 {
+  background-color: core-color('aux-four', 'aux-60');
+}
+.aux-four-70 {
+  background-color: core-color('aux-four', 'aux-70');
+}
+.aux-four-b5 {
+  background-color: core-color('aux-four', 'aux-b5');
+}
+.aux-four-b10 {
+  background-color: core-color('aux-four', 'aux-b10');
+}
+.aux-four-b20 {
+  background-color: core-color('aux-four', 'aux-b20');
+}
+.aux-four-b40 {
+  background-color: core-color('aux-four', 'aux-b40');
+}
+.aux-four-b60 {
+  background-color: core-color('aux-four', 'aux-b60');
+}
 
 
 .aux-five {
@@ -254,5 +256,188 @@ $core-opacity: (
 .aux-five-50 {
   background-color: core-color('aux-five', 'aux-50');
 }
+.aux-five-60 {
+  background-color: core-color('aux-five', 'aux-60');
+}
+.aux-five-70 {
+  background-color: core-color('aux-five', 'aux-70');
+}
+.aux-five-b5 {
+  background-color: core-color('aux-five', 'aux-b5');
+}
+.aux-five-b10 {
+  background-color: core-color('aux-five', 'aux-b10');
+}
+.aux-five-b20 {
+  background-color: core-color('aux-five', 'aux-b20');
+}
+.aux-five-b40 {
+  background-color: core-color('aux-five', 'aux-b40');
+}
+.aux-five-b60 {
+  background-color: core-color('aux-five', 'aux-b60');
+}
 
 
+
+.aux-six {
+  background-color: core-color('aux-six');
+}
+.aux-six-10 {
+  background-color: core-color('aux-six', 'aux-10');
+}
+.aux-six-20 {
+  background-color: core-color('aux-six', 'aux-20');
+}
+.aux-six-30 {
+  background-color: core-color('aux-six', 'aux-30');
+}
+.aux-six-40 {
+  background-color: core-color('aux-six', 'aux-40');
+}
+.aux-six-50 {
+  background-color: core-color('aux-six', 'aux-50');
+}
+.aux-six-60 {
+  background-color: core-color('aux-six', 'aux-60');
+}
+.aux-six-70 {
+  background-color: core-color('aux-six', 'aux-70');
+}
+.aux-six-b5 {
+  background-color: core-color('aux-six', 'aux-b5');
+}
+.aux-six-b10 {
+  background-color: core-color('aux-six', 'aux-b10');
+}
+.aux-six-b20 {
+  background-color: core-color('aux-six', 'aux-b20');
+}
+.aux-six-b40 {
+  background-color: core-color('aux-six', 'aux-b40');
+}
+.aux-six-b60 {
+  background-color: core-color('aux-six', 'aux-b60');
+}
+
+
+.aux-seven {
+  background-color: core-color('aux-seven');
+}
+.aux-seven-10 {
+  background-color: core-color('aux-seven', 'aux-10');
+}
+.aux-seven-20 {
+  background-color: core-color('aux-seven', 'aux-20');
+}
+.aux-seven-30 {
+  background-color: core-color('aux-seven', 'aux-30');
+}
+.aux-seven-40 {
+  background-color: core-color('aux-seven', 'aux-40');
+}
+.aux-seven-50 {
+  background-color: core-color('aux-seven', 'aux-50');
+}
+.aux-seven-60 {
+  background-color: core-color('aux-seven', 'aux-60');
+}
+.aux-seven-70 {
+  background-color: core-color('aux-seven', 'aux-70');
+}
+.aux-seven-b5 {
+  background-color: core-color('aux-seven', 'aux-b5');
+}
+.aux-seven-b10 {
+  background-color: core-color('aux-seven', 'aux-b10');
+}
+.aux-seven-b20 {
+  background-color: core-color('aux-seven', 'aux-b20');
+}
+.aux-seven-b40 {
+  background-color: core-color('aux-seven', 'aux-b40');
+}
+.aux-seven-b60 {
+  background-color: core-color('aux-seven', 'aux-b60');
+}
+
+
+
+.color-text-primary {
+  background-color: core-color('color-text-primary');
+}
+.color-text-primary-10 {
+  background-color: core-color('color-text-primary', 'aux-10');
+}
+.color-text-primary-20 {
+  background-color: core-color('color-text-primary', 'aux-20');
+}
+.color-text-primary-30 {
+  background-color: core-color('color-text-primary', 'aux-30');
+}
+.color-text-primary-40 {
+  background-color: core-color('color-text-primary', 'aux-40');
+}
+.color-text-primary-50 {
+  background-color: core-color('color-text-primary', 'aux-50');
+}
+.color-text-primary-60 {
+  background-color: core-color('color-text-primary', 'aux-60');
+}
+.color-text-primary-70 {
+  background-color: core-color('color-text-primary', 'aux-70');
+}
+.color-text-primary-b5 {
+  background-color: core-color('color-text-primary', 'aux-b5');
+}
+.color-text-primary-b10 {
+  background-color: core-color('color-text-primary', 'aux-b10');
+}
+.color-text-primary-b20 {
+  background-color: core-color('color-text-primary', 'aux-b20');
+}
+.color-text-primary-b40 {
+  background-color: core-color('color-text-primary', 'aux-b40');
+}
+.color-text-primary-b60 {
+  background-color: core-color('color-text-primary', 'aux-b60');
+}
+.color-text-secundary {
+  background-color: core-color('color-text-secundary');
+}
+.color-text-secundary-10 {
+  background-color: core-color('color-text-secundary', 'aux-10');
+}
+.color-text-secundary-20 {
+  background-color: core-color('color-text-secundary', 'aux-20');
+}
+.color-text-secundary-30 {
+  background-color: core-color('color-text-secundary', 'aux-30');
+}
+.color-text-secundary-40 {
+  background-color: core-color('color-text-secundary', 'aux-40');
+}
+.color-text-secundary-50 {
+  background-color: core-color('color-text-secundary', 'aux-50');
+}
+.color-text-secundary-60 {
+  background-color: core-color('color-text-secundary', 'aux-60');
+}
+.color-text-secundary-70 {
+  background-color: core-color('color-text-secundary', 'aux-70');
+}
+.color-text-secundary-b5 {
+  background-color: core-color('color-text-secundary', 'aux-b5');
+}
+.color-text-secundary-b10 {
+  background-color: core-color('color-text-secundary', 'aux-b10');
+}
+.color-text-secundary-b20 {
+  background-color: core-color('color-text-secundary', 'aux-b20');
+}
+.color-text-secundary-b40 {
+  background-color: core-color('color-text-secundary', 'aux-b40');
+}
+.color-text-secundary-b60 {
+  background-color: core-color('color-text-secundary', 'aux-b60');
+}

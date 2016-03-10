@@ -1,7 +1,6 @@
-// Icon
+/// Icon
 ///
 ///
-/// @access public
 ///
 @mixin x-icon( $name: "", $position: "left" ) {
   @if $position == "left" {

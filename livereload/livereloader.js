@@ -10,7 +10,7 @@ module.exports = {
   start: function(basePath) {
     server = livereload.createServer({
     	port: 8374,
-      exts: ['js', 'jade', 'json', 'css', 'less', 'sass', 'scss', 'styl', 'svg', 'png', 'jpg', 'gif']
+      exts: ['js', 'jade', 'md', 'json', 'css', 'less', 'sass', 'scss', 'styl', 'svg', 'png', 'jpg', 'gif']
     });
     server.watch(basePath);
   }

@@ -12,8 +12,8 @@ $button-padding-medium-x: 3rem;
 $button-padding-medium-y: .875rem;
 $button-font-size-medium: 1rem;
 
-$button-padding-large-x: 3rem;
-$button-padding-large-y: .875rem;
+$button-padding-large-x: 5rem;
+$button-padding-large-y: 1.875rem;
 $button-font-size-large: 1rem;
 
 $button-font-weight: bold;
@@ -24,6 +24,14 @@ $button-height: 1rem;
 $button-border-radius: 0;
 
 $btn-types: (
-  "blue"   : (background-color: #066db2, color: #fff, background-color-hover: #066db2, color-hover: #fff, background-color-active: #066db2, color-active: #fff),
-  "red"    : (background-color: #066db2, color: #fff, background-color-hover: #066db2, color-hover: #fff, background-color-active: #066db2, color-active: #fff),
+  "blue"       : (background-color: core-color('primary'), color: #fff, background-color-hover: core-color('primary','ab20'), color-hover: #fff, background-color-active: core-color('primary','ab20'), color-active: #fff),
+  "red"        : (background-color: core-color('aux-two'), color: #fff, background-color-hover: core-color('aux-two', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-two', 'aux-b5'), color-active: #fff),
+  "orange"     : (background-color: core-color('aux-three'), color: #fff, background-color-hover: core-color('aux-three', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-three', 'aux-b5'), color-active: #fff),
+  "gray"       : (background-color: core-color('aux-five'), color: #fff, background-color-hover: core-color('aux-five', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-five', 'aux-b5'), color-active: #fff),
+  "green"      : (background-color: core-color('aux-four'), color: #fff, background-color-hover: core-color('aux-four', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-four', 'aux-b5'), color-active: #fff),
+  "disabled"   : (background-color: core-color('color-text-secundary', 'aux-b5'), color: #fff, background-color-hover:core-color('color-text-secundary', 'aux-b10'), color-hover: #fff, background-color-active: core-color('color-text-secundary', 'aux-b10'), color-active: #fff),
+  "gray-white" : (background-color: core-color('color-text-secundary', 'aux-b5'), color: #fff, background-color-hover:core-color('color-text-secundary', 'aux-b10'), color-hover: #fff, background-color-active: core-color('color-text-secundary', 'aux-b10'), color-active: #fff),
+  "ghost"      : (background-color: core-color('aux-six', 'aux-50'), color: #fff, background-color-hover:core-color('aux-six', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-six', 'aux-b5'), color-active: #fff),
+  "link"       : (background-color: core-color('aux-six', 'aux-50'), color: #fff, background-color-hover:core-color('aux-six', 'aux-b5'), color-hover: #fff, background-color-active: core-color('aux-six', 'aux-b5'), color-active: #fff),
+
 );

@@ -4,19 +4,19 @@
 
 main.mad-content
 	section
-		h2 Átomos
+		h2.mad-content-heading Átomos
 		each value, key in atoms
 			section.mad-atom(id='#{key}')
 				!=partial("source/style/04-base/"+key+"/"+key)
 
 	section
-		h2 Moléculas
+		h2.mad-content-heading Moléculas
 		each value, key in molecules
 			section.mad-molecule(id='#{key}')
 				!=partial("source/style/05-objects/"+key+"/"+key)
 
 	section
-		h2 Organismos
+		h2.mad-content-heading Organismos
 		each value, key in organisms
 			section.mad-organism(id='#{key}')
 				!=partial("source/style/06-components/"+key+"/"+key)
