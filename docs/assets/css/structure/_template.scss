@@ -19,12 +19,17 @@
 	@include span-columns(9);
 	@include shift(3);
 	padding: 2%;
+  p {
+    @extend %base-text-1;
+    color: core-color('aux-seven', 'aux-b60');
+  }
   pre {
-    background: #2C2B2B;
+    background: core-color('color-text-secundary', 'aux-10');
     color: #fff;
     line-height: 19px;
     font-size: 13px;
     padding: 20px;
+    margin: 20px 0;
   }
 }
 .mad-content-heading{
@@ -35,9 +40,9 @@
 }
 .mad-content-title{
   @extend %headings-2;
-  border-bottom: 1px solid core-color('color-text-secundary', 'aux-b5');
+  border-bottom: 2px dotted core-color('color-text-secundary', 'aux-b10');
   margin-bottom: 20px;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 .mad-content-sub-title{
   @extend %headings-3;
