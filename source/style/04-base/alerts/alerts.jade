@@ -1,11 +1,21 @@
-h3 Alerts
+h3.mad-content-title Alerts
+
+h3.mad-content-sub-title Alerts Text Close
 .alert-warning.alert-dismissible
 	button.close(type="button" data-dismiss="alert" aria-label="Close")
 		span &times;
-	strong Warning! 
+	strong Warning!
 	| Better check yourself, you're not looking too good.
-
-
+:markdown
+	```
+		<div class="alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+		</div>
+	```
+h3.mad-content-sub-title Alerts Text
 .alert-default
 	| default...
 .alert-success
@@ -16,9 +26,17 @@ h3 Alerts
 	| warning...
 .alert-danger
 	| danger...
+:markdown
+	```
+		<div class="alert-default" role="alert">default...</div>
+		<div class="alert-success" role="alert">success...</div>
+		<div class="alert-info" role="alert">info...</div>
+		<div class="alert-warning" role="alert">warning...</div>
+		<div class="alert-danger" role="alert">danger...</div>
+	```
 
 
-h3 Alert Link
+h3.mad-content-sub-title Alert Link
 .alert-success
 	a.alert-link success...
 
@@ -30,3 +48,20 @@ h3 Alert Link
 
 .alert-danger
 	a.alert-link danger...
+
+:markdown
+	```
+		<div class="alert-success" role="alert">
+		  <a href="#" class="alert-link">success...</a>
+		</div>
+		<div class="alert-info" role="alert">
+		  <a href="#" class="alert-link">info...</a>
+		</div>
+		<div class="alert-warning" role="alert">
+		  <a href="#" class="alert-link">warning...</a>
+		</div>
+		<div class="alert-danger" role="alert">
+		  <a href="#" class="alert-link">danger...</a>
+		</div>
+	```
+

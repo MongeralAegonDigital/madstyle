@@ -1,8 +1,6 @@
 // --------------------------------------------------------------------------
 // Objects: Social Media
 // --------------------------------------------------------------------------
-@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css";
-
 @mixin font-smoothing() {
   // Font antialising on Mac OS X
   -webkit-font-smoothing: antialiased;
@@ -11,13 +9,13 @@
 
 .social-media {
   list-style: none;
-  width: 370px;
+  width: 275px;
   margin: 0 auto;
   padding: 15px 0;
   min-height: 1px;
   position: relative;
   @media (max-width: 600px) {
-    width: 80%;
+    width: 200px;
   }
   &__link {
     display: inline-block;
@@ -27,12 +25,12 @@
     text-decoration: none;
     color: #fff;
     text-align: center;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
     @media (min-width: 600px) {
       width: 50px;
       height: 50px;
-      margin-right: 20px;
+      margin-right: 19px;
       margin-left: 19px;
     }
     &:before {
@@ -62,19 +60,6 @@
 
 
 
-
-// --------------------------------------------------------------------------
-// Variables: Social Media
-// Variable for the object of social media
-// --------------------------------------------------------------------------
-$social-icons: (
-  twitter :  (char: "\f099", background-color: #4679bb, color: #fff, size: 35px, line-height: 50px, size-mobile: 2.7em, line-height-mobile: 1.5),
-  whatsapp:  (char: "\f232", background-color: transparent, color: #6cc784, size: 57px, line-height: 1, size-mobile: 4.5em, line-height-mobile: 1),
-  facebook:  (char: "\f09a", background-color: #4d5ea8, color: #fff, size: 35px, line-height: 50px, size-mobile: 2.5em, line-height-mobile: 1.7),
-  linkedin:  (char: "\f0e1", background-color: #4d5ea8, color: #fff, size: 35px, line-height: 50px, size-mobile: 3em, line-height-mobile: 1.3),
-);
-
-
 %icon {
   display: inline-block;
   font-family:'FontAwesome';
@@ -84,6 +69,14 @@ $social-icons: (
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+// --------------------------------------------------------------------------
+// Variables: Social Media
+// Variable for the object of social media
+// --------------------------------------------------------------------------
+
 
 @each $social-name, $social-icon in $social-icons {
   .social-media {
@@ -105,36 +98,8 @@ $social-icons: (
   }
 }
 
-
-
-
-// // --------------------------------------------------------------------------
-// // Variables: Social Media Mobile
-// // Variable for the object of social media
-// // --------------------------------------------------------------------------
-// .social-media {
-//   .social-media__link--linkedin:before {
-//    @media (max-width: 600px) {
-//       font-size: 28px;
-//       line-height: 1.5;
-//     }
-//   }
-//   .social-media__link--twitter:before {
-//     @media (max-width: 600px) {
-//       font-size: 2.7em;
-//       line-height: 1.5;
-//     }
-//   }
-//   .social-media__link--whatsapp:before {
-//     @media (max-width: 600px) {
-//       font-size: 4.5em;
-//     }
-//   }
-//   .social-media__link--facebook:before {
-//     @media (max-width: 600px) {
-//       font-size: 2.5em;
-//       line-height: 1.7;
-//     }
-//   }
-
-// }
+.social-media__link--whatsapp {
+  @include media($tablet) {
+    display: none;
+  }
+}

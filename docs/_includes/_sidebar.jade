@@ -4,22 +4,23 @@
 
 aside.mad-sidebar
 	nav
-		p Átomos
-		ul
+		p.list-sidebar__title Átomos
+		ul.list-sidebar
 			each value, key in atoms
-				li
-					a(href="##{key}")=key
+				li.list-sidebar__item
+					a.list-sidebar__link(href="##{key}")=key
 
 	nav
-		p Moléculas
-		ul
+		p.list-sidebar__title Moléculas
+		ul.list-sidebar
 			each value, key in molecules
-				li
-					a(href="##{key}")=key
+				li.list-sidebar__item
+					a.list-sidebar__link(href="##{key}")=key
 
 	nav
-		p Organismos
-		ul
+		p.list-sidebar__title Organismos
+		ul.list-sidebar
 			each value, key in organisms
-				li
-					a(href="##{key}")=key
+				li.list-sidebar__item
+					a.list-sidebar__link(href="##{key}")=key
+

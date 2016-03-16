@@ -1,0 +1,65 @@
+// --------------------------------------------------------------------------
+// Objects: Nav List
+// --------------------------------------------------------------------------
+/*
+  @include nav-list(
+    $list-name,
+    $list-inline: false
+  );
+*/
+/*
+// --------------------------------------------------------------------------
+  EXEMPLO CSS:
+  .nomedaclasse {
+    @include nav-list(nomedaclasse,  $list-inline: inline);
+  }
+// --------------------------------------------------------------------------
+*/
+
+%nav-list{
+  padding-left: 0;
+  list-style: none;
+  &:before,
+  &:after{
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+%nav-list__item{
+  position: relative;
+}
+%nav-list__link{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+%nav-list__item--block{
+  float:none;
+  display: block;
+}
+%nav-list__item--inline{
+  float:left;
+  display: inline-block;
+}
+
+@mixin nav-list($list-name, $list-inline: false) {
+  @extend %nav-list;
+  .#{$list-name}__item {
+    @extend %nav-list__item;
+  }
+  .#{$list-name}__link {
+    @extend %nav-list__link;
+  }
+  @if $list-inline == "inline" {
+    .#{$list-name}__item {
+      @extend %nav-list__item--inline;
+    }
+  } @else {
+    .#{$list-name}__item {
+      @extend %nav-list__item--block;
+    }
+  }
+}

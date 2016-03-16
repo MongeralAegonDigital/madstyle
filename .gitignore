@@ -5,3 +5,4 @@
 .idea
 www/
 node_modules/
+/docs/assets/javascript/main.js
