@@ -1,5 +1,5 @@
 // Importing elements from source
-@import "source/style/style";
+@import "source/style/_style";
 
 @import "structure/template";
 
@@ -7,3 +7,5 @@
 
 @import "objects/card-category/card-category";
 @import "objects/heading-line/heading-line";
+@import "objects/list/_list";
+

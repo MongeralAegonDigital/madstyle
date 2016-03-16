@@ -71,9 +71,8 @@
 .card-overlay__link {
   &:hover {
     .card-overlay__bg {
-      background-image: linear-gradient(to bottom, rgba(33,33,33,0.25) 0%, rgba(33,33,33,0.31) 12%, rgba(33,33,33,0.46) 42%, rgba(33,33,33,0.61) 71%, rgba(0,0,0,0.75) 100%);
-      // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-     }
+      background-image: linear-gradient(to right top,rgba(0,0,0,.7)0,rgba(0,0,0,.7)15%,rgba(0,0,0,.1)55%,transparent 75%,transparent 100%);
+    }
   }
 }
 
@@ -96,9 +95,8 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
-    background-image: linear-gradient(to bottom, rgba(33,33,33,0.25) 0%, rgba(33,33,33,0.31) 12%, rgba(33,33,33,0.46) 42%, rgba(33,33,33,0.61) 71%, rgba(0,0,0,0.75) 100%);
+    background-image: linear-gradient(to right top,rgba(0,0,0,.7)0,rgba(0,0,0,.7)15%,rgba(0,0,0,.1)55%,transparent 75%,transparent 100%);
     content: '';
     display: block;
     height: 100%;

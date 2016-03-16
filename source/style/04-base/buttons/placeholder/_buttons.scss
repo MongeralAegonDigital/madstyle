@@ -1,0 +1,83 @@
+// --------------------------------------------------------------------------
+//Button Style
+// --------------------------------------------------------------------------
+//---------------------------------------------------------------------
+// HTML
+//---------------------------------------------------------------------
+// .nome-card {
+//   @include set-styles("blue");
+// }
+// .nome-card {
+//   @include set-styles("blue","large");
+// }
+
+
+
+%btn {
+  display: inline-block;
+  font-weight: $button-font-weight;
+  font-family: $button-font-family;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border: $button-border-width solid transparent;
+  line-height: $button-height;
+  border-radius: $button-border-radius;
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {
+    background-image: none;
+    outline: 0;
+  }
+}
+
+
+@each $btn-types, $btn-type in $btn-types {
+  %btn-#{$btn-types} {
+    @extend %btn;
+    background-color:  map-get($btn-type, background-color);
+    color: map-get($btn-type, color);
+    &:hover{
+      background-color: map-get($btn-type, background-color-hover);
+      color: map-get($btn-type, color-hover);
+    }
+    &:active{
+      background-color: map-get($btn-type, background-color-active);
+      color: map-get($btn-type, color-active);
+    }
+  }
+}
+
+@mixin set-styles($btn-types, $btn-widht:false) {
+  @extend %btn-#{$btn-types};
+  @if $btn-widht == "large" {
+    padding: $button-padding-large-y $button-padding-large-x;
+    font-size: $button-font-size-large;
+  } @else if ($btn-widht == "small") {
+    font-size: $button-font-size-small;
+    padding:  $button-padding-small-y $button-padding-small-x;
+  } @else {
+    font-size: $button-font-size-medium;
+    padding: $button-padding-medium-y $button-padding-medium-x;
+  }
+}
+
+//---------------------------------------------------------------------
+// Block button
+//---------------------------------------------------------------------
+%btn-block {
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  // Vertically space out multiple block buttons
+  .btn-block + .btn-block {
+    margin-top: 5px;
+  }
+}
+

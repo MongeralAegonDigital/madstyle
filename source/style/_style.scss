@@ -2,33 +2,47 @@
 //@import "00-generic/_normalize";
 //@import "00-generic/_box-sizing";
 //@import "00-generic/_page";
-@import "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css";
 
-@import "grid/neat";
+@import "00-grid/neat";
 
 @import "01-settings/variables";
-@import "01-settings/typography";
 
 @import "02-generic/reset";
 @import "02-generic/general";
 
-@import "03-tools/functions";
-@import "03-tools/mixins";
+@import "03-tools/_functions";
+@import "03-tools/_mixins";
 
-@import "04-base/typography/links";
-@import "04-base/typography/typography";
-@import "04-base/fonts/fonts";
-@import "04-base/color/color";
+@import "04-base/_transitions";
+
+@import "04-base/color/_variables-color";
+@import "04-base/color/_color";
+
+@import "04-base/fonts/_variables-fonts";
+@import "04-base/fonts/_fonts";
+
+@import "04-base/typography/placeholder/_typography";
+@import "04-base/typography/_links";
+@import "04-base/typography/_typography";
+
+@import "04-base/icons/_icons";
+
+@import "04-base/alerts/_variables-alerts";
+@import "04-base/alerts/_alerts";
 
 
 @import "04-base/buttons/_variables-buttons.scss";
+@import "04-base/buttons/placeholder/_buttons";
 @import "04-base/buttons/_buttons";
 
+@import "04-base/boxes/_variables-shadows.scss";
+@import "04-base/boxes/_boxes";
+@import "04-base/boxes/_shadows.scss";
 
-@import "04-base/alerts/alerts";
+@import "05-objects/list/list";
 
 @import "05-objects/card-category/_variables-card-category";
-@import "05-objects/card-category/card-category";
+@import "05-objects/card-category/_card-category";
 
 @import "05-objects/heading-line/_variables-heading-line";
 @import "05-objects/heading-line/heading-line";
@@ -36,11 +50,8 @@
 @import "05-objects/social/_variables-social";
 @import "05-objects/social/social";
 
-
-@import "06-components/article/_variables-article";
-@import "06-components/article/article";
-
-
 @import "06-components/card-overlay/_variables-card-overlay";
 @import "06-components/card-overlay/card-overlay";
 
+@import "07-page/article/_variables-article";
+@import "07-page/article/article";

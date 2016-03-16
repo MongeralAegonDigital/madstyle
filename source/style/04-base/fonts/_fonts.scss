@@ -2,57 +2,26 @@
 // General: Fonts
 // --------------------------------------------------------------------------
 
-html, html a {
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-}
-// body {
-//     font-size: 62.5%;
-//     font-weight: 400;
-// }
 
-$path-titillium     :  'fonts/titillium';
+$path-titillium     :  'titillium';
 
-$path-fontawesome   :  'fonts/awesome';
+$path-fontawesome   :  'awesome';
 $version-fontawesome:'4.1.0';
 
+$path-fontmagicons       : 'magicons';
+$version-fontmagicons:'86wjta';
 
-// $path-mag-icons:'fonts/mag-icons';
-// $version-mag-icons:'-nmhcg8';
+@font-face {
+    font-family: 'magicons';
+    src:    url($path-fontmagicons+'/magicons.eot?'+$version-fontmagicons);
+    src:    url($path-fontmagicons+'/magicons.eot?'+$version-fontmagicons+'#iefix') format('embedded-opentype'),
+        url($path-fontmagicons+'/magicons.ttf?'+$version-fontmagicons) format('truetype'),
+        url($path-fontmagicons+'/magicons.woff?'+$version-fontmagicons) format('woff'),
+        url($path-fontmagicons+'/magicons.svg?'+$version-fontmagicons+'#magicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-// @font-face {
-//   font-family: 'Material Icons';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
-// }
-
-// .material-icons {
-//   font-family: 'Material Icons';
-//   font-weight: normal;
-//   font-style: normal;
-//   font-size: 24px;
-//   line-height: 1;
-//   letter-spacing: normal;
-//   text-transform: none;
-//   display: inline-block;
-//   word-wrap: normal;
-//   -webkit-font-feature-settings: 'liga';
-//   -webkit-font-smoothing: antialiased;
-// }
-
-// @font-face{
-//     font-family:'MagIcons';
-//     src:url($path-mag-icons+'/mag-icons.eot?v='+$version-mag-icons);
-//     src:url($path-mag-icons+'/mag-icons.eot?#iefix&v='+$version-mag-icons) format('embedded-opentype'),
-//         url($path-mag-icons+'/mag-icons.woff?v='+$version-mag-icons) format('woff'),
-//         url($path-mag-icons+'/mag-icons.ttf?v='+$version-mag-icons) format('truetype'),
-//         url($path-mag-icons+'/mag-icons.svg?v='+$version-mag-icons+'#magiconsregular') format('svg');
-//     font-weight:normal;
-//     font-style:normal;
-//     font-variant:normal;
-//     -webkit-font-smoothing:antialiased;
-// }
 @font-face{
     font-family:'FontAwesome';
     src:url($path-fontawesome+'/fontawesome-webfont.eot?v='+$version-fontawesome);
@@ -76,7 +45,6 @@ $version-fontawesome:'4.1.0';
          url($path-titillium+'/titillium-regular-webfont.svg#titilliumregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -90,12 +58,9 @@ $version-fontawesome:'4.1.0';
          url($path-titillium+'/titillium-semibold-webfont.svg#titilliumbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0){
-
-
     @font-face {
         font-family: 'titilliumregular';
         src: url($path-titillium+'/titillium-regular-webfont.svg#titilliumregular') format('svg');
@@ -112,8 +77,9 @@ $version-fontawesome:'4.1.0';
         font-family: 'FontAwesome';
             src: url($path-fontawesome+'/fontawesome-webfont.svg?v='+$version-fontawesome+'#fontawesomeregular') format('svg');
     }
-    // @font-face {
-    //     font-family: 'MagIcons';
-    //         src: url($path-mag-icons+'/mag-icons.svg?v='+$version-mag-icons+'#magiconsregular') format('svg');
-    // }
+
+    @font-face {
+        font-family: 'MagIcons';
+            src: url($path-fontmagicons+'/magicons.svg?'+$version-fontmagicons+'#magicons') format('svg');
+    }
 }
