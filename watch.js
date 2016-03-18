@@ -8,7 +8,7 @@ var exec = require('child_process').exec,
 	browserify = require('browserify'),
 	watchify = require('watchify'),
 	b = browserify({
-	  entries: ['./source/javascript/_config.js', './source/javascript/_initial.js'],
+	  entries: ['./source/javascript/_modules.js', './source/javascript/core/_config.js', './source/javascript/core/_initial.js'],
 	  cache: {},
 	  packageCache: {},
 	  plugin: [watchify]

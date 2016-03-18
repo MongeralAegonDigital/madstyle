@@ -1,5 +1,4 @@
 // Applicantion dependencies
-MAD.Slider = require('./vendor/_slider');
 MAD.Application = require('./_application');
 
 $(function(){
