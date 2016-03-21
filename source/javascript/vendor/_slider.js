@@ -6,7 +6,7 @@ Slider = function(container){
 
 Slider.prototype.init = function() {
 
-	console.log('SLIDER');
+	console.log(MAD);
 }
 
 module.exports = Slider;
