@@ -2,7 +2,10 @@
   "name": "madstyle",
   "version": "1.0.3",
   "description": "Style Guide da Mongeral Aegon",
-  "main": "./source/javascript/_initial.js",
+  "files": [
+    "./source/javascript/core/_config.js",
+    "./source/javascript/_initial.js"
+  ],
   "dependencies": {
     "jquery": "^2.2.1",
     "mediator-js": "^0.9.9"
