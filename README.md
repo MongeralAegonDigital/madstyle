@@ -52,7 +52,7 @@ npm update
 
 ```
 
-#### Atualixando o Browserify
+#### Atualizando o Browserify
 ```
 npm install -g browserify
 ```
