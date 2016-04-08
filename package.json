@@ -1,6 +1,6 @@
 {
   "name": "madstyle",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "Style Guide da Mongeral Aegon",
   "dependencies": {
     "jquery": "^2.2.1",
