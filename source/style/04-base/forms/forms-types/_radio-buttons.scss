@@ -1,9 +1,14 @@
 // --------------------------------------------------------------------------
 /// 04-base: Forms / Input Radio
 // --------------------------------------------------------------------------
+$radio-empty-color: #5a5a5a !default;
+$radio-fill-color: #006db2 !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$radio-border: 2px solid $radio-fill-color !default;
+
 
 .radio-group {
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .input-radio {
     &:not(:checked),
@@ -11,7 +16,7 @@
         position: absolute;
         left: -9999px;
         opacity: 0;
-    &+label{
+        &+label{
             position: relative;
             padding-left: 35px;
             cursor: pointer;
@@ -20,10 +25,6 @@
             line-height: 25px;
             font-size: 1rem;
             transition: .28s ease;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
             margin-right: 10px;
             &:before,
             &:after {
@@ -47,7 +48,7 @@
         &+label {
             &:before,
             &:after {
-                border: 2px solid #5a5a5a;
+                border: 2px solid $radio-empty-color;
             }
             &:after {
                 z-index: -1;
@@ -62,8 +63,8 @@
                 border: 2px solid transparent;
             }
             &:after {
-                border: 2px solid #006db2;
-                background-color: #006db2;
+                border: $radio-border;
+                background-color: $radio-fill-color;
                 z-index: 0;
                 -webkit-transform: scale(1.02);
                 transform: scale(1.02);
@@ -75,7 +76,7 @@
             &+label {
                 &:before{
                   background-color: transparent;
-                  border-color: rgba(0,0,0,0.26);
+                  border-color: $input-disabled-color;
                 }
             }
         }
@@ -83,16 +84,16 @@
             &+label {
                 &:before{
                     background-color: transparent;
-                    border-color: rgba(0,0,0,0.26);
+                    border-color: $input-disabled-color;
                 }
                 &:after {
-                    background-color: rgba(0,0,0,0.26);
-                    border-color: #BDBDBD;
+                    background-color: $input-disabled-color;
+                    border-color: $radio-empty-color;
                 }
             }
         }
         &+label {
-          color: rgba(0,0,0,0.26);
+            color: $input-disabled-color;
         }
     }
 }
