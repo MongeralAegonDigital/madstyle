@@ -1,0 +1,398 @@
+// --------------------------------------------------------------------------
+/// 04-base: Select
+// --------------------------------------------------------------------------
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-input-placeholder {
+    color: #d1d1d1
+}
+:-moz-placeholder {
+    color: #d1d1d1
+}
+::-moz-placeholder {
+    color: #d1d1d1
+}
+:-ms-input-placeholder {
+    color: #d1d1d1
+}
+
+
+.form {
+  margin-top: 50px;
+}
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 1rem; //tamanho fonte
+}
+.form-label {
+  color: #9e9e9e;
+  position: absolute;
+  top: 0.8rem;
+  left: 0rem;
+  font-size: 1rem;
+  cursor: text;
+  transition: .2s ease-out;
+}
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+    //margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+  &:focus {
+    color: #006db2;
+    //border-color: #66afe9;
+    //outline: 0;
+    border-bottom: 1px solid #006db2;
+    box-shadow: 0 1px 0 0 #006db2;
+    &:not([readonly])+label {
+      color: #006db2;
+    }
+  }
+}
+
+// Default textarea
+.form-input-textarea {
+  overflow-y: hidden; /* prevents scroll bar flash */
+  padding: 1.6rem 0; /* prevents text jump on Enter keypress */
+  resize: none;
+  min-height: 3rem;
+}
+.form-text-muted {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.radio-group {
+   margin-bottom: 1rem;
+}
+.input-radio {
+  &:not(:checked),
+  &:checked {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    &+label{
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      font-size: 1rem;
+      transition: .28s ease;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-right: 10px;
+      &:before,
+      &:after {
+          border-radius: 50%;
+      }
+    }
+  }
+  &+label:before,
+  &+label:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 4px;
+      width: 16px;
+      height: 16px;
+      z-index: 0;
+      transition: .28s ease;
+  }
+  &:not(:checked) {
+    &+label {
+      &:before,
+      &:after {
+          border: 2px solid #5a5a5a;
+      }
+      &:after {
+        z-index: -1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+    }
+  }
+  &:checked {
+    &+label {
+      &:before {
+        border: 2px solid transparent;
+      }
+      &:after {
+        border: 2px solid #006db2;
+        background-color: #006db2;
+        z-index: 0;
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+      }
+    }
+  }
+  &:disabled {
+    &:not(:checked) {
+      &+label {
+        &:before{
+          background-color: transparent;
+          border-color: rgba(0,0,0,0.26);
+        }
+      }
+    }
+    &:checked {
+      &+label {
+        &:before{
+          background-color: transparent;
+          border-color: rgba(0,0,0,0.26);
+        }
+        &:after {
+          background-color: rgba(0,0,0,0.26);
+          border-color: #BDBDBD;
+        }
+      }
+    }
+    &+label {
+      color: rgba(0,0,0,0.26);
+    }
+  }
+}
+$radio-empty-color: #5a5a5a !default;
+$radio-fill-color: #006db2 !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$radio-border: 2px solid $radio-fill-color !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+
+.checkbox-group {
+    margin-bottom: 1rem;
+}
+
+/* Remove default checkbox */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+
+// Checkbox Styles
+[type="checkbox"] {
+  // Text Label Style
+  + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    margin-right: 10px;
+
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+  }
+
+  /* checkbox aspect */
+  + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid $radio-empty-color;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+  }
+
+  &:not(.filled-in) + label:after {
+    border: 0;
+    transform: scale(0);
+  }
+
+  &:not(:checked):disabled + label:before {
+    border: none;
+    background-color: $input-disabled-color;
+  }
+
+  // Focused styles
+  &.tabbed:focus + label:after {
+    transform: scale(1);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1);
+  }
+}
+[type="checkbox"]:checked {
+  + label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: $radio-border;
+    border-bottom: $radio-border;
+    transform: rotate(40deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+  }
+
+  &:disabled + label:before {
+    border-right: 2px solid $input-disabled-color;
+    border-bottom: 2px solid $input-disabled-color;
+  }
+}
+
+/* Indeterminate checkbox */
+[type="checkbox"]:indeterminate {
+  +label:before {
+    top: -11px;
+    left: -12px;
+    width: 10px;
+    height: 22px;
+    border-top: none;
+    border-left: none;
+    border-right: $radio-border;
+    border-bottom: none;
+    transform: rotate(90deg);
+    backface-visibility: hidden;
+    transform-origin: 100% 100%;
+  }
+
+  // Disabled indeterminate
+  &:disabled + label:before {
+    border-right: 2px solid $input-disabled-color;
+    background-color: transparent;
+  }
+}
+
+<form class="form">
+  <div class="checkbox-group">
+    <input class="input-checkbox" name="group1" type="checkbox" id="test1" />
+    <label for="test1">Red</label>
+  </div>
+  <div class="checkbox-group">
+    <input class="input-checkbox" name="group1" type="checkbox" checked="checked" id="test2" />
+    <label for="test2">Red</label>
+  </div>
+
+
+  <div class="checkbox-group">
+    <input class="input-checkbox" name="group32" type="checkbox" id="testd31" />
+    <label for="testd31">Red</label>
+
+    <input class="input-checkbox" name="group32" type="checkbox" checked="checked" id="testd32" />
+    <label for="testd32">Red</label>
+  </div>
+
+  <div class="radio-group">
+    <input class="input-radio" name="group1" type="radio" id="test1" />
+    <label for="test1">Red</label>
+  </div>
+  <div class="radio-group">
+    <input class="input-radio" name="group1" type="radio" id="test2" />
+    <label for="test2">Red</label>
+  </div>
+
+  <div class="radio-group">
+    <input class="input-radio" name="group22" type="radio" id="test11" />
+    <label for="test11">Red</label>
+
+    <input class="input-radio" name="group22" type="radio" id="test22" />
+    <label for="test22">Red</label>
+
+    <input class="input-radio" name="group22" type="radio" id="test33" />
+    <label for="test33">Red</label>
+  </div>
+
+
+  <div class="form-group">
+    <input type="text" class="form-input" id="email" placeholder="Enter email">
+    <label class="form-label" for="email">Email</label>
+    <small class="form-text-muted">Descrição</small>
+  </div>
+  <div class="form-group">
+    <textarea class="form-input form-input-textarea" id="exampleTextarea" rows="3"></textarea>
+    <label class="form-label" for="exampleTextarea">Example textarea</label>
+  </div>
+
+
+  <!--<div class="radio">-->
+  <!--    <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>-->
+  <!--    <label class="form-label">Option one is this and that&mdash;be sure to include why it's great-->
+  <!--  </label>-->
+  <!--</div>-->
+  <!--<div class="radio">-->
+  <!--    <input type="radio" name="optionsRadios" id="radio2" value="option2">-->
+  <!--    <label class="form-label">-->
+  <!--      Option two can be something else and selecting it will deselect option one-->
+  <!--    </label>-->
+  <!--</div>-->
+
+  <!--<div>-->
+
+  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">-->
+  <!--  <label class="radio-inline"> 1</label>-->
+
+  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">-->
+  <!--  <label class="radio-inline"> 2</label>-->
+
+  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">-->
+  <!--  <label class="radio-inline"> 3</label>-->
+  <!--</div>-->
+  <!--<div class="checkbox">-->
+  <!--  <label>-->
+  <!--    <input type="checkbox"> Check me out-->
+  <!--  </label>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+  <!--  <label class="form-label" for="file">File input</label>-->
+  <!--  <input type="file" class="form-input-file" id="file">-->
+  <!--  <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>-->
+  <!--</div>-->
+  <!-- <div class="radio disabled">-->
+  <!--  <label class="form-label">-->
+  <!--    <input type="radio" name="optionsRadios" id="radio3" value="option3" disabled>-->
+  <!--    Option three is disabled-->
+  <!--  </label>-->
+  <!--</div>-->
+  <!--<div>-->
+  <!--  <label class="checkbox-inline">-->
+  <!--    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1-->
+  <!--  </label>-->
+  <!--  <label class="checkbox-inline">-->
+  <!--    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2-->
+  <!--  </label>-->
+  <!--  <label class="checkbox-inline">-->
+  <!--    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3-->
+  <!--  </label>-->
+  <!--</div>-->
+  <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+</form>

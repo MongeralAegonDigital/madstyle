@@ -1,0 +1,64 @@
+// --------------------------------------------------------------------------
+/// 04-base: Alerts
+// --------------------------------------------------------------------------
+
+%alert {
+  border: $alert-border;
+  border-radius: $alert-border-radius;
+  padding: $alert-padding;
+  margin-bottom: $alert-margin-bottom;
+  box-shadow: 2px 2px 1px -1px #ccc;
+}
+%alert-dismissible {
+  padding-right: 35px;
+  button.close{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0
+  }
+  .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    &:focus,
+    &:hover {
+      color: #000;
+      cursor: pointer;
+      text-decoration: none;
+      cursor: pointer;
+      filter: alpha(opacity=50);
+      opacity: .5
+    }
+  }
+}
+
+
+@each $types, $alert-type in $alert-types {
+  $background: nth($alert-type, 1);
+  $color: nth($alert-type, 2);
+  $link: nth($alert-type, 3);
+
+  %alert-#{$types} {
+    @extend %alert;
+    background-color: $background;
+    color: $color;
+    .alert-link {
+      color: $link;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
