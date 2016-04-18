@@ -1,0 +1,218 @@
+/* Select Field
+   ========================================================================== */
+
+// Text Inputs + Textarea
+$input-height: 3rem !default;
+$input-border-color: #ddd !default;
+$input-border: 1px solid $input-border-color !default;
+$input-background: #fff !default;
+$input-error-color: red !default;
+$input-success-color: blue !default;
+$input-focus-color: #ddd !default;
+$input-font-size: 1rem !default;
+$input-margin: 0 0 15px 0 !default;
+$input-padding: 0 !default;
+$input-transition: all .3s !default;
+$label-font-size: .8rem !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$input-disabled-solid-color: #BDBDBD !default;
+$input-disabled-border: 1px dotted $input-disabled-color !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$placeholder-text-color: #ddd !default;
+
+
+// Select
+$select-border: 1px solid #f2f2f2 !default;
+$select-background: rgba(255, 255, 255, 0.90) !default;
+$select-focus: 1px solid #ddd !default;
+$select-padding: 5px !default;
+$select-radius: 2px !default;
+$select-disabled-color: rgba(0,0,0,.3) !default;
+
+
+/* 8. Dropdown
+   ========================================================================== */
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: #006DB2 !default;
+$dropdown-item-height: 50px !default;
+$off-black: rgba(0,0,0,0.87);
+
+
+select { display: none; }
+select.browser-default { display: block; }
+
+select {
+  background-color: $select-background;
+  width: 100%;
+  padding: $select-padding;
+  border: $select-border;
+  border-radius: $select-radius;
+  height: $input-height;
+}
+
+.select-label {
+  position: absolute;
+}
+
+.form-select-wrapper {
+  position: relative;
+
+  input.form-select-dropdown {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: $input-border;
+    outline: none;
+    height: $input-height;
+    line-height: $input-height;
+    width: 100%;
+    font-size: $input-font-size;
+    margin: $input-margin;
+    padding: 0;
+    display: block;
+  }
+
+  span.caret {
+    color: initial;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-size: 10px;
+    &.disabled {
+      color: $input-disabled-color;
+    }
+  }
+
+  & + label {
+    position: absolute;
+    top: -14px;
+    font-size: $label-font-size;
+  }
+}
+
+// Disabled styles
+select:disabled {
+  color: rgba(0,0,0,.3);
+}
+
+.form-select-wrapper input.form-select-dropdown:disabled {
+  color: rgba(0,0,0,.3);
+  cursor: default;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -ms-user-select: none; /* IE10+ */
+  border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.form-select-wrapper i {
+  color: $select-disabled-color;
+}
+
+.form-select-dropdown li.disabled,
+.form-select-dropdown li.disabled > span,
+.form-select-dropdown li.optgroup {
+  color: $select-disabled-color;
+  background-color: transparent;
+}
+
+// Prefix Icons
+.prefix ~ .form-select-wrapper {
+  margin-left: 3rem;
+  width: 92%;
+  width: calc(100% - 3rem);
+}
+
+.prefix ~ label { margin-left: 3rem; }
+
+// Icons
+.form-select-dropdown li {
+  img {
+    height: $dropdown-item-height - 10;
+    width: $dropdown-item-height - 10;
+    margin: 5px 15px;
+    float: right;
+  }
+}
+
+// Optgroup styles
+.form-select-dropdown li {
+  border-top: 1px solid $dropdown-hover-bg-color;
+
+  &.selected > span {
+    color: rgba(0, 0, 0, .7);
+  }
+
+  & > span {
+    color: rgba(0, 0, 0, .4);
+  }
+
+  & ~ li.optgroup-option {
+    padding-left: 1rem;
+  }
+}
+
+
+
+
+
+
+
+.form-select-dropdown {
+  background-color: $dropdown-bg-color;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+
+  li {
+    clear: both;
+    color: $off-black;
+    cursor: pointer;
+    min-height: $dropdown-item-height;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+
+    &:hover, &.active, &.selected {
+      background-color: $dropdown-hover-bg-color;
+    }
+
+    &.active.selected {
+      background-color: darken($dropdown-hover-bg-color, 5%);
+    }
+
+    &.divider {
+      min-height: 0;
+      height: 1px;
+    }
+
+    & > a, & > span {
+      font-size: 16px;
+      color: $dropdown-color;
+      display: block;
+      line-height: 22px;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+
+    & > span > label {
+      top: 1px;
+      left: 3px;
+      height: 18px;
+    }
+
+    // Icon alignment override
+    & > a > i {
+      height: inherit;
+      line-height: inherit;
+    }
+  }
+}

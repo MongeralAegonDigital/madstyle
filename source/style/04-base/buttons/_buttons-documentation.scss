@@ -1,0 +1,60 @@
+// --------------------------------------------------------------------------
+//Button Style
+// --------------------------------------------------------------------------
+//---------------------------------------------------------------------
+// HTML
+//---------------------------------------------------------------------
+// .nome-card {
+//   @include set-styles("blue");
+// }
+// .nome-card {
+//   @include set-styles("blue","large");
+// }
+
+
+.btn-send {
+  @include set-styles("blue");
+}
+.btn-action {
+  @include set-styles("red");
+}
+.btn-call-to-action {
+  @include set-styles("red");
+}
+.btn-call-to-action-two {
+  @include set-styles("orange");
+}
+.btn-buy {
+  @include set-styles("green");
+}
+.btn-submit {
+  @include set-styles("blue");
+}
+.btn-cancel {
+  @include set-styles("gray");
+}
+.btn-simulation {
+  @include set-styles("green");
+}
+.btn-save {
+  @include set-styles("blue");
+}
+.btn-return {
+  @include set-styles("gray");
+}
+.btn-register {
+  @include set-styles("green");
+}
+.btn-secundary-one {
+  @include set-styles("ghost");
+}
+.btn-secundary-two {
+  @include set-styles("gray-white");
+}
+.btn-disabled {
+  @include set-styles("disabled");
+}
+.btn-link {
+  @include set-styles("link");
+}
+

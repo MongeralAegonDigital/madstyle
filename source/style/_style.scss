@@ -21,11 +21,15 @@
 @import "04-base/fonts/_variables-fonts";
 @import "04-base/fonts/_fonts";
 
+@import "04-base/forms/_variables-forms";
+@import "04-base/forms/_forms";
+
 @import "04-base/typography/placeholder/_typography";
 @import "04-base/typography/_links";
 @import "04-base/typography/_typography";
 
 @import "04-base/icons/_icons";
+@import "04-base/icons/placeholder/_icon-documentacao";
 
 @import "04-base/alerts/_variables-alerts";
 @import "04-base/alerts/_alerts";
@@ -33,7 +37,10 @@
 
 @import "04-base/buttons/_variables-buttons.scss";
 @import "04-base/buttons/placeholder/_buttons";
+@import "04-base/buttons/_buttons-documentation";
 @import "04-base/buttons/_buttons";
+
+
 
 @import "04-base/boxes/_variables-shadows.scss";
 @import "04-base/boxes/_boxes";
