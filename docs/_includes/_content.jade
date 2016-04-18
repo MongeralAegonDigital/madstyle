@@ -6,7 +6,7 @@ main.mad-content
 	section
 		h2.mad-content-heading Átomos
 		each value, key in atoms
-			section.mad-atom(id='#{key}')
+			section.mad-atom(id='#{key}', data-js-module='slider')
 				!=partial("source/style/04-base/"+key+"/"+key)
 
 	section

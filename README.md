@@ -46,5 +46,17 @@ npm install
 node watch.js
 ```
 
+### Atualizando o core do Mad Style no seu projeto
+```
+npm update
+
+```
+
+#### Atualizando o Browserify
+```
+npm install -g browserify
+```
+
+
 #### Dúvidas
 Caso tenha alguma dúvida sobre o livereload, o Caio Vaccaro tira nesse link: [HarpLiveReload](https://libraries.io/github/caiovaccaro/HarpLivereload)

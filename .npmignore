@@ -1,0 +1,11 @@
+.DS_Store
+.sass-cache
+*.lock
+*.log
+.idea
+www/
+node_modules/
+docs/
+livereload/
+watch.js
+index.jade
