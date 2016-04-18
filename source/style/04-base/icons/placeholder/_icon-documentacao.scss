@@ -2,2376 +2,5541 @@
 /// Este arquivo não é necessário no projeto.
 
 .icon-shopping111 {
-    content: "\e90e";
+    &:before{
+        @extend %icon;
+        content: "\e90e";
+        font-size: 50px;
+
+    }
 }
 .icon-lock8 {
-    content: "\e90f";
+    &:before{
+        @extend %icon;
+        content: "\e90f";
+        font-size: 50px;
+    }
 }
 .icon-assistencia-personal-care2 {
-    content: "\e901";
+    &:before{
+        @extend %icon;
+        content: "\e901";
+        font-size: 50px;
+    }
 }
 .icon-cesta-basica2 {
-    content: "\e902";
+    &:before{
+        @extend %icon;
+        content: "\e902";
+        font-size: 50px;
+    }
 }
 .icon-conjuge2 {
-    content: "\e903";
+    &:before{
+        @extend %icon;
+        content: "\e903";
+        font-size: 50px;
+    }
 }
 .icon-desconto-em-medicamentos2 {
-    content: "\e904";
+    &:before{
+        @extend %icon;
+        content: "\e904";
+        font-size: 50px;
+    }
 }
 .icon-diaria-por-incapacidade-temporaria2 {
-    content: "\e905";
+    &:before{
+        @extend %icon;
+        content: "\e905";
+        font-size: 50px;
+    }
 }
 .icon-diaria-por-internacao-hospitalar2 {
-    content: "\e906";
+    &:before{
+        @extend %icon;
+        content: "\e906";
+        font-size: 50px;
+    }
 }
 .icon-doencas-graves2 {
-    content: "\e907";
+    &:before{
+        @extend %icon;
+        content: "\e907";
+        font-size: 50px;
+    }
 }
 .icon-invalidez2 {
-    content: "\e908";
+    &:before{
+        @extend %icon;
+        content: "\e908";
+        font-size: 50px;
+    }
 }
 .icon-morte-acidental2 {
-    content: "\e909";
+    &:before{
+        @extend %icon;
+        content: "\e909";
+        font-size: 50px;
+    }
 }
 .icon-morte-qualquer-causa2 {
-    content: "\e90a";
+    &:before{
+        @extend %icon;
+        content: "\e90a";
+        font-size: 50px;
+    }
 }
 .icon-seguro-de-assistencia-funeral2 {
-    content: "\e90b";
+    &:before{
+        @extend %icon;
+        content: "\e90b";
+        font-size: 50px;
+    }
 }
 .icon-sorteios-mensais2 {
-    content: "\e90c";
+    &:before{
+        @extend %icon;
+        content: "\e90c";
+        font-size: 50px;
+    }
 }
 .icon-transplante-de-orgaos2 {
-    content: "\e90d";
+    &:before{
+        @extend %icon;
+        content: "\e90d";
+        font-size: 50px;
+    }
 }
 .icon-pilha-dinheiro {
-    content: "\e900";
+    &:before{
+        @extend %icon;
+        content: "\e900";
+        font-size: 50px;
+    }
 }
 .icon-produto-invalidez-senior {
-    content: "\e665";
+    &:before{
+        @extend %icon;
+        content: "\e665";
+        font-size: 50px;
+    }
 }
 .icon-produto-prevencao {
-    content: "\e669";
+    &:before{
+        @extend %icon;
+        content: "\e669";
+        font-size: 50px;
+    }
 }
 .icon-produto-previdencia-vida-toda {
-    content: "\e66d";
+    &:before{
+        @extend %icon;
+        content: "\e66d";
+        font-size: 50px;
+    }
 }
 .icon-produto-private-solutions {
-    content: "\e67a";
+    &:before{
+        @extend %icon;
+        content: "\e67a";
+        font-size: 50px;
+    }
 }
 .icon-produto-private-top {
-    content: "\e67f";
+    &:before{
+        @extend %icon;
+        content: "\e67f";
+        font-size: 50px;
+    }
 }
 .icon-produto-profissional {
-    content: "\e682";
+    &:before{
+        @extend %icon;
+        content: "\e682";
+        font-size: 50px;
+    }
 }
 .icon-produto-protecao {
-    content: "\e684";
+    &:before{
+        @extend %icon;
+        content: "\e684";
+        font-size: 50px;
+    }
 }
 .icon-produto-seguranca-profissional {
-    content: "\e687";
+    &:before{
+        @extend %icon;
+        content: "\e687";
+        font-size: 50px;
+    }
 }
 .icon-produto-senior-premiado {
-    content: "\e689";
+    &:before{
+        @extend %icon;
+        content: "\e689";
+        font-size: 50px;
+    }
 }
 .icon-produto-vantagens {
-    content: "\e688";
+    &:before{
+        @extend %icon;
+        content: "\e688";
+        font-size: 50px;
+    }
 }
 .icon-produto-vida-tranquila {
-    content: "\e68a";
+    &:before{
+        @extend %icon;
+        content: "\e68a";
+        font-size: 50px;
+    }
 }
 .icon-produto-acidentes-pessoais {
-    content: "\e68b";
+    &:before{
+        @extend %icon;
+        content: "\e68b";
+        font-size: 50px;
+    }
 }
 .icon-produto-familiar {
-    content: "\e677";
+    &:before{
+        @extend %icon;
+        content: "\e677";
+        font-size: 50px;
+    }
 }
 .icon-produto-incapacidade-temporaria {
-    content: "\e661";
+    &:before{
+        @extend %icon;
+        content: "\e661";
+        font-size: 50px;
+    }
 }
 .icon-produto-invalidez {
-    content: "\e66b";
+    &:before{
+        @extend %icon;
+        content: "\e66b";
+        font-size: 50px;
+    }
 }
 .icon-assistencia-personal-care {
-    content: "\e667";
+    &:before{
+        @extend %icon;
+        content: "\e667";
+        font-size: 50px;
+    }
 }
 .icon-cesta-basica {
-    content: "\e660";
+    &:before{
+        @extend %icon;
+        content: "\e660";
+        font-size: 50px;
+    }
 }
 .icon-conjuge {
-    content: "\e662";
+    &:before{
+        @extend %icon;
+        content: "\e662";
+        font-size: 50px;
+    }
 }
 .icon-descontos-em-medicamentos {
-    content: "\e663";
+    &:before{
+        @extend %icon;
+        content: "\e663";
+        font-size: 50px;
+    }
 }
 .icon-diaria-por-internacao-hospitalar {
-    content: "\e664";
+    &:before{
+        @extend %icon;
+        content: "\e664";
+        font-size: 50px;
+    }
 }
 .icon-dit2 {
-    content: "\e666";
+    &:before{
+        @extend %icon;
+        content: "\e666";
+        font-size: 50px;
+    }
 }
 .icon-doencas-graves {
-    content: "\e668";
+    &:before{
+        @extend %icon;
+        content: "\e668";
+        font-size: 50px;
+    }
 }
 .icon-invalidez3 {
-    content: "\e66a";
+    &:before{
+        @extend %icon;
+        content: "\e66a";
+        font-size: 50px;
+    }
 }
 .icon-morte-acidental {
-    content: "\e66c";
+    &:before{
+        @extend %icon;
+        content: "\e66c";
+        font-size: 50px;
+    }
 }
 .icon-morte-natural {
-    content: "\e66e";
+    &:before{
+        @extend %icon;
+        content: "\e66e";
+        font-size: 50px;
+    }
 }
 .icon-morte-qualquer-causa {
-    content: "\e66f";
+    &:before{
+        @extend %icon;
+        content: "\e66f";
+        font-size: 50px;
+    }
 }
 .icon-saf {
-    content: "\e670";
+    &:before{
+        @extend %icon;
+        content: "\e670";
+        font-size: 50px;
+    }
 }
 .icon-servicos-assistenciais {
-    content: "\e671";
+    &:before{
+        @extend %icon;
+        content: "\e671";
+        font-size: 50px;
+    }
 }
 .icon-sorteios-mensais {
-    content: "\e672";
+    &:before{
+        @extend %icon;
+        content: "\e672";
+        font-size: 50px;
+    }
 }
 .icon-transplante-de-orgaos {
-    content: "\e673";
+    &:before{
+        @extend %icon;
+        content: "\e673";
+        font-size: 50px;
+    }
 }
 .icon-telemarketer1 {
-    content: "\e674";
+    &:before{
+        @extend %icon;
+        content: "\e674";
+        font-size: 50px;
+    }
 }
 .icon-uniE600 {
-    content: "\e675";
+    &:before{
+        @extend %icon;
+        content: "\e675";
+        font-size: 50px;
+    }
 }
 .icon-uniE601 {
-    content: "\e676";
+    &:before{
+        @extend %icon;
+        content: "\e676";
+        font-size: 50px;
+    }
 }
 .icon-uniE602 {
-    content: "\e678";
+    &:before{
+        @extend %icon;
+        content: "\e678";
+        font-size: 50px;
+    }
 }
 .icon-uniE603 {
-    content: "\e679";
+    &:before{
+        @extend %icon;
+        content: "\e679";
+        font-size: 50px;
+    }
 }
 .icon-uniE604 {
-    content: "\e67b";
+    &:before{
+        @extend %icon;
+        content: "\e67b";
+        font-size: 50px;
+    }
 }
 .icon-uniE605 {
-    content: "\e67c";
+    &:before{
+        @extend %icon;
+        content: "\e67c";
+        font-size: 50px;
+    }
 }
 .icon-uniE606 {
-    content: "\e67d";
+    &:before{
+        @extend %icon;
+        content: "\e67d";
+        font-size: 50px;
+    }
 }
 .icon-uniE607 {
-    content: "\e67e";
+    &:before{
+        @extend %icon;
+        content: "\e67e";
+        font-size: 50px;
+    }
 }
 .icon-uniE608 {
-    content: "\e680";
+    &:before{
+        @extend %icon;
+        content: "\e680";
+        font-size: 50px;
+    }
 }
 .icon-uniE609 {
-    content: "\e681";
+    &:before{
+        @extend %icon;
+        content: "\e681";
+        font-size: 50px;
+    }
 }
 .icon-uniE60A {
-    content: "\e683";
+    &:before{
+        @extend %icon;
+        content: "\e683";
+        font-size: 50px;
+    }
 }
 .icon-uniE60C {
-    content: "\e686";
+    &:before{
+        @extend %icon;
+        content: "\e686";
+        font-size: 50px;
+    }
 }
 .icon-uniF000 {
-    content: "\f000";
+    &:before{
+        @extend %icon;
+        content: "\f000";
+        font-size: 50px;
+    }
 }
 .icon-uniF001 {
-    content: "\f001";
+    &:before{
+        @extend %icon;
+        content: "\f001";
+        font-size: 50px;
+    }
 }
 .icon-uniF002 {
-    content: "\f00a";
+    &:before{
+        @extend %icon;
+        content: "\f00a";
+        font-size: 50px;
+    }
 }
 .icon-uniF003 {
-    content: "\f00b";
+    &:before{
+        @extend %icon;
+        content: "\f00b";
+        font-size: 50px;
+    }
 }
 .icon-uniF004 {
-    content: "\f00e";
+    &:before{
+        @extend %icon;
+        content: "\f00e";
+        font-size: 50px;
+    }
 }
 .icon-uniF005 {
-    content: "\f00f";
+    &:before{
+        @extend %icon;
+        content: "\f00f";
+        font-size: 50px;
+    }
 }
 .icon-uniF006 {
-    content: "\f010";
+    &:before{
+        @extend %icon;
+        content: "\f010";
+        font-size: 50px;
+    }
 }
 .icon-uniF007 {
-    content: "\f011";
+    &:before{
+        @extend %icon;
+        content: "\f011";
+        font-size: 50px;
+    }
 }
 .icon-uniF008 {
-    content: "\f012";
+    &:before{
+        @extend %icon;
+        content: "\f012";
+        font-size: 50px;
+    }
 }
 .icon-uniF009 {
-    content: "\f016";
+    &:before{
+        @extend %icon;
+        content: "\f016";
+        font-size: 50px;
+    }
 }
 .icon-uniF00A {
-    content: "\f017";
+    &:before{
+        @extend %icon;
+        content: "\f017";
+        font-size: 50px;
+    }
 }
 .icon-uniF00B {
-    content: "\f018";
+    &:before{
+        @extend %icon;
+        content: "\f018";
+        font-size: 50px;
+    }
 }
 .icon-uniF00C {
-    content: "\f019";
+    &:before{
+        @extend %icon;
+        content: "\f019";
+        font-size: 50px;
+    }
 }
 .icon-uniF00D {
-    content: "\f01c";
+    &:before{
+        @extend %icon;
+        content: "\f01c";
+        font-size: 50px;
+    }
 }
 .icon-uniF00E {
-    content: "\f01f";
+    &:before{
+        @extend %icon;
+        content: "\f01f";
+        font-size: 50px;
+    }
 }
 .icon-uniF010 {
-    content: "\f020";
+    &:before{
+        @extend %icon;
+        content: "\f020";
+        font-size: 50px;
+    }
 }
 .icon-uniF011 {
-    content: "\f022";
+    &:before{
+        @extend %icon;
+        content: "\f022";
+        font-size: 50px;
+    }
 }
 .icon-uniF012 {
-    content: "\f024";
+    &:before{
+        @extend %icon;
+        content: "\f024";
+        font-size: 50px;
+    }
 }
 .icon-uniF013 {
-    content: "\f025";
+    &:before{
+        @extend %icon;
+        content: "\f025";
+        font-size: 50px;
+    }
 }
 .icon-uniF014 {
-    content: "\f029";
+    &:before{
+        @extend %icon;
+        content: "\f029";
+        font-size: 50px;
+    }
 }
 .icon-uniF015 {
-    content: "\f02a";
+    &:before{
+        @extend %icon;
+        content: "\f02a";
+        font-size: 50px;
+    }
 }
 .icon-uniF016 {
-    content: "\f02d";
+    &:before{
+        @extend %icon;
+        content: "\f02d";
+        font-size: 50px;
+    }
 }
 .icon-uniF017 {
-    content: "\f02e";
+    &:before{
+        @extend %icon;
+        content: "\f02e";
+        font-size: 50px;
+    }
 }
 .icon-uniF018 {
-    content: "\f030";
+    &:before{
+        @extend %icon;
+        content: "\f030";
+        font-size: 50px;
+    }
 }
 .icon-uniF019 {
-    content: "\f031";
+    &:before{
+        @extend %icon;
+        content: "\f031";
+        font-size: 50px;
+    }
 }
 .icon-uniF01A {
-    content: "\f032";
+    &:before{
+        @extend %icon;
+        content: "\f032";
+        font-size: 50px;
+    }
 }
 .icon-uniF01B {
-    content: "\f033";
+    &:before{
+        @extend %icon;
+        content: "\f033";
+        font-size: 50px;
+    }
 }
 .icon-uniF01C {
-    content: "\f034";
+    &:before{
+        @extend %icon;
+        content: "\f034";
+        font-size: 50px;
+    }
 }
 .icon-uniF01D {
-    content: "\f035";
+    &:before{
+        @extend %icon;
+        content: "\f035";
+        font-size: 50px;
+    }
 }
 .icon-uniF01E {
-    content: "\f036";
+    &:before{
+        @extend %icon;
+        content: "\f036";
+        font-size: 50px;
+    }
 }
 .icon-uniF021 {
-    content: "\f037";
+    &:before{
+        @extend %icon;
+        content: "\f037";
+        font-size: 50px;
+    }
 }
 .icon-uniF022 {
-    content: "\f038";
+    &:before{
+        @extend %icon;
+        content: "\f038";
+        font-size: 50px;
+    }
 }
 .icon-uniF023 {
-    content: "\f039";
+    &:before{
+        @extend %icon;
+        content: "\f039";
+        font-size: 50px;
+    }
 }
 .icon-uniF024 {
-    content: "\f03a";
+    &:before{
+        @extend %icon;
+        content: "\f03a";
+        font-size: 50px;
+    }
 }
 .icon-uniF025 {
-    content: "\f03b";
+    &:before{
+        @extend %icon;
+        content: "\f03b";
+        font-size: 50px;
+    }
 }
 .icon-uniF026 {
-    content: "\f03c";
+    &:before{
+        @extend %icon;
+        content: "\f03c";
+        font-size: 50px;
+    }
 }
 .icon-uniF027 {
-    content: "\f03d";
+    &:before{
+        @extend %icon;
+        content: "\f03d";
+        font-size: 50px;
+    }
 }
 .icon-uniF028 {
-    content: "\f03e";
+    &:before{
+        @extend %icon;
+        content: "\f03e";
+        font-size: 50px;
+    }
 }
 .icon-uniF029 {
-    content: "\f03f";
+    &:before{
+        @extend %icon;
+        content: "\f03f";
+        font-size: 50px;
+    }
 }
 .icon-uniF02A {
-    content: "\f040";
+    &:before{
+        @extend %icon;
+        content: "\f040";
+        font-size: 50px;
+    }
 }
 .icon-uniF02B {
-    content: "\f041";
+    &:before{
+        @extend %icon;
+        content: "\f041";
+        font-size: 50px;
+    }
 }
 .icon-uniF02C {
-    content: "\f042";
+    &:before{
+        @extend %icon;
+        content: "\f042";
+        font-size: 50px;
+    }
 }
 .icon-uniF02D {
-    content: "\f043";
+    &:before{
+        @extend %icon;
+        content: "\f043";
+        font-size: 50px;
+    }
 }
 .icon-uniF02E {
-    content: "\f047";
+    &:before{
+        @extend %icon;
+        content: "\f047";
+        font-size: 50px;
+    }
 }
 .icon-uniF02F {
-    content: "\f04f";
+    &:before{
+        @extend %icon;
+        content: "\f04f";
+        font-size: 50px;
+    }
 }
 .icon-uniF030 {
-    content: "\f05b";
+    &:before{
+        @extend %icon;
+        content: "\f05b";
+        font-size: 50px;
+    }
 }
 .icon-uniF03B {
-    content: "\f070";
+    &:before{
+        @extend %icon;
+        content: "\f070";
+        font-size: 50px;
+    }
 }
 .icon-uniF03C {
-    content: "\f072";
+    &:before{
+        @extend %icon;
+        content: "\f072";
+        font-size: 50px;
+    }
 }
 .icon-uniF03D {
-    content: "\f074";
+    &:before{
+        @extend %icon;
+        content: "\f074";
+        font-size: 50px;
+    }
 }
 .icon-uniF03E {
-    content: "\f075";
+    &:before{
+        @extend %icon;
+        content: "\f075";
+        font-size: 50px;
+    }
 }
 .icon-uniF040 {
-    content: "\f076";
+    &:before{
+        @extend %icon;
+        content: "\f076";
+        font-size: 50px;
+    }
 }
 .icon-uniF041 {
-    content: "\f079";
+    &:before{
+        @extend %icon;
+        content: "\f079";
+        font-size: 50px;
+    }
 }
 .icon-uniF042 {
-    content: "\f07b";
+    &:before{
+        @extend %icon;
+        content: "\f07b";
+        font-size: 50px;
+    }
 }
 .icon-uniF043 {
-    content: "\f07c";
+    &:before{
+        @extend %icon;
+        content: "\f07c";
+        font-size: 50px;
+    }
 }
 .icon-uniF044 {
-    content: "\f07d";
+    &:before{
+        @extend %icon;
+        content: "\f07d";
+        font-size: 50px;
+    }
 }
 .icon-uniF045 {
-    content: "\f07e";
+    &:before{
+        @extend %icon;
+        content: "\f07e";
+        font-size: 50px;
+    }
 }
 .icon-uniF046 {
-    content: "\f07f";
+    &:before{
+        @extend %icon;
+        content: "\f07f";
+        font-size: 50px;
+    }
 }
 .icon-uniF047 {
-    content: "\f080";
+    &:before{
+        @extend %icon;
+        content: "\f080";
+        font-size: 50px;
+    }
 }
 .icon-uniF048 {
-    content: "\f081";
+    &:before{
+        @extend %icon;
+        content: "\f081";
+        font-size: 50px;
+    }
 }
 .icon-uniF049 {
-    content: "\f082";
+    &:before{
+        @extend %icon;
+        content: "\f082";
+        font-size: 50px;
+    }
 }
 .icon-uniF04A {
-    content: "\f083";
+    &:before{
+        @extend %icon;
+        content: "\f083";
+        font-size: 50px;
+    }
 }
 .icon-uniF04B {
-    content: "\f084";
+    &:before{
+        @extend %icon;
+        content: "\f084";
+        font-size: 50px;
+    }
 }
 .icon-uniF04C {
-    content: "\f085";
+    &:before{
+        @extend %icon;
+        content: "\f085";
+        font-size: 50px;
+    }
 }
 .icon-uniF04D {
-    content: "\f089";
+    &:before{
+        @extend %icon;
+        content: "\f089";
+        font-size: 50px;
+    }
 }
 .icon-uniF04E {
-    content: "\f08c";
+    &:before{
+        @extend %icon;
+        content: "\f08c";
+        font-size: 50px;
+    }
 }
 .icon-uniF050 {
-    content: "\f08d";
+    &:before{
+        @extend %icon;
+        content: "\f08d";
+        font-size: 50px;
+    }
 }
 .icon-uniF051 {
-    content: "\f08e";
+    &:before{
+        @extend %icon;
+        content: "\f08e";
+        font-size: 50px;
+    }
 }
 .icon-uniF052 {
-    content: "\f08f";
+    &:before{
+        @extend %icon;
+        content: "\f08f";
+        font-size: 50px;
+    }
 }
 .icon-uniF053 {
-    content: "\f090";
+    &:before{
+        @extend %icon;
+        content: "\f090";
+        font-size: 50px;
+    }
 }
 .icon-uniF054 {
-    content: "\f091";
+    &:before{
+        @extend %icon;
+        content: "\f091";
+        font-size: 50px;
+    }
 }
 .icon-uniF055 {
-    content: "\f092";
+    &:before{
+        @extend %icon;
+        content: "\f092";
+        font-size: 50px;
+    }
 }
 .icon-uniF056 {
-    content: "\f093";
+    &:before{
+        @extend %icon;
+        content: "\f093";
+        font-size: 50px;
+    }
 }
 .icon-uniF057 {
-    content: "\f094";
+    &:before{
+        @extend %icon;
+        content: "\f094";
+        font-size: 50px;
+    }
 }
 .icon-uniF058 {
-    content: "\f097";
+    &:before{
+        @extend %icon;
+        content: "\f097";
+        font-size: 50px;
+    }
 }
 .icon-uniF059 {
-    content: "\f09b";
+    &:before{
+        @extend %icon;
+        content: "\f09b";
+        font-size: 50px;
+    }
 }
 .icon-uniF05A {
-    content: "\f09d";
+    &:before{
+        @extend %icon;
+        content: "\f09d";
+        font-size: 50px;
+    }
 }
 .icon-uniF05B {
-    content: "\f09f";
+    &:before{
+        @extend %icon;
+        content: "\f09f";
+        font-size: 50px;
+    }
 }
 .icon-uniF05C {
-    content: "\f0a0";
+    &:before{
+        @extend %icon;
+        content: "\f0a0";
+        font-size: 50px;
+    }
 }
 .icon-uniF05D {
-    content: "\f0a1";
+    &:before{
+        @extend %icon;
+        content: "\f0a1";
+        font-size: 50px;
+    }
 }
 .icon-uniF05E {
-    content: "\f0a2";
+    &:before{
+        @extend %icon;
+        content: "\f0a2";
+        font-size: 50px;
+    }
 }
 .icon-uniF060 {
-    content: "\f0a3";
+    &:before{
+        @extend %icon;
+        content: "\f0a3";
+        font-size: 50px;
+    }
 }
 .icon-uniF061 {
-    content: "\f0a4";
+    &:before{
+        @extend %icon;
+        content: "\f0a4";
+        font-size: 50px;
+    }
 }
 .icon-uniF062 {
-    content: "\f0a5";
+    &:before{
+        @extend %icon;
+        content: "\f0a5";
+        font-size: 50px;
+    }
 }
 .icon-uniF063 {
-    content: "\f0a6";
+    &:before{
+        @extend %icon;
+        content: "\f0a6";
+        font-size: 50px;
+    }
 }
 .icon-uniF064 {
-    content: "\f0a7";
+    &:before{
+        @extend %icon;
+        content: "\f0a7";
+        font-size: 50px;
+    }
 }
 .icon-uniF067 {
-    content: "\f0b0";
+    &:before{
+        @extend %icon;
+        content: "\f0b0";
+        font-size: 50px;
+    }
 }
 .icon-uniF068 {
-    content: "\f0b1";
+    &:before{
+        @extend %icon;
+        content: "\f0b1";
+        font-size: 50px;
+    }
 }
 .icon-uniF069 {
-    content: "\f0b2";
+    &:before{
+        @extend %icon;
+        content: "\f0b2";
+        font-size: 50px;
+    }
 }
 .icon-uniF06A {
-    content: "\f0b3";
+    &:before{
+        @extend %icon;
+        content: "\f0b3";
+        font-size: 50px;
+    }
 }
 .icon-uniF06E {
-    content: "\f0b7";
+    &:before{
+        @extend %icon;
+        content: "\f0b7";
+        font-size: 50px;
+    }
 }
 .icon-uniF070 {
-    content: "\f0b8";
+    &:before{
+        @extend %icon;
+        content: "\f0b8";
+        font-size: 50px;
+    }
 }
 .icon-uniF071 {
-    content: "\f0b9";
+    &:before{
+        @extend %icon;
+        content: "\f0b9";
+        font-size: 50px;
+    }
 }
 .icon-uniF072 {
-    content: "\f0ba";
+    &:before{
+        @extend %icon;
+        content: "\f0ba";
+        font-size: 50px;
+    }
 }
 .icon-uniF073 {
-    content: "\f0bb";
+    &:before{
+        @extend %icon;
+        content: "\f0bb";
+        font-size: 50px;
+    }
 }
 .icon-uniF074 {
-    content: "\f0bc";
+    &:before{
+        @extend %icon;
+        content: "\f0bc";
+        font-size: 50px;
+    }
 }
 .icon-uniF075 {
-    content: "\f0bd";
+    &:before{
+        @extend %icon;
+        content: "\f0bd";
+        font-size: 50px;
+    }
 }
 .icon-uniF076 {
-    content: "\f0be";
+    &:before{
+        @extend %icon;
+        content: "\f0be";
+        font-size: 50px;
+    }
 }
 .icon-uniF077 {
-    content: "\f0bf";
+    &:before{
+        @extend %icon;
+        content: "\f0bf";
+        font-size: 50px;
+    }
 }
 .icon-uniF078 {
-    content: "\f0c0";
+    &:before{
+        @extend %icon;
+        content: "\f0c0";
+        font-size: 50px;
+    }
 }
 .icon-uniF079 {
-    content: "\f0c1";
+    &:before{
+        @extend %icon;
+        content: "\f0c1";
+        font-size: 50px;
+    }
 }
 .icon-uniF07A {
-    content: "\f0c2";
+    &:before{
+        @extend %icon;
+        content: "\f0c2";
+        font-size: 50px;
+    }
 }
 .icon-uniF07B {
-    content: "\f0c3";
+    &:before{
+        @extend %icon;
+        content: "\f0c3";
+        font-size: 50px;
+    }
 }
 .icon-uniF07C {
-    content: "\f0c4";
+    &:before{
+        @extend %icon;
+        content: "\f0c4";
+        font-size: 50px;
+    }
 }
 .icon-uniF07D {
-    content: "\f0c5";
+    &:before{
+        @extend %icon;
+        content: "\f0c5";
+        font-size: 50px;
+    }
 }
 .icon-uniF07E {
-    content: "\f0c7";
+    &:before{
+        @extend %icon;
+        content: "\f0c7";
+        font-size: 50px;
+    }
 }
 .icon-uniF080 {
-    content: "\f0cb";
+    &:before{
+        @extend %icon;
+        content: "\f0cb";
+        font-size: 50px;
+    }
 }
 .icon-uniF081 {
-    content: "\f0cc";
+    &:before{
+        @extend %icon;
+        content: "\f0cc";
+        font-size: 50px;
+    }
 }
 .icon-uniF082 {
-    content: "\f0cd";
+    &:before{
+        @extend %icon;
+        content: "\f0cd";
+        font-size: 50px;
+    }
 }
 .icon-uniF083 {
-    content: "\f0ce";
+    &:before{
+        @extend %icon;
+        content: "\f0ce";
+        font-size: 50px;
+    }
 }
 .icon-uniF085 {
-    content: "\f0d0";
+    &:before{
+        @extend %icon;
+        content: "\f0d0";
+        font-size: 50px;
+    }
 }
 .icon-uniF086 {
-    content: "\f0d1";
+    &:before{
+        @extend %icon;
+        content: "\f0d1";
+        font-size: 50px;
+    }
 }
 .icon-uniF087 {
-    content: "\f0d3";
+    &:before{
+        @extend %icon;
+        content: "\f0d3";
+        font-size: 50px;
+    }
 }
 .icon-uniF088 {
-    content: "\f0d4";
+    &:before{
+        @extend %icon;
+        content: "\f0d4";
+        font-size: 50px;
+    }
 }
 .icon-uniF08A {
-    content: "\f0db";
+    &:before{
+        @extend %icon;
+        content: "\f0db";
+        font-size: 50px;
+    }
 }
 .icon-uniF08B {
-    content: "\f0df";
+    &:before{
+        @extend %icon;
+        content: "\f0df";
+        font-size: 50px;
+    }
 }
 .icon-uniF08C {
-    content: "\f0e3";
+    &:before{
+        @extend %icon;
+        content: "\f0e3";
+        font-size: 50px;
+    }
 }
 .icon-uniF08D {
-    content: "\f0e4";
+    &:before{
+        @extend %icon;
+        content: "\f0e4";
+        font-size: 50px;
+    }
 }
 .icon-uniF08E {
-    content: "\f0e5";
+    &:before{
+        @extend %icon;
+        content: "\f0e5";
+        font-size: 50px;
+    }
 }
 .icon-uniF090 {
-    content: "\f0e6";
+    &:before{
+        @extend %icon;
+        content: "\f0e6";
+        font-size: 50px;
+    }
 }
 .icon-uniF091 {
-    content: "\f0e7";
+    &:before{
+        @extend %icon;
+        content: "\f0e7";
+        font-size: 50px;
+    }
 }
 .icon-uniF092 {
-    content: "\f0e8";
+    &:before{
+        @extend %icon;
+        content: "\f0e8";
+        font-size: 50px;
+    }
 }
 .icon-uniF093 {
-    content: "\f0e9";
+    &:before{
+        @extend %icon;
+        content: "\f0e9";
+        font-size: 50px;
+    }
 }
 .icon-uniF095 {
-    content: "\f0eb";
+    &:before{
+        @extend %icon;
+        content: "\f0eb";
+        font-size: 50px;
+    }
 }
 .icon-uniF096 {
-    content: "\f0ec";
+    &:before{
+        @extend %icon;
+        content: "\f0ec";
+        font-size: 50px;
+    }
 }
 .icon-uniF097 {
-    content: "\f0ed";
+    &:before{
+        @extend %icon;
+        content: "\f0ed";
+        font-size: 50px;
+    }
 }
 .icon-uniF098 {
-    content: "\f0ee";
+    &:before{
+        @extend %icon;
+        content: "\f0ee";
+        font-size: 50px;
+    }
 }
 .icon-uniF099 {
-    content: "\f0ef";
+    &:before{
+        @extend %icon;
+        content: "\f0ef";
+        font-size: 50px;
+    }
 }
 .icon-uniF09A {
-    content: "\f0f0";
+    &:before{
+        @extend %icon;
+        content: "\f0f0";
+        font-size: 50px;
+    }
 }
 .icon-uniF09B {
-    content: "\f0f1";
+    &:before{
+        @extend %icon;
+        content: "\f0f1";
+        font-size: 50px;
+    }
 }
 .icon-uniF09C {
-    content: "\f0f2";
+    &:before{
+        @extend %icon;
+        content: "\f0f2";
+        font-size: 50px;
+    }
 }
 .icon-uniF09D {
-    content: "\f0f3";
+    &:before{
+        @extend %icon;
+        content: "\f0f3";
+        font-size: 50px;
+    }
 }
 .icon-uniF09E {
-    content: "\f0f4";
+    &:before{
+        @extend %icon;
+        content: "\f0f4";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A0 {
-    content: "\f0f5";
+    &:before{
+        @extend %icon;
+        content: "\f0f5";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A1 {
-    content: "\f0f6";
+    &:before{
+        @extend %icon;
+        content: "\f0f6";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A2 {
-    content: "\f0f7";
+    &:before{
+        @extend %icon;
+        content: "\f0f7";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A3 {
-    content: "\f0f8";
+    &:before{
+        @extend %icon;
+        content: "\f0f8";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A4 {
-    content: "\f0f9";
+    &:before{
+        @extend %icon;
+        content: "\f0f9";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A5 {
-    content: "\f0fa";
+    &:before{
+        @extend %icon;
+        content: "\f0fa";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A6 {
-    content: "\f0fb";
+    &:before{
+        @extend %icon;
+        content: "\f0fb";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A7 {
-    content: "\f0fc";
+    &:before{
+        @extend %icon;
+        content: "\f0fc";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A8 {
-    content: "\f0fd";
+    &:before{
+        @extend %icon;
+        content: "\f0fd";
+        font-size: 50px;
+    }
 }
 .icon-uniF0A9 {
-    content: "\f0ff";
+    &:before{
+        @extend %icon;
+        content: "\f0ff";
+        font-size: 50px;
+    }
 }
 .icon-uniF0AA {
-    content: "\f108";
+    &:before{
+        @extend %icon;
+        content: "\f108";
+        font-size: 50px;
+    }
 }
 .icon-uniF0AB {
-    content: "\f109";
+    &:before{
+        @extend %icon;
+        content: "\f109";
+        font-size: 50px;
+    }
 }
 .icon-uniF0AC {
-    content: "\f10a";
+    &:before{
+        @extend %icon;
+        content: "\f10a";
+        font-size: 50px;
+    }
 }
 .icon-uniF0AD {
-    content: "\f10f";
+    &:before{
+        @extend %icon;
+        content: "\f10f";
+        font-size: 50px;
+    }
 }
 .icon-uniF0AE {
-    content: "\f113";
+    &:before{
+        @extend %icon;
+        content: "\f113";
+        font-size: 50px;
+    }
 }
 .icon-uniF0B0 {
-    content: "\f114";
+    &:before{
+        @extend %icon;
+        content: "\f114";
+        font-size: 50px;
+    }
 }
 .icon-uniF0B1 {
-    content: "\f115";
+    &:before{
+        @extend %icon;
+        content: "\f115";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C0 {
-    content: "\f299";
+    &:before{
+        @extend %icon;
+        content: "\f299";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C1 {
-    content: "\f117";
+    &:before{
+        @extend %icon;
+        content: "\f117";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C2 {
-    content: "\f118";
+    &:before{
+        @extend %icon;
+        content: "\f118";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C3 {
-    content: "\f119";
+    &:before{
+        @extend %icon;
+        content: "\f119";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C4 {
-    content: "\f11a";
+    &:before{
+        @extend %icon;
+        content: "\f11a";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C5 {
-    content: "\f11b";
+    &:before{
+        @extend %icon;
+        content: "\f11b";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C6 {
-    content: "\f11c";
+    &:before{
+        @extend %icon;
+        content: "\f11c";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C7 {
-    content: "\f11d";
+    &:before{
+        @extend %icon;
+        content: "\f11d";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C8 {
-    content: "\f11e";
+    &:before{
+        @extend %icon;
+        content: "\f11e";
+        font-size: 50px;
+    }
 }
 .icon-uniF0C9 {
-    content: "\f11f";
+    &:before{
+        @extend %icon;
+        content: "\f11f";
+        font-size: 50px;
+    }
 }
 .icon-uniF0CA {
-    content: "\f120";
+    &:before{
+        @extend %icon;
+        content: "\f120";
+        font-size: 50px;
+    }
 }
 .icon-uniF0CB {
-    content: "\f121";
+    &:before{
+        @extend %icon;
+        content: "\f121";
+        font-size: 50px;
+    }
 }
 .icon-uniF0CE {
-    content: "\f125";
+    &:before{
+        @extend %icon;
+        content: "\f125";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D2 {
-    content: "\f128";
+    &:before{
+        @extend %icon;
+        content: "\f128";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D3 {
-    content: "\f12a";
+    &:before{
+        @extend %icon;
+        content: "\f12a";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D4 {
-    content: "\f12b";
+    &:before{
+        @extend %icon;
+        content: "\f12b";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D5 {
-    content: "\f12c";
+    &:before{
+        @extend %icon;
+        content: "\f12c";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D6 {
-    content: "\f12d";
+    &:before{
+        @extend %icon;
+        content: "\f12d";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D7 {
-    content: "\f12e";
+    &:before{
+        @extend %icon;
+        content: "\f12e";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D8 {
-    content: "\f12f";
+    &:before{
+        @extend %icon;
+        content: "\f12f";
+        font-size: 50px;
+    }
 }
 .icon-uniF0D9 {
-    content: "\f130";
+    &:before{
+        @extend %icon;
+        content: "\f130";
+        font-size: 50px;
+    }
 }
 .icon-uniF0DA {
-    content: "\f131";
+    &:before{
+        @extend %icon;
+        content: "\f131";
+        font-size: 50px;
+    }
 }
 .icon-uniF0DB {
-    content: "\f132";
+    &:before{
+        @extend %icon;
+        content: "\f132";
+        font-size: 50px;
+    }
 }
 .icon-uniF0DC {
-    content: "\f133";
+    &:before{
+        @extend %icon;
+        content: "\f133";
+        font-size: 50px;
+    }
 }
 .icon-uniF0DD {
-    content: "\f134";
+    &:before{
+        @extend %icon;
+        content: "\f134";
+        font-size: 50px;
+    }
 }
 .icon-uniF0DE {
-    content: "\f135";
+    &:before{
+        @extend %icon;
+        content: "\f135";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E0 {
-    content: "\f136";
+    &:before{
+        @extend %icon;
+        content: "\f136";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E1 {
-    content: "\f13b";
+    &:before{
+        @extend %icon;
+        content: "\f13b";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E2 {
-    content: "\f13c";
+    &:before{
+        @extend %icon;
+        content: "\f13c";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E3 {
-    content: "\f13d";
+    &:before{
+        @extend %icon;
+        content: "\f13d";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E4 {
-    content: "\f13f";
+    &:before{
+        @extend %icon;
+        content: "\f13f";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E5 {
-    content: "\f143";
+    &:before{
+        @extend %icon;
+        content: "\f143";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E6 {
-    content: "\f145";
+    &:before{
+        @extend %icon;
+        content: "\f145";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E7 {
-    content: "\f146";
+    &:before{
+        @extend %icon;
+        content: "\f146";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E8 {
-    content: "\f147";
+    &:before{
+        @extend %icon;
+        content: "\f147";
+        font-size: 50px;
+    }
 }
 .icon-uniF0E9 {
-    content: "\f148";
+    &:before{
+        @extend %icon;
+        content: "\f148";
+        font-size: 50px;
+    }
 }
 .icon-uniF0EA {
-    content: "\f149";
+    &:before{
+        @extend %icon;
+        content: "\f149";
+        font-size: 50px;
+    }
 }
 .icon-uniF0EB {
-    content: "\f14b";
+    &:before{
+        @extend %icon;
+        content: "\f14b";
+        font-size: 50px;
+    }
 }
 .icon-uniF0EC {
-    content: "\f14c";
+    &:before{
+        @extend %icon;
+        content: "\f14c";
+        font-size: 50px;
+    }
 }
 .icon-uniF0ED {
-    content: "\f14d";
+    &:before{
+        @extend %icon;
+        content: "\f14d";
+        font-size: 50px;
+    }
 }
 .icon-uniF0EE {
-    content: "\f14e";
+    &:before{
+        @extend %icon;
+        content: "\f14e";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F0 {
-    content: "\f14f";
+    &:before{
+        @extend %icon;
+        content: "\f14f";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F1 {
-    content: "\f150";
+    &:before{
+        @extend %icon;
+        content: "\f150";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F2 {
-    content: "\f151";
+    &:before{
+        @extend %icon;
+        content: "\f151";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F3 {
-    content: "\f152";
+    &:before{
+        @extend %icon;
+        content: "\f152";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F6 {
-    content: "\f155";
+    &:before{
+        @extend %icon;
+        content: "\f155";
+        font-size: 50px;
+    }
 }
 .icon-uniF0F7 {
-    content: "\f156";
+    &:before{
+        @extend %icon;
+        content: "\f156";
+        font-size: 50px;
+    }
 }
 .icon-uniF0FC {
-    content: "\f15d";
+    &:before{
+        @extend %icon;
+        content: "\f15d";
+        font-size: 50px;
+    }
 }
 .icon-uniF0FD {
-    content: "\f15e";
+    &:before{
+        @extend %icon;
+        content: "\f15e";
+        font-size: 50px;
+    }
 }
 .icon-uniF0FE {
-    content: "\f15f";
+    &:before{
+        @extend %icon;
+        content: "\f15f";
+        font-size: 50px;
+    }
 }
 .icon-uniF100 {
-    content: "\f160";
+    &:before{
+        @extend %icon;
+        content: "\f160";
+        font-size: 50px;
+    }
 }
 .icon-uniF101 {
-    content: "\f161";
+    &:before{
+        @extend %icon;
+        content: "\f161";
+        font-size: 50px;
+    }
 }
 .icon-uniF102 {
-    content: "\f162";
+    &:before{
+        @extend %icon;
+        content: "\f162";
+        font-size: 50px;
+    }
 }
 .icon-uniF103 {
-    content: "\f163";
+    &:before{
+        @extend %icon;
+        content: "\f163";
+        font-size: 50px;
+    }
 }
 .icon-uniF104 {
-    content: "\f166";
+    &:before{
+        @extend %icon;
+        content: "\f166";
+        font-size: 50px;
+    }
 }
 .icon-uniF105 {
-    content: "\f168";
+    &:before{
+        @extend %icon;
+        content: "\f168";
+        font-size: 50px;
+    }
 }
 .icon-uniF106 {
-    content: "\f169";
+    &:before{
+        @extend %icon;
+        content: "\f169";
+        font-size: 50px;
+    }
 }
 .icon-uniF107 {
-    content: "\f16b";
+    &:before{
+        @extend %icon;
+        content: "\f16b";
+        font-size: 50px;
+    }
 }
 .icon-uniF108 {
-    content: "\f16c";
+    &:before{
+        @extend %icon;
+        content: "\f16c";
+        font-size: 50px;
+    }
 }
 .icon-uniF109 {
-    content: "\f16e";
+    &:before{
+        @extend %icon;
+        content: "\f16e";
+        font-size: 50px;
+    }
 }
 .icon-uniF10A {
-    content: "\f16f";
+    &:before{
+        @extend %icon;
+        content: "\f16f";
+        font-size: 50px;
+    }
 }
 .icon-uniF10B {
-    content: "\f170";
+    &:before{
+        @extend %icon;
+        content: "\f170";
+        font-size: 50px;
+    }
 }
 .icon-uniF10C {
-    content: "\f171";
+    &:before{
+        @extend %icon;
+        content: "\f171";
+        font-size: 50px;
+    }
 }
 .icon-uniF10D {
-    content: "\f172";
+    &:before{
+        @extend %icon;
+        content: "\f172";
+        font-size: 50px;
+    }
 }
 .icon-uniF10E {
-    content: "\f173";
+    &:before{
+        @extend %icon;
+        content: "\f173";
+        font-size: 50px;
+    }
 }
 .icon-uniF110 {
-    content: "\f174";
+    &:before{
+        @extend %icon;
+        content: "\f174";
+        font-size: 50px;
+    }
 }
 .icon-uniF111 {
-    content: "\f179";
+    &:before{
+        @extend %icon;
+        content: "\f179";
+        font-size: 50px;
+    }
 }
 .icon-uniF112 {
-    content: "\f17a";
+    &:before{
+        @extend %icon;
+        content: "\f17a";
+        font-size: 50px;
+    }
 }
 .icon-uniF113 {
-    content: "\f17b";
+    &:before{
+        @extend %icon;
+        content: "\f17b";
+        font-size: 50px;
+    }
 }
 .icon-uniF114 {
-    content: "\f17c";
+    &:before{
+        @extend %icon;
+        content: "\f17c";
+        font-size: 50px;
+    }
 }
 .icon-uniF115 {
-    content: "\f17d";
+    &:before{
+        @extend %icon;
+        content: "\f17d";
+        font-size: 50px;
+    }
 }
 .icon-uniF118 {
-    content: "\f17e";
+    &:before{
+        @extend %icon;
+        content: "\f17e";
+        font-size: 50px;
+    }
 }
 .icon-uniF119 {
-    content: "\f17f";
+    &:before{
+        @extend %icon;
+        content: "\f17f";
+        font-size: 50px;
+    }
 }
 .icon-uniF122 {
-    content: "\f187";
+    &:before{
+        @extend %icon;
+        content: "\f187";
+        font-size: 50px;
+    }
 }
 .icon-uniF123 {
-    content: "\f188";
+    &:before{
+        @extend %icon;
+        content: "\f188";
+        font-size: 50px;
+    }
 }
 .icon-uniF124 {
-    content: "\f189";
+    &:before{
+        @extend %icon;
+        content: "\f189";
+        font-size: 50px;
+    }
 }
 .icon-uniF125 {
-    content: "\f18a";
+    &:before{
+        @extend %icon;
+        content: "\f18a";
+        font-size: 50px;
+    }
 }
 .icon-uniF128 {
-    content: "\f18d";
+    &:before{
+        @extend %icon;
+        content: "\f18d";
+        font-size: 50px;
+    }
 }
 .icon-uniF129 {
-    content: "\f18f";
+    &:before{
+        @extend %icon;
+        content: "\f18f";
+        font-size: 50px;
+    }
 }
 .icon-uniF12A {
-    content: "\f191";
+    &:before{
+        @extend %icon;
+        content: "\f191";
+        font-size: 50px;
+    }
 }
 .icon-uniF12D {
-    content: "\f195";
+    &:before{
+        @extend %icon;
+        content: "\f195";
+        font-size: 50px;
+    }
 }
 .icon-uniF130 {
-    content: "\f198";
+    &:before{
+        @extend %icon;
+        content: "\f198";
+        font-size: 50px;
+    }
 }
 .icon-uniF131 {
-    content: "\f199";
+    &:before{
+        @extend %icon;
+        content: "\f199";
+        font-size: 50px;
+    }
 }
 .icon-uniF132 {
-    content: "\f19a";
+    &:before{
+        @extend %icon;
+        content: "\f19a";
+        font-size: 50px;
+    }
 }
 .icon-uniF133 {
-    content: "\f19b";
+    &:before{
+        @extend %icon;
+        content: "\f19b";
+        font-size: 50px;
+    }
 }
 .icon-uniF137 {
-    content: "\f19f";
+    &:before{
+        @extend %icon;
+        content: "\f19f";
+        font-size: 50px;
+    }
 }
 .icon-uniF138 {
-    content: "\f1a0";
+    &:before{
+        @extend %icon;
+        content: "\f1a0";
+        font-size: 50px;
+    }
 }
 .icon-uniF139 {
-    content: "\f1a1";
+    &:before{
+        @extend %icon;
+        content: "\f1a1";
+        font-size: 50px;
+    }
 }
 .icon-uniF13A {
-    content: "\f1a2";
+    &:before{
+        @extend %icon;
+        content: "\f1a2";
+        font-size: 50px;
+    }
 }
 .icon-uniF13E {
-    content: "\f1a6";
+    &:before{
+        @extend %icon;
+        content: "\f1a6";
+        font-size: 50px;
+    }
 }
 .icon-uniF140 {
-    content: "\f1a7";
+    &:before{
+        @extend %icon;
+        content: "\f1a7";
+        font-size: 50px;
+    }
 }
 .icon-uniF141 {
-    content: "\f1a8";
+    &:before{
+        @extend %icon;
+        content: "\f1a8";
+        font-size: 50px;
+    }
 }
 .icon-uniF142 {
-    content: "\f1a9";
+    &:before{
+        @extend %icon;
+        content: "\f1a9";
+        font-size: 50px;
+    }
 }
 .icon-uniF143 {
-    content: "\f1aa";
+    &:before{
+        @extend %icon;
+        content: "\f1aa";
+        font-size: 50px;
+    }
 }
 .icon-uniF144 {
-    content: "\f1ab";
+    &:before{
+        @extend %icon;
+        content: "\f1ab";
+        font-size: 50px;
+    }
 }
 .icon-uniF145 {
-    content: "\f1ac";
+    &:before{
+        @extend %icon;
+        content: "\f1ac";
+        font-size: 50px;
+    }
 }
 .icon-uniF146 {
-    content: "\f1ad";
+    &:before{
+        @extend %icon;
+        content: "\f1ad";
+        font-size: 50px;
+    }
 }
 .icon-uniF147 {
-    content: "\f1ae";
+    &:before{
+        @extend %icon;
+        content: "\f1ae";
+        font-size: 50px;
+    }
 }
 .icon-uniF148 {
-    content: "\f1af";
+    &:before{
+        @extend %icon;
+        content: "\f1af";
+        font-size: 50px;
+    }
 }
 .icon-uniF149 {
-    content: "\f1b0";
+    &:before{
+        @extend %icon;
+        content: "\f1b0";
+        font-size: 50px;
+    }
 }
 .icon-uniF14A {
-    content: "\f1b1";
+    &:before{
+        @extend %icon;
+        content: "\f1b1";
+        font-size: 50px;
+    }
 }
 .icon-uniF14B {
-    content: "\f1b2";
+    &:before{
+        @extend %icon;
+        content: "\f1b2";
+        font-size: 50px;
+    }
 }
 .icon-uniF14C {
-    content: "\f1b3";
+    &:before{
+        @extend %icon;
+        content: "\f1b3";
+        font-size: 50px;
+    }
 }
 .icon-uniF14D {
-    content: "\f1b4";
+    &:before{
+        @extend %icon;
+        content: "\f1b4";
+        font-size: 50px;
+    }
 }
 .icon-uniF150 {
-    content: "\f1b6";
+    &:before{
+        @extend %icon;
+        content: "\f1b6";
+        font-size: 50px;
+    }
 }
 .icon-uniF151 {
-    content: "\f1b7";
+    &:before{
+        @extend %icon;
+        content: "\f1b7";
+        font-size: 50px;
+    }
 }
 .icon-uniF152 {
-    content: "\f1b8";
+    &:before{
+        @extend %icon;
+        content: "\f1b8";
+        font-size: 50px;
+    }
 }
 .icon-uniF15B {
-    content: "\f1c2";
+    &:before{
+        @extend %icon;
+        content: "\f1c2";
+        font-size: 50px;
+    }
 }
 .icon-uniF15C {
-    content: "\f1c3";
+    &:before{
+        @extend %icon;
+        content: "\f1c3";
+        font-size: 50px;
+    }
 }
 .icon-uniF160 {
-    content: "\f1c6";
+    &:before{
+        @extend %icon;
+        content: "\f1c6";
+        font-size: 50px;
+    }
 }
 .icon-uniF161 {
-    content: "\f1c7";
+    &:before{
+        @extend %icon;
+        content: "\f1c7";
+        font-size: 50px;
+    }
 }
 .icon-uniF164 {
-    content: "\f1ca";
+    &:before{
+        @extend %icon;
+        content: "\f1ca";
+        font-size: 50px;
+    }
 }
 .icon-uniF165 {
-    content: "\f1cb";
+    &:before{
+        @extend %icon;
+        content: "\f1cb";
+        font-size: 50px;
+    }
 }
 .icon-uniF166 {
-    content: "\f1cc";
+    &:before{
+        @extend %icon;
+        content: "\f1cc";
+        font-size: 50px;
+    }
 }
 .icon-uniF167 {
-    content: "\f1cd";
+    &:before{
+        @extend %icon;
+        content: "\f1cd";
+        font-size: 50px;
+    }
 }
 .icon-uniF168 {
-    content: "\f1ce";
+    &:before{
+        @extend %icon;
+        content: "\f1ce";
+        font-size: 50px;
+    }
 }
 .icon-uniF169 {
-    content: "\f1cf";
+    &:before{
+        @extend %icon;
+        content: "\f1cf";
+        font-size: 50px;
+    }
 }
 .icon-uniF16A {
-    content: "\f1d0";
+    &:before{
+        @extend %icon;
+        content: "\f1d0";
+        font-size: 50px;
+    }
 }
 .icon-uniF16B {
-    content: "\f1d1";
+    &:before{
+        @extend %icon;
+        content: "\f1d1";
+        font-size: 50px;
+    }
 }
 .icon-uniF16D {
-    content: "\f1d3";
+    &:before{
+        @extend %icon;
+        content: "\f1d3";
+        font-size: 50px;
+    }
 }
 .icon-uniF16E {
-    content: "\f1d4";
+    &:before{
+        @extend %icon;
+        content: "\f1d4";
+        font-size: 50px;
+    }
 }
 .icon-uniF173 {
-    content: "\f1d8";
+    &:before{
+        @extend %icon;
+        content: "\f1d8";
+        font-size: 50px;
+    }
 }
 .icon-uniF175 {
-    content: "\f1da";
+    &:before{
+        @extend %icon;
+        content: "\f1da";
+        font-size: 50px;
+    }
 }
 .icon-uniF176 {
-    content: "\f1db";
+    &:before{
+        @extend %icon;
+        content: "\f1db";
+        font-size: 50px;
+    }
 }
 .icon-uniF177 {
-    content: "\f1dc";
+    &:before{
+        @extend %icon;
+        content: "\f1dc";
+        font-size: 50px;
+    }
 }
 .icon-uniF178 {
-    content: "\f1dd";
+    &:before{
+        @extend %icon;
+        content: "\f1dd";
+        font-size: 50px;
+    }
 }
 .icon-uniF182 {
-    content: "\f1e8";
+    &:before{
+        @extend %icon;
+        content: "\f1e8";
+        font-size: 50px;
+    }
 }
 .icon-uniF183 {
-    content: "\f1e9";
+    &:before{
+        @extend %icon;
+        content: "\f1e9";
+        font-size: 50px;
+    }
 }
 .icon-uniF184 {
-    content: "\f1ea";
+    &:before{
+        @extend %icon;
+        content: "\f1ea";
+        font-size: 50px;
+    }
 }
 .icon-uniF18E {
-    content: "\f1f5";
+    &:before{
+        @extend %icon;
+        content: "\f1f5";
+        font-size: 50px;
+    }
 }
 .icon-uniF190 {
-    content: "\f1f6";
+    &:before{
+        @extend %icon;
+        content: "\f1f6";
+        font-size: 50px;
+    }
 }
 .icon-uniF191 {
-    content: "\f1f7";
+    &:before{
+        @extend %icon;
+        content: "\f1f7";
+        font-size: 50px;
+    }
 }
 .icon-uniF192 {
-    content: "\f1f9";
+    &:before{
+        @extend %icon;
+        content: "\f1f9";
+        font-size: 50px;
+    }
 }
 .icon-uniF193 {
-    content: "\f1fa";
+    &:before{
+        @extend %icon;
+        content: "\f1fa";
+        font-size: 50px;
+    }
 }
 .icon-uniF194 {
-    content: "\f1fb";
+    &:before{
+        @extend %icon;
+        content: "\f1fb";
+        font-size: 50px;
+    }
 }
 .icon-uniF196 {
-    content: "\f1fd";
+    &:before{
+        @extend %icon;
+        content: "\f1fd";
+        font-size: 50px;
+    }
 }
 .icon-uniF19C {
-    content: "\f203";
+    &:before{
+        @extend %icon;
+        content: "\f203";
+        font-size: 50px;
+    }
 }
 .icon-uniF19D {
-    content: "\f204";
+    &:before{
+        @extend %icon;
+        content: "\f204";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A0 {
-    content: "\f206";
+    &:before{
+        @extend %icon;
+        content: "\f206";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A2 {
-    content: "\f208";
+    &:before{
+        @extend %icon;
+        content: "\f208";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A3 {
-    content: "\f209";
+    &:before{
+        @extend %icon;
+        content: "\f209";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A4 {
-    content: "\f20a";
+    &:before{
+        @extend %icon;
+        content: "\f20a";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A5 {
-    content: "\f20b";
+    &:before{
+        @extend %icon;
+        content: "\f20b";
+        font-size: 50px;
+    }
 }
 .icon-uniF1A6 {
-    content: "\f20c";
+    &:before{
+        @extend %icon;
+        content: "\f20c";
+        font-size: 50px;
+    }
 }
 .icon-uniF1AC {
-    content: "\f212";
+    &:before{
+        @extend %icon;
+        content: "\f212";
+        font-size: 50px;
+    }
 }
 .icon-uniF1AD {
-    content: "\f213";
+    &:before{
+        @extend %icon;
+        content: "\f213";
+        font-size: 50px;
+    }
 }
 .icon-uniF1AE {
-    content: "\f214";
+    &:before{
+        @extend %icon;
+        content: "\f214";
+        font-size: 50px;
+    }
 }
 .icon-uniF1B4 {
-    content: "\f219";
+    &:before{
+        @extend %icon;
+        content: "\f219";
+        font-size: 50px;
+    }
 }
 .icon-uniF1B5 {
-    content: "\f21a";
+    &:before{
+        @extend %icon;
+        content: "\f21a";
+        font-size: 50px;
+    }
 }
 .icon-uniF1B8 {
-    content: "\f21d";
+    &:before{
+        @extend %icon;
+        content: "\f21d";
+        font-size: 50px;
+    }
 }
 .icon-uniF1B9 {
-    content: "\f21e";
+    &:before{
+        @extend %icon;
+        content: "\f21e";
+        font-size: 50px;
+    }
 }
 .icon-uniF1BA {
-    content: "\f21f";
+    &:before{
+        @extend %icon;
+        content: "\f21f";
+        font-size: 50px;
+    }
 }
 .icon-uniF1BC {
-    content: "\f221";
+    &:before{
+        @extend %icon;
+        content: "\f221";
+        font-size: 50px;
+    }
 }
 .icon-uniF1BE {
-    content: "\f223";
+    &:before{
+        @extend %icon;
+        content: "\f223";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C0 {
-    content: "\f224";
+    &:before{
+        @extend %icon;
+        content: "\f224";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C1 {
-    content: "\f225";
+    &:before{
+        @extend %icon;
+        content: "\f225";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C3 {
-    content: "\f227";
+    &:before{
+        @extend %icon;
+        content: "\f227";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C4 {
-    content: "\f228";
+    &:before{
+        @extend %icon;
+        content: "\f228";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C5 {
-    content: "\f229";
+    &:before{
+        @extend %icon;
+        content: "\f229";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C6 {
-    content: "\f22a";
+    &:before{
+        @extend %icon;
+        content: "\f22a";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C7 {
-    content: "\f22b";
+    &:before{
+        @extend %icon;
+        content: "\f22b";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C8 {
-    content: "\f22d";
+    &:before{
+        @extend %icon;
+        content: "\f22d";
+        font-size: 50px;
+    }
 }
 .icon-uniF1C9 {
-    content: "\f22e";
+    &:before{
+        @extend %icon;
+        content: "\f22e";
+        font-size: 50px;
+    }
 }
 .icon-uniF1CB {
-    content: "\f233";
+    &:before{
+        @extend %icon;
+        content: "\f233";
+        font-size: 50px;
+    }
 }
 .icon-uniF1CC {
-    content: "\f234";
+    &:before{
+        @extend %icon;
+        content: "\f234";
+        font-size: 50px;
+    }
 }
 .icon-uniF1CE {
-    content: "\f236";
+    &:before{
+        @extend %icon;
+        content: "\f236";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D1 {
-    content: "\f238";
+    &:before{
+        @extend %icon;
+        content: "\f238";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D2 {
-    content: "\f239";
+    &:before{
+        @extend %icon;
+        content: "\f239";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D3 {
-    content: "\f23a";
+    &:before{
+        @extend %icon;
+        content: "\f23a";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D7 {
-    content: "\f23e";
+    &:before{
+        @extend %icon;
+        content: "\f23e";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D8 {
-    content: "\f23f";
+    &:before{
+        @extend %icon;
+        content: "\f23f";
+        font-size: 50px;
+    }
 }
 .icon-uniF1D9 {
-    content: "\f240";
+    &:before{
+        @extend %icon;
+        content: "\f240";
+        font-size: 50px;
+    }
 }
 .icon-uniF1DA {
-    content: "\f241";
+    &:before{
+        @extend %icon;
+        content: "\f241";
+        font-size: 50px;
+    }
 }
 .icon-uniF1DB {
-    content: "\f242";
+    &:before{
+        @extend %icon;
+        content: "\f242";
+        font-size: 50px;
+    }
 }
 .icon-uniF1DD {
-    content: "\f244";
+    &:before{
+        @extend %icon;
+        content: "\f244";
+        font-size: 50px;
+    }
 }
 .icon-uniF1DE {
-    content: "\f245";
+    &:before{
+        @extend %icon;
+        content: "\f245";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E0 {
-    content: "\f246";
+    &:before{
+        @extend %icon;
+        content: "\f246";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E1 {
-    content: "\f247";
+    &:before{
+        @extend %icon;
+        content: "\f247";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E2 {
-    content: "\f248";
+    &:before{
+        @extend %icon;
+        content: "\f248";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E7 {
-    content: "\f24d";
+    &:before{
+        @extend %icon;
+        content: "\f24d";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E8 {
-    content: "\f24e";
+    &:before{
+        @extend %icon;
+        content: "\f24e";
+        font-size: 50px;
+    }
 }
 .icon-uniF1E9 {
-    content: "\f24f";
+    &:before{
+        @extend %icon;
+        content: "\f24f";
+        font-size: 50px;
+    }
 }
 .icon-uniF1EB {
-    content: "\f251";
+    &:before{
+        @extend %icon;
+        content: "\f251";
+        font-size: 50px;
+    }
 }
 .icon-uniF1EC {
-    content: "\f252";
+    &:before{
+        @extend %icon;
+        content: "\f252";
+        font-size: 50px;
+    }
 }
 .icon-uniF1ED {
-    content: "\f253";
+    &:before{
+        @extend %icon;
+        content: "\f253";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F0 {
-    content: "\f255";
+    &:before{
+        @extend %icon;
+        content: "\f255";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F1 {
-    content: "\f256";
+    &:before{
+        @extend %icon;
+        content: "\f256";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F2 {
-    content: "\f257";
+    &:before{
+        @extend %icon;
+        content: "\f257";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F3 {
-    content: "\f258";
+    &:before{
+        @extend %icon;
+        content: "\f258";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F4 {
-    content: "\f259";
+    &:before{
+        @extend %icon;
+        content: "\f259";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F5 {
-    content: "\f25a";
+    &:before{
+        @extend %icon;
+        content: "\f25a";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F6 {
-    content: "\f25b";
+    &:before{
+        @extend %icon;
+        content: "\f25b";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F7 {
-    content: "\f25c";
+    &:before{
+        @extend %icon;
+        content: "\f25c";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F8 {
-    content: "\f25d";
+    &:before{
+        @extend %icon;
+        content: "\f25d";
+        font-size: 50px;
+    }
 }
 .icon-uniF1F9 {
-    content: "\f25e";
+    &:before{
+        @extend %icon;
+        content: "\f25e";
+        font-size: 50px;
+    }
 }
 .icon-uniF1FA {
-    content: "\f25f";
+    &:before{
+        @extend %icon;
+        content: "\f25f";
+        font-size: 50px;
+    }
 }
 .icon-uniF1FE {
-    content: "\f263";
+    &:before{
+        @extend %icon;
+        content: "\f263";
+        font-size: 50px;
+    }
 }
 .icon-uniF200 {
-    content: "\f264";
+    &:before{
+        @extend %icon;
+        content: "\f264";
+        font-size: 50px;
+    }
 }
 .icon-uniF201 {
-    content: "\f265";
+    &:before{
+        @extend %icon;
+        content: "\f265";
+        font-size: 50px;
+    }
 }
 .icon-uniF202 {
-    content: "\f266";
+    &:before{
+        @extend %icon;
+        content: "\f266";
+        font-size: 50px;
+    }
 }
 .icon-uniF204 {
-    content: "\f268";
+    &:before{
+        @extend %icon;
+        content: "\f268";
+        font-size: 50px;
+    }
 }
 .icon-uniF205 {
-    content: "\f269";
+    &:before{
+        @extend %icon;
+        content: "\f269";
+        font-size: 50px;
+    }
 }
 .icon-uniF20A {
-    content: "\f26e";
+    &:before{
+        @extend %icon;
+        content: "\f26e";
+        font-size: 50px;
+    }
 }
 .icon-uniF20B {
-    content: "\f26f";
+    &:before{
+        @extend %icon;
+        content: "\f26f";
+        font-size: 50px;
+    }
 }
 .icon-uniF20E {
-    content: "\f272";
+    &:before{
+        @extend %icon;
+        content: "\f272";
+        font-size: 50px;
+    }
 }
 .icon-uniF210 {
-    content: "\f273";
+    &:before{
+        @extend %icon;
+        content: "\f273";
+        font-size: 50px;
+    }
 }
 .icon-uniF211 {
-    content: "\f274";
+    &:before{
+        @extend %icon;
+        content: "\f274";
+        font-size: 50px;
+    }
 }
 .icon-uniF212 {
-    content: "\f275";
+    &:before{
+        @extend %icon;
+        content: "\f275";
+        font-size: 50px;
+    }
 }
 .icon-uniF213 {
-    content: "\f276";
+    &:before{
+        @extend %icon;
+        content: "\f276";
+        font-size: 50px;
+    }
 }
 .icon-uniF214 {
-    content: "\f277";
+    &:before{
+        @extend %icon;
+        content: "\f277";
+        font-size: 50px;
+    }
 }
 .icon-uniF230 {
-    content: "\f28e";
+    &:before{
+        @extend %icon;
+        content: "\f28e";
+        font-size: 50px;
+    }
 }
 .icon-uniF231 {
-    content: "\f28f";
+    &:before{
+        @extend %icon;
+        content: "\f28f";
+        font-size: 50px;
+    }
 }
 .icon-uniF232 {
-    content: "\f290";
+    &:before{
+        @extend %icon;
+        content: "\f290";
+        font-size: 50px;
+    }
 }
 .icon-uniF233 {
-    content: "\f291";
+    &:before{
+        @extend %icon;
+        content: "\f291";
+        font-size: 50px;
+    }
 }
 .icon-uniF234 {
-    content: "\f292";
+    &:before{
+        @extend %icon;
+        content: "\f292";
+        font-size: 50px;
+    }
 }
 .icon-uniF235 {
-    content: "\f293";
+    &:before{
+        @extend %icon;
+        content: "\f293";
+        font-size: 50px;
+    }
 }
 .icon-sem-gerente {
-    content: "\e64c";
+    &:before{
+        @extend %icon;
+        content: "\e64c";
+        font-size: 50px;
+    }
 }
 .icon-logo-mongeral-agon2 {
-    content: "\e64d";
+    &:before{
+        @extend %icon;
+        content: "\e64d";
+        font-size: 50px;
+    }
 }
 .icon-logo-mongeral-agon {
-    content: "\e62f";
+    &:before{
+        @extend %icon;
+        content: "\e62f";
+        font-size: 50px;
+    }
 }
 .icon-acidentes-pessoais {
-    content: "\e618";
+    &:before{
+        @extend %icon;
+        content: "\e618";
+        font-size: 50px;
+    }
 }
 .icon-atendimento-icon {
-    content: "\e619";
+    &:before{
+        @extend %icon;
+        content: "\e619";
+        font-size: 50px;
+    }
 }
 .icon-beneficos-pagos {
-    content: "\e61a";
+    &:before{
+        @extend %icon;
+        content: "\e61a";
+        font-size: 50px;
+    }
 }
 .icon-calendario {
-    content: "\e61b";
+    &:before{
+        @extend %icon;
+        content: "\e61b";
+        font-size: 50px;
+    }
 }
 .icon-capital-segurado {
-    content: "\e61c";
+    &:before{
+        @extend %icon;
+        content: "\e61c";
+        font-size: 50px;
+    }
 }
 .icon-carteira-assinada {
-    content: "\e61d";
+    &:before{
+        @extend %icon;
+        content: "\e61d";
+        font-size: 50px;
+    }
 }
 .icon-cases-icon {
-    content: "\e61e";
+    &:before{
+        @extend %icon;
+        content: "\e61e";
+        font-size: 50px;
+    }
 }
 .icon-converso-icon {
-    content: "\e61f";
+    &:before{
+        @extend %icon;
+        content: "\e61f";
+        font-size: 50px;
+    }
 }
 .icon-corretores-parceiros {
-    content: "\e620";
+    &:before{
+        @extend %icon;
+        content: "\e620";
+        font-size: 50px;
+    }
 }
 .icon-dit {
-    content: "\e621";
+    &:before{
+        @extend %icon;
+        content: "\e621";
+        font-size: 50px;
+    }
 }
 .icon-empreendedorismo-icon {
-    content: "\e622";
+    &:before{
+        @extend %icon;
+        content: "\e622";
+        font-size: 50px;
+    }
 }
 .icon-EUR {
-    content: "\e623";
+    &:before{
+        @extend %icon;
+        content: "\e623";
+        font-size: 50px;
+    }
 }
 .icon-familiar {
-    content: "\e624";
+    &:before{
+        @extend %icon;
+        content: "\e624";
+        font-size: 50px;
+    }
 }
 .icon-finanas-icon {
-    content: "\e625";
+    &:before{
+        @extend %icon;
+        content: "\e625";
+        font-size: 50px;
+    }
 }
 .icon-funcionarios {
-    content: "\e626";
+    &:before{
+        @extend %icon;
+        content: "\e626";
+        font-size: 50px;
+    }
 }
 .icon-funcionarios2 {
-    content: "\e627";
+    &:before{
+        @extend %icon;
+        content: "\e627";
+        font-size: 50px;
+    }
 }
 .icon-indique-um-amigo {
-    content: "\e628";
+    &:before{
+        @extend %icon;
+        content: "\e628";
+        font-size: 50px;
+    }
 }
 .icon-inovao-icon {
-    content: "\e629";
+    &:before{
+        @extend %icon;
+        content: "\e629";
+        font-size: 50px;
+    }
 }
 .icon-invalidez {
-    content: "\e62a";
+    &:before{
+        @extend %icon;
+        content: "\e62a";
+        font-size: 50px;
+    }
 }
 .icon-invalidez-senior {
-    content: "\e62b";
+    &:before{
+        @extend %icon;
+        content: "\e62b";
+        font-size: 50px;
+    }
 }
 .icon-investimento-icon {
-    content: "\e62c";
+    &:before{
+        @extend %icon;
+        content: "\e62c";
+        font-size: 50px;
+    }
 }
 .icon-legislao-icon {
-    content: "\e62d";
+    &:before{
+        @extend %icon;
+        content: "\e62d";
+        font-size: 50px;
+    }
 }
 .icon-loggado {
-    content: "\e62e";
+    &:before{
+        @extend %icon;
+        content: "\e62e";
+        font-size: 50px;
+    }
 }
 .icon-lucro-liquido {
-    content: "\e630";
+    &:before{
+        @extend %icon;
+        content: "\e630";
+        font-size: 50px;
+    }
 }
 .icon-maiores-grupos {
-    content: "\e631";
+    &:before{
+        @extend %icon;
+        content: "\e631";
+        font-size: 50px;
+    }
 }
 .icon-marketing-icon {
-    content: "\e632";
+    &:before{
+        @extend %icon;
+        content: "\e632";
+        font-size: 50px;
+    }
 }
 .icon-negcios-icon {
-    content: "\e633";
+    &:before{
+        @extend %icon;
+        content: "\e633";
+        font-size: 50px;
+    }
 }
 .icon-office {
-    content: "\e634";
+    &:before{
+        @extend %icon;
+        content: "\e634";
+        font-size: 50px;
+    }
 }
 .icon-parceiros-de-negocios {
-    content: "\e635";
+    &:before{
+        @extend %icon;
+        content: "\e635";
+        font-size: 50px;
+    }
 }
 .icon-play-outline {
-    content: "\e636";
+    &:before{
+        @extend %icon;
+        content: "\e636";
+        font-size: 50px;
+    }
 }
 .icon-prevencao {
-    content: "\e637";
+    &:before{
+        @extend %icon;
+        content: "\e637";
+        font-size: 50px;
+    }
 }
 .icon-prev-vida-toda {
-    content: "\e638";
+    &:before{
+        @extend %icon;
+        content: "\e638";
+        font-size: 50px;
+    }
 }
 .icon-private-solutions {
-    content: "\e639";
+    &:before{
+        @extend %icon;
+        content: "\e639";
+        font-size: 50px;
+    }
 }
 .icon-private-top {
-    content: "\e63a";
+    &:before{
+        @extend %icon;
+        content: "\e63a";
+        font-size: 50px;
+    }
 }
 .icon-profissional {
-    content: "\e63b";
+    &:before{
+        @extend %icon;
+        content: "\e63b";
+        font-size: 50px;
+    }
 }
 .icon-profissional-de-seguranca {
-    content: "\e63c";
+    &:before{
+        @extend %icon;
+        content: "\e63c";
+        font-size: 50px;
+    }
 }
 .icon-profissional-liberal {
-    content: "\e63d";
+    &:before{
+        @extend %icon;
+        content: "\e63d";
+        font-size: 50px;
+    }
 }
 .icon-protecao {
-    content: "\e63e";
+    &:before{
+        @extend %icon;
+        content: "\e63e";
+        font-size: 50px;
+    }
 }
 .icon-receitas {
-    content: "\e63f";
+    &:before{
+        @extend %icon;
+        content: "\e63f";
+        font-size: 50px;
+    }
 }
 .icon-receitas-de-premios {
-    content: "\e640";
+    &:before{
+        @extend %icon;
+        content: "\e640";
+        font-size: 50px;
+    }
 }
 .icon-senior-premiado {
-    content: "\e641";
+    &:before{
+        @extend %icon;
+        content: "\e641";
+        font-size: 50px;
+    }
 }
 .icon-unidades {
-    content: "\e642";
+    &:before{
+        @extend %icon;
+        content: "\e642";
+        font-size: 50px;
+    }
 }
 .icon-vantagens {
-    content: "\e643";
+    &:before{
+        @extend %icon;
+        content: "\e643";
+        font-size: 50px;
+    }
 }
 .icon-vidas-seguradas {
-    content: "\e644";
+    &:before{
+        @extend %icon;
+        content: "\e644";
+        font-size: 50px;
+    }
 }
 .icon-vida-tranquila {
-    content: "\e645";
+    &:before{
+        @extend %icon;
+        content: "\e645";
+        font-size: 50px;
+    }
 }
 .icon-X-clear {
-    content: "\e646";
+    &:before{
+        @extend %icon;
+        content: "\e646";
+        font-size: 50px;
+    }
 }
 .icon-atendimento-icon2 {
-    content: "\e601";
+    &:before{
+        @extend %icon;
+        content: "\e601";
+        font-size: 50px;
+    }
 }
 .icon-empreendedorismo-icon2 {
-    content: "\e602";
+    &:before{
+        @extend %icon;
+        content: "\e602";
+        font-size: 50px;
+    }
 }
 .icon-cases-icon2 {
-    content: "\e603";
+    &:before{
+        @extend %icon;
+        content: "\e603";
+        font-size: 50px;
+    }
 }
 .icon-negcios-icon2 {
-    content: "\e604";
+    &:before{
+        @extend %icon;
+        content: "\e604";
+        font-size: 50px;
+    }
 }
 .icon-converso-icon2 {
-    content: "\e605";
+    &:before{
+        @extend %icon;
+        content: "\e605";
+        font-size: 50px;
+    }
 }
 .icon-marketing-icon2 {
-    content: "\e606";
+    &:before{
+        @extend %icon;
+        content: "\e606";
+        font-size: 50px;
+    }
 }
 .icon-inovao-icon2 {
-    content: "\e607";
+    &:before{
+        @extend %icon;
+        content: "\e607";
+        font-size: 50px;
+    }
 }
 .icon-finanas-icon2 {
-    content: "\e608";
+    &:before{
+        @extend %icon;
+        content: "\e608";
+        font-size: 50px;
+    }
 }
 .icon-legislao-icon2 {
-    content: "\e609";
+    &:before{
+        @extend %icon;
+        content: "\e609";
+        font-size: 50px;
+    }
 }
 .icon-investimento-icon2 {
-    content: "\e60a";
+    &:before{
+        @extend %icon;
+        content: "\e60a";
+        font-size: 50px;
+    }
 }
 .icon-atendimento-icon22 {
-    content: "\e60b";
+    &:before{
+        @extend %icon;
+        content: "\e60b";
+        font-size: 50px;
+    }
 }
 .icon-forward {
-    content: "\e647";
+    &:before{
+        @extend %icon;
+        content: "\e647";
+        font-size: 50px;
+    }
 }
 .icon-arrow-right {
-    content: "\e648";
+    &:before{
+        @extend %icon;
+        content: "\e648";
+        font-size: 50px;
+    }
 }
 .icon-arrow-left {
-    content: "\e649";
+    &:before{
+        @extend %icon;
+        content: "\e649";
+        font-size: 50px;
+    }
 }
 .icon-arrow-down {
-    content: "\e64a";
+    &:before{
+        @extend %icon;
+        content: "\e64a";
+        font-size: 50px;
+    }
 }
 .icon-arrow-up {
-    content: "\e64b";
+    &:before{
+        @extend %icon;
+        content: "\e64b";
+        font-size: 50px;
+    }
 }
 .icon-user2 {
-    content: "\e60d";
+    &:before{
+        @extend %icon;
+        content: "\e60d";
+        font-size: 50px;
+    }
 }
 .icon-spinner6 {
-    content: "\e64e";
+    &:before{
+        @extend %icon;
+        content: "\e64e";
+        font-size: 50px;
+    }
 }
 .icon-spinner7 {
-    content: "\e64f";
+    &:before{
+        @extend %icon;
+        content: "\e64f";
+        font-size: 50px;
+    }
 }
 .icon-info2 {
-    content: "\e60e";
+    &:before{
+        @extend %icon;
+        content: "\e60e";
+        font-size: 50px;
+    }
 }
 .icon-cancel-circle {
-    content: "\e650";
+    &:before{
+        @extend %icon;
+        content: "\e650";
+        font-size: 50px;
+    }
 }
 .icon-blocked {
-    content: "\e651";
+    &:before{
+        @extend %icon;
+        content: "\e651";
+        font-size: 50px;
+    }
 }
 .icon-cross {
-    content: "\e60f";
+    &:before{
+        @extend %icon;
+        content: "\e60f";
+        font-size: 50px;
+    }
 }
 .icon-checkmark {
-    content: "\e610";
+    &:before{
+        @extend %icon;
+        content: "\e610";
+        font-size: 50px;
+    }
 }
 .icon-play3 {
-    content: "\e652";
+    &:before{
+        @extend %icon;
+        content: "\e652";
+        font-size: 50px;
+    }
 }
 .icon-pause2 {
-    content: "\e653";
+    &:before{
+        @extend %icon;
+        content: "\e653";
+        font-size: 50px;
+    }
 }
 .icon-stop2 {
-    content: "\e654";
+    &:before{
+        @extend %icon;
+        content: "\e654";
+        font-size: 50px;
+    }
 }
 .icon-backward2 {
-    content: "\e655";
+    &:before{
+        @extend %icon;
+        content: "\e655";
+        font-size: 50px;
+    }
 }
 .icon-forward3 {
-    content: "\e656";
+    &:before{
+        @extend %icon;
+        content: "\e656";
+        font-size: 50px;
+    }
 }
 .icon-first {
-    content: "\e657";
+    &:before{
+        @extend %icon;
+        content: "\e657";
+        font-size: 50px;
+    }
 }
 .icon-last {
-    content: "\e658";
+    &:before{
+        @extend %icon;
+        content: "\e658";
+        font-size: 50px;
+    }
 }
 .icon-previous2 {
-    content: "\e659";
+    &:before{
+        @extend %icon;
+        content: "\e659";
+        font-size: 50px;
+    }
 }
 .icon-next2 {
-    content: "\e65a";
+    &:before{
+        @extend %icon;
+        content: "\e65a";
+        font-size: 50px;
+    }
 }
 .icon-volume-high {
-    content: "\e65b";
+    &:before{
+        @extend %icon;
+        content: "\e65b";
+        font-size: 50px;
+    }
 }
 .icon-volume-medium {
-    content: "\e65c";
+    &:before{
+        @extend %icon;
+        content: "\e65c";
+        font-size: 50px;
+    }
 }
 .icon-volume-low {
-    content: "\e65d";
+    &:before{
+        @extend %icon;
+        content: "\e65d";
+        font-size: 50px;
+    }
 }
 .icon-volume-mute {
-    content: "\e65e";
+    &:before{
+        @extend %icon;
+        content: "\e65e";
+        font-size: 50px;
+    }
 }
 .icon-volume-mute2 {
-    content: "\e65f";
+    &:before{
+        @extend %icon;
+        content: "\e65f";
+        font-size: 50px;
+    }
 }
 .icon-checkbox-checked {
-    content: "\e611";
+    &:before{
+        @extend %icon;
+        content: "\e611";
+        font-size: 50px;
+    }
 }
 .icon-share2 {
-    content: "\e600";
+    &:before{
+        @extend %icon;
+        content: "\e600";
+        font-size: 50px;
+    }
 }
 .icon-google-plus2 {
-    content: "\e612";
+    &:before{
+        @extend %icon;
+        content: "\e612";
+        font-size: 50px;
+    }
 }
 .icon-facebook2 {
-    content: "\e613";
+    &:before{
+        @extend %icon;
+        content: "\e613";
+        font-size: 50px;
+    }
 }
 .icon-instagram2 {
-    content: "\e614";
+    &:before{
+        @extend %icon;
+        content: "\e614";
+        font-size: 50px;
+    }
 }
 .icon-twitter2 {
-    content: "\e615";
+    &:before{
+        @extend %icon;
+        content: "\e615";
+        font-size: 50px;
+    }
 }
 .icon-youtube3 {
-    content: "\e616";
+    &:before{
+        @extend %icon;
+        content: "\e616";
+        font-size: 50px;
+    }
 }
 .icon-linkedin2 {
-    content: "\e617";
+    &:before{
+        @extend %icon;
+        content: "\e617";
+        font-size: 50px;
+    }
 }
 .icon-search {
-    content: "\f009";
+    &:before{
+        @extend %icon;
+        content: "\f009";
+        font-size: 50px;
+    }
 }
 .icon-heart {
-    content: "\f29a";
+    &:before{
+        @extend %icon;
+        content: "\f29a";
+        font-size: 50px;
+    }
 }
 .icon-user {
-    content: "\f29b";
+    &:before{
+        @extend %icon;
+        content: "\f29b";
+        font-size: 50px;
+    }
 }
 .icon-check {
-    content: "\f29c";
+    &:before{
+        @extend %icon;
+        content: "\f29c";
+        font-size: 50px;
+    }
 }
 .icon-close {
-    content: "\f29d";
+    &:before{
+        @extend %icon;
+        content: "\f29d";
+        font-size: 50px;
+    }
 }
 .icon-remove {
-    content: "\f29d";
+    &:before{
+        @extend %icon;
+        content: "\f29d";
+        font-size: 50px;
+    }
 }
 .icon-times {
-    content: "\f29d";
+    &:before{
+        @extend %icon;
+        content: "\f29d";
+        font-size: 50px;
+    }
 }
 .icon-lock {
-    content: "\f29e";
+    &:before{
+        @extend %icon;
+        content: "\f29e";
+        font-size: 50px;
+    }
 }
 .icon-tag {
-    content: "\f02b";
+    &:before{
+        @extend %icon;
+        content: "\f02b";
+        font-size: 50px;
+    }
 }
 .icon-tags {
-    content: "\f02c";
+    &:before{
+        @extend %icon;
+        content: "\f02c";
+        font-size: 50px;
+    }
 }
 .icon-print {
-    content: "\f29f";
+    &:before{
+        @extend %icon;
+        content: "\f29f";
+        font-size: 50px;
+    }
 }
 .icon-align-left {
-    content: "\f2a0";
+    &:before{
+        @extend %icon;
+        content: "\f2a0";
+        font-size: 50px;
+    }
 }
 .icon-align-center {
-    content: "\f2a1";
+    &:before{
+        @extend %icon;
+        content: "\f2a1";
+        font-size: 50px;
+    }
 }
 .icon-align-right {
-    content: "\f2a2";
+    &:before{
+        @extend %icon;
+        content: "\f2a2";
+        font-size: 50px;
+    }
 }
 .icon-image {
-    content: "\f2a3";
+    &:before{
+        @extend %icon;
+        content: "\f2a3";
+        font-size: 50px;
+    }
 }
 .icon-photo {
-    content: "\f2a3";
+    &:before{
+        @extend %icon;
+        content: "\f2a3";
+        font-size: 50px;
+    }
 }
 .icon-picture-o {
-    content: "\f2a3";
+    &:before{
+        @extend %icon;
+        content: "\f2a3";
+        font-size: 50px;
+    }
 }
 .icon-play {
-    content: "\f2a4";
+    &:before{
+        @extend %icon;
+        content: "\f2a4";
+        font-size: 50px;
+    }
 }
 .icon-chevron-left {
-    content: "\f2a5";
+    &:before{
+        @extend %icon;
+        content: "\f2a5";
+        font-size: 50px;
+    }
 }
 .icon-chevron-right {
-    content: "\f2a6";
+    &:before{
+        @extend %icon;
+        content: "\f2a6";
+        font-size: 50px;
+    }
 }
 .icon-question-circle {
-    content: "\f2a7";
+    &:before{
+        @extend %icon;
+        content: "\f2a7";
+        font-size: 50px;
+    }
 }
 .icon-info-circle {
-    content: "\f2a8";
+    &:before{
+        @extend %icon;
+        content: "\f2a8";
+        font-size: 50px;
+    }
 }
 .icon-times-circle-o {
-    content: "\f2a9";
+    &:before{
+        @extend %icon;
+        content: "\f2a9";
+        font-size: 50px;
+    }
 }
 .icon-check-circle-o {
-    content: "\f2aa";
+    &:before{
+        @extend %icon;
+        content: "\f2aa";
+        font-size: 50px;
+    }
 }
 .icon-minus {
-    content: "\f2ab";
+    &:before{
+        @extend %icon;
+        content: "\f2ab";
+        font-size: 50px;
+    }
 }
 .icon-asterisk {
-    content: "\f2ac";
+    &:before{
+        @extend %icon;
+        content: "\f2ac";
+        font-size: 50px;
+    }
 }
 .icon-exclamation-circle {
-    content: "\f2ad";
+    &:before{
+        @extend %icon;
+        content: "\f2ad";
+        font-size: 50px;
+    }
 }
 .icon-chevron-up {
-    content: "\f2ae";
+    &:before{
+        @extend %icon;
+        content: "\f2ae";
+        font-size: 50px;
+    }
 }
 .icon-chevron-down {
-    content: "\f2af";
+    &:before{
+        @extend %icon;
+        content: "\f2af";
+        font-size: 50px;
+    }
 }
 .icon-heart-o {
-    content: "\f2b0";
+    &:before{
+        @extend %icon;
+        content: "\f2b0";
+        font-size: 50px;
+    }
 }
 .icon-sign-out {
-    content: "\f2b1";
+    &:before{
+        @extend %icon;
+        content: "\f2b1";
+        font-size: 50px;
+    }
 }
 .icon-phone {
-    content: "\f2b2";
+    &:before{
+        @extend %icon;
+        content: "\f2b2";
+        font-size: 50px;
+    }
 }
 .icon-twitter {
-    content: "\f2b3";
+    &:before{
+        @extend %icon;
+        content: "\f2b3";
+        font-size: 50px;
+    }
 }
 .icon-facebook {
-    content: "\f2b4";
+    &:before{
+        @extend %icon;
+        content: "\f2b4";
+        font-size: 50px;
+    }
 }
 .icon-facebook-f {
-    content: "\f2b4";
+    &:before{
+        @extend %icon;
+        content: "\f2b4";
+        font-size: 50px;
+    }
 }
 .icon-unlock {
-    content: "\f2b5";
+    &:before{
+        @extend %icon;
+        content: "\f2b5";
+        font-size: 50px;
+    }
 }
 .icon-bullhorn {
-    content: "\f2b6";
+    &:before{
+        @extend %icon;
+        content: "\f2b6";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-left {
-    content: "\f2b7";
+    &:before{
+        @extend %icon;
+        content: "\f2b7";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-right {
-    content: "\f2b8";
+    &:before{
+        @extend %icon;
+        content: "\f2b8";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-up {
-    content: "\f2b9";
+    &:before{
+        @extend %icon;
+        content: "\f2b9";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-down {
-    content: "\f2ba";
+    &:before{
+        @extend %icon;
+        content: "\f2ba";
+        font-size: 50px;
+    }
 }
 .icon-filter {
-    content: "\f2bb";
+    &:before{
+        @extend %icon;
+        content: "\f2bb";
+        font-size: 50px;
+    }
 }
 .icon-flask {
-    content: "\f2bc";
+    &:before{
+        @extend %icon;
+        content: "\f2bc";
+        font-size: 50px;
+    }
 }
 .icon-bars {
-    content: "\f2bd";
+    &:before{
+        @extend %icon;
+        content: "\f2bd";
+        font-size: 50px;
+    }
 }
 .icon-navicon {
-    content: "\f2bd";
+    &:before{
+        @extend %icon;
+        content: "\f2bd";
+        font-size: 50px;
+    }
 }
 .icon-reorder {
-    content: "\f2bd";
+    &:before{
+        @extend %icon;
+        content: "\f2bd";
+        font-size: 50px;
+    }
 }
 .icon-list-ul {
-    content: "\f2be";
+    &:before{
+        @extend %icon;
+        content: "\f2be";
+        font-size: 50px;
+    }
 }
 .icon-caret-down {
-    content: "\f2bf";
+    &:before{
+        @extend %icon;
+        content: "\f2bf";
+        font-size: 50px;
+    }
 }
 .icon-caret-up {
-    content: "\f2c0";
+    &:before{
+        @extend %icon;
+        content: "\f2c0";
+        font-size: 50px;
+    }
 }
 .icon-caret-left {
-    content: "\f2c1";
+    &:before{
+        @extend %icon;
+        content: "\f2c1";
+        font-size: 50px;
+    }
 }
 .icon-caret-right {
-    content: "\f2c2";
+    &:before{
+        @extend %icon;
+        content: "\f2c2";
+        font-size: 50px;
+    }
 }
 .icon-sort-desc {
-    content: "\f2c3";
+    &:before{
+        @extend %icon;
+        content: "\f2c3";
+        font-size: 50px;
+    }
 }
 .icon-sort-down {
-    content: "\f2c3";
+    &:before{
+        @extend %icon;
+        content: "\f2c3";
+        font-size: 50px;
+    }
 }
 .icon-sort-asc {
-    content: "\f2c4";
+    &:before{
+        @extend %icon;
+        content: "\f2c4";
+        font-size: 50px;
+    }
 }
 .icon-sort-up {
-    content: "\f2c4";
+    &:before{
+        @extend %icon;
+        content: "\f2c4";
+        font-size: 50px;
+    }
 }
 .icon-envelope {
-    content: "\f2c5";
+    &:before{
+        @extend %icon;
+        content: "\f2c5";
+        font-size: 50px;
+    }
 }
 .icon-linkedin {
-    content: "\f2c6";
+    &:before{
+        @extend %icon;
+        content: "\f2c6";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-left {
-    content: "\f2c7";
+    &:before{
+        @extend %icon;
+        content: "\f2c7";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-right {
-    content: "\f2c8";
+    &:before{
+        @extend %icon;
+        content: "\f2c8";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-up {
-    content: "\f2c9";
+    &:before{
+        @extend %icon;
+        content: "\f2c9";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-down {
-    content: "\f2ca";
+    &:before{
+        @extend %icon;
+        content: "\f2ca";
+        font-size: 50px;
+    }
 }
 .icon-angle-left {
-    content: "\f2cb";
+    &:before{
+        @extend %icon;
+        content: "\f2cb";
+        font-size: 50px;
+    }
 }
 .icon-angle-right {
-    content: "\f2cc";
+    &:before{
+        @extend %icon;
+        content: "\f2cc";
+        font-size: 50px;
+    }
 }
 .icon-angle-up {
-    content: "\f2cd";
+    &:before{
+        @extend %icon;
+        content: "\f2cd";
+        font-size: 50px;
+    }
 }
 .icon-angle-down {
-    content: "\f2ce";
+    &:before{
+        @extend %icon;
+        content: "\f2ce";
+        font-size: 50px;
+    }
 }
 .icon-desktop {
-    content: "\f2cf";
+    &:before{
+        @extend %icon;
+        content: "\f2cf";
+        font-size: 50px;
+    }
 }
 .icon-laptop {
-    content: "\f2d0";
+    &:before{
+        @extend %icon;
+        content: "\f2d0";
+        font-size: 50px;
+    }
 }
 .icon-mobile {
-    content: "\f2d1";
+    &:before{
+        @extend %icon;
+        content: "\f2d1";
+        font-size: 50px;
+    }
 }
 .icon-mobile-phone {
-    content: "\f2d1";
+    &:before{
+        @extend %icon;
+        content: "\f2d1";
+        font-size: 50px;
+    }
 }
 .icon-circle-o {
-    content: "\f2d2";
+    &:before{
+        @extend %icon;
+        content: "\f2d2";
+        font-size: 50px;
+    }
 }
 .icon-quote-left {
-    content: "\f10d";
+    &:before{
+        @extend %icon;
+        content: "\f10d";
+        font-size: 50px;
+    }
 }
 .icon-quote-right {
-    content: "\f10e";
+    &:before{
+        @extend %icon;
+        content: "\f10e";
+        font-size: 50px;
+    }
 }
 .icon-spinner {
-    content: "\f2d3";
+    &:before{
+        @extend %icon;
+        content: "\f2d3";
+        font-size: 50px;
+    }
 }
 .icon-circle {
-    content: "\f2d4";
+    &:before{
+        @extend %icon;
+        content: "\f2d4";
+        font-size: 50px;
+    }
 }
 .icon-mail-reply {
-    content: "\f2d5";
+    &:before{
+        @extend %icon;
+        content: "\f2d5";
+        font-size: 50px;
+    }
 }
 .icon-reply {
-    content: "\f2d5";
+    &:before{
+        @extend %icon;
+        content: "\f2d5";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-left {
-    content: "\f2d6";
+    &:before{
+        @extend %icon;
+        content: "\f2d6";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-right {
-    content: "\f2d7";
+    &:before{
+        @extend %icon;
+        content: "\f2d7";
+        font-size: 50px;
+    }
 }
 .icon-rss-square {
-    content: "\f2d8";
+    &:before{
+        @extend %icon;
+        content: "\f2d8";
+        font-size: 50px;
+    }
 }
 .icon-play-circle {
-    content: "\f2d9";
+    &:before{
+        @extend %icon;
+        content: "\f2d9";
+        font-size: 50px;
+    }
 }
 .icon-check-square {
-    content: "\f2da";
+    &:before{
+        @extend %icon;
+        content: "\f2da";
+        font-size: 50px;
+    }
 }
 .icon-youtube-play {
-    content: "\f2db";
+    &:before{
+        @extend %icon;
+        content: "\f2db";
+        font-size: 50px;
+    }
 }
 .icon-instagram {
-    content: "\f2dc";
+    &:before{
+        @extend %icon;
+        content: "\f2dc";
+        font-size: 50px;
+    }
 }
 .icon-recycle {
-    content: "\f2dd";
+    &:before{
+        @extend %icon;
+        content: "\f2dd";
+        font-size: 50px;
+    }
 }
 .icon-share-alt {
-    content: "\f2de";
+    &:before{
+        @extend %icon;
+        content: "\f2de";
+        font-size: 50px;
+    }
 }
 .icon-wifi {
-    content: "\f2df";
+    &:before{
+        @extend %icon;
+        content: "\f2df";
+        font-size: 50px;
+    }
 }
 .icon-paypal {
-    content: "\f2e0";
+    &:before{
+        @extend %icon;
+        content: "\f2e0";
+        font-size: 50px;
+    }
 }
 .icon-cc-visa {
-    content: "\f2e1";
+    &:before{
+        @extend %icon;
+        content: "\f2e1";
+        font-size: 50px;
+    }
 }
 .icon-cc-mastercard {
-    content: "\f2e2";
+    &:before{
+        @extend %icon;
+        content: "\f2e2";
+        font-size: 50px;
+    }
 }
 .icon-cc-discover {
-    content: "\f2e3";
+    &:before{
+        @extend %icon;
+        content: "\f2e3";
+        font-size: 50px;
+    }
 }
 .icon-cc-amex {
-    content: "\f2e4";
+    &:before{
+        @extend %icon;
+        content: "\f2e4";
+        font-size: 50px;
+    }
 }
 .icon-cc-stripe {
-    content: "\f2e5";
+    &:before{
+        @extend %icon;
+        content: "\f2e5";
+        font-size: 50px;
+    }
 }
 .icon-trash {
-    content: "\f1f8";
+    &:before{
+        @extend %icon;
+        content: "\f1f8";
+        font-size: 50px;
+    }
 }
 .icon-copyright {
-    content: "\f2e6";
+    &:before{
+        @extend %icon;
+        content: "\f2e6";
+        font-size: 50px;
+    }
 }
 .icon-at {
-    content: "\f2e7";
+    &:before{
+        @extend %icon;
+        content: "\f2e7";
+        font-size: 50px;
+    }
 }
 .icon-genderless {
-    content: "\f2e8";
+    &:before{
+        @extend %icon;
+        content: "\f2e8";
+        font-size: 50px;
+    }
 }
 .icon-facebook-official {
-    content: "\f2e9";
+    &:before{
+        @extend %icon;
+        content: "\f2e9";
+        font-size: 50px;
+    }
 }
 .icon-pinterest-p {
-    content: "\f2ea";
+    &:before{
+        @extend %icon;
+        content: "\f2ea";
+        font-size: 50px;
+    }
 }
 .icon-whatsapp {
-    content: "\f2eb";
+    &:before{
+        @extend %icon;
+        content: "\f2eb";
+        font-size: 50px;
+    }
 }
 .icon-trademark {
-    content: "\f2ec";
+    &:before{
+        @extend %icon;
+        content: "\f2ec";
+        font-size: 50px;
+    }
 }
 .icon-registered {
-    content: "\f2ed";
+    &:before{
+        @extend %icon;
+        content: "\f2ed";
+        font-size: 50px;
+    }
 }
 .icon-creative-commons {
-    content: "\f2ee";
+    &:before{
+        @extend %icon;
+        content: "\f2ee";
+        font-size: 50px;
+    }
 }
 .icon-calendar-plus-o {
-    content: "\f2ef";
+    &:before{
+        @extend %icon;
+        content: "\f2ef";
+        font-size: 50px;
+    }
 }
 .icon-calendar-minus-o {
-    content: "\f2f0";
+    &:before{
+        @extend %icon;
+        content: "\f2f0";
+        font-size: 50px;
+    }
 }
 .icon-calendar-times-o {
-    content: "\f2f1";
+    &:before{
+        @extend %icon;
+        content: "\f2f1";
+        font-size: 50px;
+    }
 }
 .icon-calendar-check-o {
-    content: "\f2f2";
+    &:before{
+        @extend %icon;
+        content: "\f2f2";
+        font-size: 50px;
+    }
 }
 .icon-commenting {
-    content: "\f2f3";
+    &:before{
+        @extend %icon;
+        content: "\f2f3";
+        font-size: 50px;
+    }
 }
 .icon-commenting-o {
-    content: "\f2f4";
+    &:before{
+        @extend %icon;
+        content: "\f2f4";
+        font-size: 50px;
+    }
 }
 .icon-pause-circle {
-    content: "\f2f5";
+    &:before{
+        @extend %icon;
+        content: "\f2f5";
+        font-size: 50px;
+    }
 }
 .icon-pause-circle-o {
-    content: "\f2f6";
+    &:before{
+        @extend %icon;
+        content: "\f2f6";
+        font-size: 50px;
+    }
 }
 .icon-stop-circle {
-    content: "\f2f7";
+    &:before{
+        @extend %icon;
+        content: "\f2f7";
+        font-size: 50px;
+    }
 }
 .icon-stop-circle-o {
-    content: "\f2f8";
+    &:before{
+        @extend %icon;
+        content: "\f2f8";
+        font-size: 50px;
+    }
 }
 .icon-search2 {
-    content: "\f002";
+    &:before{
+        @extend %icon;
+        content: "\f002";
+        font-size: 50px;
+    }
 }
 .icon-envelope-o {
-    content: "\f003";
+    &:before{
+        @extend %icon;
+        content: "\f003";
+        font-size: 50px;
+    }
 }
 .icon-heart2 {
-    content: "\f004";
+    &:before{
+        @extend %icon;
+        content: "\f004";
+        font-size: 50px;
+    }
 }
 .icon-star {
-    content: "\f005";
+    &:before{
+        @extend %icon;
+        content: "\f005";
+        font-size: 50px;
+    }
 }
 .icon-star-o {
-    content: "\f006";
+    &:before{
+        @extend %icon;
+        content: "\f006";
+        font-size: 50px;
+    }
 }
 .icon-user3 {
-    content: "\f007";
+    &:before{
+        @extend %icon;
+        content: "\f007";
+        font-size: 50px;
+    }
 }
 .icon-film {
-    content: "\f008";
+    &:before{
+        @extend %icon;
+        content: "\f008";
+        font-size: 50px;
+    }
 }
 .icon-check2 {
-    content: "\f00c";
+    &:before{
+        @extend %icon;
+        content: "\f00c";
+        font-size: 50px;
+    }
 }
 .icon-close2 {
-    content: "\f00d";
+    &:before{
+        @extend %icon;
+        content: "\f00d";
+        font-size: 50px;
+    }
 }
 .icon-remove2 {
-    content: "\f00d";
+    &:before{
+        @extend %icon;
+        content: "\f00d";
+        font-size: 50px;
+    }
 }
 .icon-times2 {
-    content: "\f00d";
+    &:before{
+        @extend %icon;
+        content: "\f00d";
+        font-size: 50px;
+    }
 }
 .icon-cog {
-    content: "\f013";
+    &:before{
+        @extend %icon;
+        content: "\f013";
+        font-size: 50px;
+    }
 }
 .icon-gear {
-    content: "\f013";
+    &:before{
+        @extend %icon;
+        content: "\f013";
+        font-size: 50px;
+    }
 }
 .icon-trash-o {
-    content: "\f014";
+    &:before{
+        @extend %icon;
+        content: "\f014";
+        font-size: 50px;
+    }
 }
 .icon-home {
-    content: "\f015";
+    &:before{
+        @extend %icon;
+        content: "\f015";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-o-down {
-    content: "\f01a";
+    &:before{
+        @extend %icon;
+        content: "\f01a";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-o-up {
-    content: "\f01b";
+    &:before{
+        @extend %icon;
+        content: "\f01b";
+        font-size: 50px;
+    }
 }
 .icon-play-circle-o {
-    content: "\f01d";
+    &:before{
+        @extend %icon;
+        content: "\f01d";
+        font-size: 50px;
+    }
 }
 .icon-repeat {
-    content: "\f01e";
+    &:before{
+        @extend %icon;
+        content: "\f01e";
+        font-size: 50px;
+    }
 }
 .icon-rotate-right {
-    content: "\f01e";
+    &:before{
+        @extend %icon;
+        content: "\f01e";
+        font-size: 50px;
+    }
 }
 .icon-refresh {
-    content: "\f021";
+    &:before{
+        @extend %icon;
+        content: "\f021";
+        font-size: 50px;
+    }
 }
 .icon-lock2 {
-    content: "\f023";
+    &:before{
+        @extend %icon;
+        content: "\f023";
+        font-size: 50px;
+    }
 }
 .icon-volume-off {
-    content: "\f026";
+    &:before{
+        @extend %icon;
+        content: "\f026";
+        font-size: 50px;
+    }
 }
 .icon-volume-down {
-    content: "\f027";
+    &:before{
+        @extend %icon;
+        content: "\f027";
+        font-size: 50px;
+    }
 }
 .icon-volume-up {
-    content: "\f028";
+    &:before{
+        @extend %icon;
+        content: "\f028";
+        font-size: 50px;
+    }
 }
 .icon-print2 {
-    content: "\f02f";
+    &:before{
+        @extend %icon;
+        content: "\f02f";
+        font-size: 50px;
+    }
 }
 .icon-edit {
-    content: "\f044";
+    &:before{
+        @extend %icon;
+        content: "\f044";
+        font-size: 50px;
+    }
 }
 .icon-pencil-square-o {
-    content: "\f044";
+    &:before{
+        @extend %icon;
+        content: "\f044";
+        font-size: 50px;
+    }
 }
 .icon-share-square-o {
-    content: "\f045";
+    &:before{
+        @extend %icon;
+        content: "\f045";
+        font-size: 50px;
+    }
 }
 .icon-check-square-o {
-    content: "\f046";
+    &:before{
+        @extend %icon;
+        content: "\f046";
+        font-size: 50px;
+    }
 }
 .icon-step-backward {
-    content: "\f048";
+    &:before{
+        @extend %icon;
+        content: "\f048";
+        font-size: 50px;
+    }
 }
 .icon-fast-backward {
-    content: "\f049";
+    &:before{
+        @extend %icon;
+        content: "\f049";
+        font-size: 50px;
+    }
 }
 .icon-backward {
-    content: "\f04a";
+    &:before{
+        @extend %icon;
+        content: "\f04a";
+        font-size: 50px;
+    }
 }
 .icon-play2 {
-    content: "\f04b";
+    &:before{
+        @extend %icon;
+        content: "\f04b";
+        font-size: 50px;
+    }
 }
 .icon-pause {
-    content: "\f04c";
+    &:before{
+        @extend %icon;
+        content: "\f04c";
+        font-size: 50px;
+    }
 }
 .icon-stop {
-    content: "\f04d";
+    &:before{
+        @extend %icon;
+        content: "\f04d";
+        font-size: 50px;
+    }
 }
 .icon-forward2 {
-    content: "\f04e";
+    &:before{
+        @extend %icon;
+        content: "\f04e";
+        font-size: 50px;
+    }
 }
 .icon-fast-forward {
-    content: "\f050";
+    &:before{
+        @extend %icon;
+        content: "\f050";
+        font-size: 50px;
+    }
 }
 .icon-step-forward {
-    content: "\f051";
+    &:before{
+        @extend %icon;
+        content: "\f051";
+        font-size: 50px;
+    }
 }
 .icon-eject {
-    content: "\f052";
+    &:before{
+        @extend %icon;
+        content: "\f052";
+        font-size: 50px;
+    }
 }
 .icon-chevron-left2 {
-    content: "\f053";
+    &:before{
+        @extend %icon;
+        content: "\f053";
+        font-size: 50px;
+    }
 }
 .icon-chevron-right2 {
-    content: "\f054";
+    &:before{
+        @extend %icon;
+        content: "\f054";
+        font-size: 50px;
+    }
 }
 .icon-plus-circle {
-    content: "\f055";
+    &:before{
+        @extend %icon;
+        content: "\f055";
+        font-size: 50px;
+    }
 }
 .icon-minus-circle {
-    content: "\f056";
+    &:before{
+        @extend %icon;
+        content: "\f056";
+        font-size: 50px;
+    }
 }
 .icon-times-circle {
-    content: "\f057";
+    &:before{
+        @extend %icon;
+        content: "\f057";
+        font-size: 50px;
+    }
 }
 .icon-check-circle {
-    content: "\f058";
+    &:before{
+        @extend %icon;
+        content: "\f058";
+        font-size: 50px;
+    }
 }
 .icon-question-circle2 {
-    content: "\f059";
+    &:before{
+        @extend %icon;
+        content: "\f059";
+        font-size: 50px;
+    }
 }
 .icon-info-circle2 {
-    content: "\f05a";
+    &:before{
+        @extend %icon;
+        content: "\f05a";
+        font-size: 50px;
+    }
 }
 .icon-times-circle-o2 {
-    content: "\f05c";
+    &:before{
+        @extend %icon;
+        content: "\f05c";
+        font-size: 50px;
+    }
 }
 .icon-check-circle-o2 {
-    content: "\f05d";
+    &:before{
+        @extend %icon;
+        content: "\f05d";
+        font-size: 50px;
+    }
 }
 .icon-ban {
-    content: "\f05e";
+    &:before{
+        @extend %icon;
+        content: "\f05e";
+        font-size: 50px;
+    }
 }
 .icon-arrow-left2 {
-    content: "\f060";
+    &:before{
+        @extend %icon;
+        content: "\f060";
+        font-size: 50px;
+    }
 }
 .icon-arrow-right2 {
-    content: "\f061";
+    &:before{
+        @extend %icon;
+        content: "\f061";
+        font-size: 50px;
+    }
 }
 .icon-arrow-up2 {
-    content: "\f062";
+    &:before{
+        @extend %icon;
+        content: "\f062";
+        font-size: 50px;
+    }
 }
 .icon-arrow-down2 {
-    content: "\f063";
+    &:before{
+        @extend %icon;
+        content: "\f063";
+        font-size: 50px;
+    }
 }
 .icon-mail-forward {
-    content: "\f064";
+    &:before{
+        @extend %icon;
+        content: "\f064";
+        font-size: 50px;
+    }
 }
 .icon-share {
-    content: "\f064";
+    &:before{
+        @extend %icon;
+        content: "\f064";
+        font-size: 50px;
+    }
 }
 .icon-plus {
-    content: "\f067";
+    &:before{
+        @extend %icon;
+        content: "\f067";
+        font-size: 50px;
+    }
 }
 .icon-exclamation-circle2 {
-    content: "\f06a";
+    &:before{
+        @extend %icon;
+        content: "\f06a";
+        font-size: 50px;
+    }
 }
 .icon-exclamation-triangle2 {
-    content: "\f071";
+    &:before{
+        @extend %icon;
+        content: "\f071";
+        font-size: 50px;
+    }
 }
 .icon-warning2 {
-    content: "\f071";
+    &:before{
+        @extend %icon;
+        content: "\f071";
+        font-size: 50px;
+    }
 }
 .icon-calendar {
-    content: "\f073";
+    &:before{
+        @extend %icon;
+        content: "\f073";
+        font-size: 50px;
+    }
 }
 .icon-chevron-up2 {
-    content: "\f077";
+    &:before{
+        @extend %icon;
+        content: "\f077";
+        font-size: 50px;
+    }
 }
 .icon-chevron-down2 {
-    content: "\f078";
+    &:before{
+        @extend %icon;
+        content: "\f078";
+        font-size: 50px;
+    }
 }
 .icon-shopping-cart {
-    content: "\f07a";
+    &:before{
+        @extend %icon;
+        content: "\f07a";
+        font-size: 50px;
+    }
 }
 .icon-comments {
-    content: "\f086";
+    &:before{
+        @extend %icon;
+        content: "\f086";
+        font-size: 50px;
+    }
 }
 .icon-thumbs-o-up {
-    content: "\f087";
+    &:before{
+        @extend %icon;
+        content: "\f087";
+        font-size: 50px;
+    }
 }
 .icon-thumbs-o-down {
-    content: "\f088";
+    &:before{
+        @extend %icon;
+        content: "\f088";
+        font-size: 50px;
+    }
 }
 .icon-heart-o2 {
-    content: "\f08a";
+    &:before{
+        @extend %icon;
+        content: "\f08a";
+        font-size: 50px;
+    }
 }
 .icon-sign-out2 {
-    content: "\f08b";
+    &:before{
+        @extend %icon;
+        content: "\f08b";
+        font-size: 50px;
+    }
 }
 .icon-phone2 {
-    content: "\f095";
+    &:before{
+        @extend %icon;
+        content: "\f095";
+        font-size: 50px;
+    }
 }
 .icon-square-o {
-    content: "\f096";
+    &:before{
+        @extend %icon;
+        content: "\f096";
+        font-size: 50px;
+    }
 }
 .icon-phone-square {
-    content: "\f098";
+    &:before{
+        @extend %icon;
+        content: "\f098";
+        font-size: 50px;
+    }
 }
 .icon-twitter3 {
-    content: "\f099";
+    &:before{
+        @extend %icon;
+        content: "\f099";
+        font-size: 50px;
+    }
 }
 .icon-facebook3 {
-    content: "\f09a";
+    &:before{
+        @extend %icon;
+        content: "\f09a";
+        font-size: 50px;
+    }
 }
 .icon-facebook-f2 {
-    content: "\f09a";
+    &:before{
+        @extend %icon;
+        content: "\f09a";
+        font-size: 50px;
+    }
 }
 .icon-unlock2 {
-    content: "\f09c";
+    &:before{
+        @extend %icon;
+        content: "\f09c";
+        font-size: 50px;
+    }
 }
 .icon-rss {
-    content: "\f09e";
+    &:before{
+        @extend %icon;
+        content: "\f09e";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-left2 {
-    content: "\f0a8";
+    &:before{
+        @extend %icon;
+        content: "\f0a8";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-right2 {
-    content: "\f0a9";
+    &:before{
+        @extend %icon;
+        content: "\f0a9";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-up2 {
-    content: "\f0aa";
+    &:before{
+        @extend %icon;
+        content: "\f0aa";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-down2 {
-    content: "\f0ab";
+    &:before{
+        @extend %icon;
+        content: "\f0ab";
+        font-size: 50px;
+    }
 }
 .icon-wrench {
-    content: "\f0ad";
+    &:before{
+        @extend %icon;
+        content: "\f0ad";
+        font-size: 50px;
+    }
 }
 .icon-tasks {
-    content: "\f0ae";
+    &:before{
+        @extend %icon;
+        content: "\f0ae";
+        font-size: 50px;
+    }
 }
 .icon-paperclip {
-    content: "\f0c6";
+    &:before{
+        @extend %icon;
+        content: "\f0c6";
+        font-size: 50px;
+    }
 }
 .icon-square {
-    content: "\f0c8";
+    &:before{
+        @extend %icon;
+        content: "\f0c8";
+        font-size: 50px;
+    }
 }
 .icon-bars2 {
-    content: "\f0c9";
+    &:before{
+        @extend %icon;
+        content: "\f0c9";
+        font-size: 50px;
+    }
 }
 .icon-navicon2 {
-    content: "\f0c9";
+    &:before{
+        @extend %icon;
+        content: "\f0c9";
+        font-size: 50px;
+    }
 }
 .icon-reorder2 {
-    content: "\f0c9";
+    &:before{
+        @extend %icon;
+        content: "\f0c9";
+        font-size: 50px;
+    }
 }
 .icon-list-ul2 {
-    content: "\f0ca";
+    &:before{
+        @extend %icon;
+        content: "\f0ca";
+        font-size: 50px;
+    }
 }
 .icon-pinterest {
-    content: "\f0d2";
+    &:before{
+        @extend %icon;
+        content: "\f0d2";
+        font-size: 50px;
+    }
 }
 .icon-google-plus {
-    content: "\f0d5";
+    &:before{
+        @extend %icon;
+        content: "\f0d5";
+        font-size: 50px;
+    }
 }
 .icon-caret-down2 {
-    content: "\f0d7";
+    &:before{
+        @extend %icon;
+        content: "\f0d7";
+        font-size: 50px;
+    }
 }
 .icon-caret-up2 {
-    content: "\f0d8";
+    &:before{
+        @extend %icon;
+        content: "\f0d8";
+        font-size: 50px;
+    }
 }
 .icon-caret-left2 {
-    content: "\f0d9";
+    &:before{
+        @extend %icon;
+        content: "\f0d9";
+        font-size: 50px;
+    }
 }
 .icon-caret-right2 {
-    content: "\f0da";
+    &:before{
+        @extend %icon;
+        content: "\f0da";
+        font-size: 50px;
+    }
 }
 .icon-sort {
-    content: "\f0dc";
+    &:before{
+        @extend %icon;
+        content: "\f0dc";
+        font-size: 50px;
+    }
 }
 .icon-unsorted {
-    content: "\f0dc";
+    &:before{
+        @extend %icon;
+        content: "\f0dc";
+        font-size: 50px;
+    }
 }
 .icon-sort-desc2 {
-    content: "\f0dd";
+    &:before{
+        @extend %icon;
+        content: "\f0dd";
+        font-size: 50px;
+    }
 }
 .icon-sort-down2 {
-    content: "\f0dd";
+    &:before{
+        @extend %icon;
+        content: "\f0dd";
+        font-size: 50px;
+    }
 }
 .icon-sort-asc2 {
-    content: "\f0de";
+    &:before{
+        @extend %icon;
+        content: "\f0de";
+        font-size: 50px;
+    }
 }
 .icon-sort-up2 {
-    content: "\f0de";
+    &:before{
+        @extend %icon;
+        content: "\f0de";
+        font-size: 50px;
+    }
 }
 .icon-envelope2 {
-    content: "\f0e0";
+    &:before{
+        @extend %icon;
+        content: "\f0e0";
+        font-size: 50px;
+    }
 }
 .icon-linkedin3 {
-    content: "\f0e1";
+    &:before{
+        @extend %icon;
+        content: "\f0e1";
+        font-size: 50px;
+    }
 }
 .icon-rotate-left {
-    content: "\f0e2";
+    &:before{
+        @extend %icon;
+        content: "\f0e2";
+        font-size: 50px;
+    }
 }
 .icon-undo {
-    content: "\f0e2";
+    &:before{
+        @extend %icon;
+        content: "\f0e2";
+        font-size: 50px;
+    }
 }
 .icon-plus-square {
-    content: "\f0fe";
+    &:before{
+        @extend %icon;
+        content: "\f0fe";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-left2 {
-    content: "\f100";
+    &:before{
+        @extend %icon;
+        content: "\f100";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-right2 {
-    content: "\f101";
+    &:before{
+        @extend %icon;
+        content: "\f101";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-up2 {
-    content: "\f102";
+    &:before{
+        @extend %icon;
+        content: "\f102";
+        font-size: 50px;
+    }
 }
 .icon-angle-double-down2 {
-    content: "\f103";
+    &:before{
+        @extend %icon;
+        content: "\f103";
+        font-size: 50px;
+    }
 }
 .icon-angle-left2 {
-    content: "\f104";
+    &:before{
+        @extend %icon;
+        content: "\f104";
+        font-size: 50px;
+    }
 }
 .icon-angle-right2 {
-    content: "\f105";
+    &:before{
+        @extend %icon;
+        content: "\f105";
+        font-size: 50px;
+    }
 }
 .icon-angle-up2 {
-    content: "\f106";
+    &:before{
+        @extend %icon;
+        content: "\f106";
+        font-size: 50px;
+    }
 }
 .icon-angle-down2 {
-    content: "\f107";
+    &:before{
+        @extend %icon;
+        content: "\f107";
+        font-size: 50px;
+    }
 }
 .icon-mobile2 {
-    content: "\f10b";
+    &:before{
+        @extend %icon;
+        content: "\f10b";
+        font-size: 50px;
+    }
 }
 .icon-mobile-phone2 {
-    content: "\f10b";
+    &:before{
+        @extend %icon;
+        content: "\f10b";
+        font-size: 50px;
+    }
 }
 .icon-circle-o2 {
-    content: "\f10c";
+    &:before{
+        @extend %icon;
+        content: "\f10c";
+        font-size: 50px;
+    }
 }
 .icon-spinner2 {
-    content: "\f110";
+    &:before{
+        @extend %icon;
+        content: "\f110";
+        font-size: 50px;
+    }
 }
 .icon-circle2 {
-    content: "\f111";
+    &:before{
+        @extend %icon;
+        content: "\f111";
+        font-size: 50px;
+    }
 }
 .icon-mail-reply2 {
-    content: "\f112";
+    &:before{
+        @extend %icon;
+        content: "\f112";
+        font-size: 50px;
+    }
 }
 .icon-reply2 {
-    content: "\f112";
+    &:before{
+        @extend %icon;
+        content: "\f112";
+        font-size: 50px;
+    }
 }
 .icon-mail-reply-all {
-    content: "\f122";
+    &:before{
+        @extend %icon;
+        content: "\f122";
+        font-size: 50px;
+    }
 }
 .icon-reply-all {
-    content: "\f122";
+    &:before{
+        @extend %icon;
+        content: "\f122";
+        font-size: 50px;
+    }
 }
 .icon-info {
-    content: "\f129";
+    &:before{
+        @extend %icon;
+        content: "\f129";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-left2 {
-    content: "\f137";
+    &:before{
+        @extend %icon;
+        content: "\f137";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-right2 {
-    content: "\f138";
+    &:before{
+        @extend %icon;
+        content: "\f138";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-up {
-    content: "\f139";
+    &:before{
+        @extend %icon;
+        content: "\f139";
+        font-size: 50px;
+    }
 }
 .icon-chevron-circle-down {
-    content: "\f13a";
+    &:before{
+        @extend %icon;
+        content: "\f13a";
+        font-size: 50px;
+    }
 }
 .icon-unlock-alt {
-    content: "\f13e";
+    &:before{
+        @extend %icon;
+        content: "\f13e";
+        font-size: 50px;
+    }
 }
 .icon-bullseye {
-    content: "\f140";
+    &:before{
+        @extend %icon;
+        content: "\f140";
+        font-size: 50px;
+    }
 }
 .icon-ellipsis-h {
-    content: "\f141";
+    &:before{
+        @extend %icon;
+        content: "\f141";
+        font-size: 50px;
+    }
 }
 .icon-ellipsis-v {
-    content: "\f142";
+    &:before{
+        @extend %icon;
+        content: "\f142";
+        font-size: 50px;
+    }
 }
 .icon-play-circle2 {
-    content: "\f144";
+    &:before{
+        @extend %icon;
+        content: "\f144";
+        font-size: 50px;
+    }
 }
 .icon-check-square2 {
-    content: "\f14a";
+    &:before{
+        @extend %icon;
+        content: "\f14a";
+        font-size: 50px;
+    }
 }
 .icon-file {
-    content: "\f15b";
+    &:before{
+        @extend %icon;
+        content: "\f15b";
+        font-size: 50px;
+    }
 }
 .icon-file-text {
-    content: "\f15c";
+    &:before{
+        @extend %icon;
+        content: "\f15c";
+        font-size: 50px;
+    }
 }
 .icon-thumbs-up {
-    content: "\f164";
+    &:before{
+        @extend %icon;
+        content: "\f164";
+        font-size: 50px;
+    }
 }
 .icon-thumbs-down {
-    content: "\f165";
+    &:before{
+        @extend %icon;
+        content: "\f165";
+        font-size: 50px;
+    }
 }
 .icon-youtube {
-    content: "\f167";
+    &:before{
+        @extend %icon;
+        content: "\f167";
+        font-size: 50px;
+    }
 }
 .icon-youtube-play2 {
-    content: "\f16a";
+    &:before{
+        @extend %icon;
+        content: "\f16a";
+        font-size: 50px;
+    }
 }
 .icon-instagram3 {
-    content: "\f16d";
+    &:before{
+        @extend %icon;
+        content: "\f16d";
+        font-size: 50px;
+    }
 }
 .icon-long-arrow-down {
-    content: "\f175";
+    &:before{
+        @extend %icon;
+        content: "\f175";
+        font-size: 50px;
+    }
 }
 .icon-long-arrow-up {
-    content: "\f176";
+    &:before{
+        @extend %icon;
+        content: "\f176";
+        font-size: 50px;
+    }
 }
 .icon-long-arrow-left {
-    content: "\f177";
+    &:before{
+        @extend %icon;
+        content: "\f177";
+        font-size: 50px;
+    }
 }
 .icon-long-arrow-right {
-    content: "\f178";
+    &:before{
+        @extend %icon;
+        content: "\f178";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-o-right {
-    content: "\f18e";
+    &:before{
+        @extend %icon;
+        content: "\f18e";
+        font-size: 50px;
+    }
 }
 .icon-arrow-circle-o-left {
-    content: "\f190";
+    &:before{
+        @extend %icon;
+        content: "\f190";
+        font-size: 50px;
+    }
 }
 .icon-dot-circle-o {
-    content: "\f192";
+    &:before{
+        @extend %icon;
+        content: "\f192";
+        font-size: 50px;
+    }
 }
 .icon-plus-square-o {
-    content: "\f196";
+    &:before{
+        @extend %icon;
+        content: "\f196";
+        font-size: 50px;
+    }
 }
 .icon-automobile {
-    content: "\f1b9";
+    &:before{
+        @extend %icon;
+        content: "\f1b9";
+        font-size: 50px;
+    }
 }
 .icon-car {
-    content: "\f1b9";
+    &:before{
+        @extend %icon;
+        content: "\f1b9";
+        font-size: 50px;
+    }
 }
 .icon-share-alt2 {
-    content: "\f1e0";
+    &:before{
+        @extend %icon;
+        content: "\f1e0";
+        font-size: 50px;
+    }
 }
 .icon-share-alt-square {
-    content: "\f1e1";
+    &:before{
+        @extend %icon;
+        content: "\f1e1";
+        font-size: 50px;
+    }
 }
 .icon-wifi2 {
-    content: "\f1eb";
+    &:before{
+        @extend %icon;
+        content: "\f1eb";
+        font-size: 50px;
+    }
 }
 .icon-neuter {
-    content: "\f22c";
+    &:before{
+        @extend %icon;
+        content: "\f22c";
+        font-size: 50px;
+    }
 }
 .icon-facebook-official2 {
-    content: "\f230";
+    &:before{
+        @extend %icon;
+        content: "\f230";
+        font-size: 50px;
+    }
 }
 .icon-pinterest-p2 {
-    content: "\f231";
+    &:before{
+        @extend %icon;
+        content: "\f231";
+        font-size: 50px;
+    }
 }
 .icon-whatsapp2 {
-    content: "\f232";
+    &:before{
+        @extend %icon;
+        content: "\f232";
+        font-size: 50px;
+    }
 }
 .icon-whatsapp22 {
-    content: "\e60c";
+    &:before{
+        @extend %icon;
+        content: "\e60c";
+        font-size: 50px;
+    }
 }
 
