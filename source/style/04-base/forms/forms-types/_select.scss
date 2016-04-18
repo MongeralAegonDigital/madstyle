@@ -1,398 +1,218 @@
-// --------------------------------------------------------------------------
-/// 04-base: Select
-// --------------------------------------------------------------------------
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-::-webkit-input-placeholder {
-    color: #d1d1d1
-}
-:-moz-placeholder {
-    color: #d1d1d1
-}
-::-moz-placeholder {
-    color: #d1d1d1
-}
-:-ms-input-placeholder {
-    color: #d1d1d1
-}
+/* Select Field
+   ========================================================================== */
+
+// Text Inputs + Textarea
+$input-height: 3rem !default;
+$input-border-color: #ddd !default;
+$input-border: 1px solid $input-border-color !default;
+$input-background: #fff !default;
+$input-error-color: red !default;
+$input-success-color: blue !default;
+$input-focus-color: #ddd !default;
+$input-font-size: 1rem !default;
+$input-margin: 0 0 15px 0 !default;
+$input-padding: 0 !default;
+$input-transition: all .3s !default;
+$label-font-size: .8rem !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$input-disabled-solid-color: #BDBDBD !default;
+$input-disabled-border: 1px dotted $input-disabled-color !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$placeholder-text-color: #ddd !default;
 
 
-.form {
-  margin-top: 50px;
+// Select
+$select-border: 1px solid #f2f2f2 !default;
+$select-background: rgba(255, 255, 255, 0.90) !default;
+$select-focus: 1px solid #ddd !default;
+$select-padding: 5px !default;
+$select-radius: 2px !default;
+$select-disabled-color: rgba(0,0,0,.3) !default;
+
+
+/* 8. Dropdown
+   ========================================================================== */
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: #006DB2 !default;
+$dropdown-item-height: 50px !default;
+$off-black: rgba(0,0,0,0.87);
+
+
+select { display: none; }
+select.browser-default { display: block; }
+
+select {
+  background-color: $select-background;
+  width: 100%;
+  padding: $select-padding;
+  border: $select-border;
+  border-radius: $select-radius;
+  height: $input-height;
 }
-.form-group {
-  margin-bottom: 1rem;
+
+.select-label {
+  position: absolute;
+}
+
+.form-select-wrapper {
   position: relative;
-  padding-top: 1rem; //tamanho fonte
-}
-.form-label {
-  color: #9e9e9e;
-  position: absolute;
-  top: 0.8rem;
-  left: 0rem;
-  font-size: 1rem;
-  cursor: text;
-  transition: .2s ease-out;
-}
-.form-input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0;
-    outline: none;
-    height: 3rem;
-    width: 100%;
-    font-size: 1rem;
-    margin: 0 0 5px 0;
-    //margin: 0 0 15px 0;
-    padding: 0;
-    box-shadow: none;
-    box-sizing: content-box;
-    transition: all 0.3s;
-  &:focus {
-    color: #006db2;
-    //border-color: #66afe9;
-    //outline: 0;
-    border-bottom: 1px solid #006db2;
-    box-shadow: 0 1px 0 0 #006db2;
-    &:not([readonly])+label {
-      color: #006db2;
-    }
-  }
-}
 
-// Default textarea
-.form-input-textarea {
-  overflow-y: hidden; /* prevents scroll bar flash */
-  padding: 1.6rem 0; /* prevents text jump on Enter keypress */
-  resize: none;
-  min-height: 3rem;
-}
-.form-text-muted {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: #737373;
-}
-.radio-group {
-   margin-bottom: 1rem;
-}
-.input-radio {
-  &:not(:checked),
-  &:checked {
-    position: absolute;
-    left: -9999px;
-    opacity: 0;
-    &+label{
-      position: relative;
-      padding-left: 35px;
-      cursor: pointer;
-      display: inline-block;
-      height: 25px;
-      line-height: 25px;
-      font-size: 1rem;
-      transition: .28s ease;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      margin-right: 10px;
-      &:before,
-      &:after {
-          border-radius: 50%;
-      }
-    }
-  }
-  &+label:before,
-  &+label:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin: 4px;
-      width: 16px;
-      height: 16px;
-      z-index: 0;
-      transition: .28s ease;
-  }
-  &:not(:checked) {
-    &+label {
-      &:before,
-      &:after {
-          border: 2px solid #5a5a5a;
-      }
-      &:after {
-        z-index: -1;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-    }
-  }
-  &:checked {
-    &+label {
-      &:before {
-        border: 2px solid transparent;
-      }
-      &:after {
-        border: 2px solid #006db2;
-        background-color: #006db2;
-        z-index: 0;
-        -webkit-transform: scale(1.02);
-        transform: scale(1.02);
-      }
-    }
-  }
-  &:disabled {
-    &:not(:checked) {
-      &+label {
-        &:before{
-          background-color: transparent;
-          border-color: rgba(0,0,0,0.26);
-        }
-      }
-    }
-    &:checked {
-      &+label {
-        &:before{
-          background-color: transparent;
-          border-color: rgba(0,0,0,0.26);
-        }
-        &:after {
-          background-color: rgba(0,0,0,0.26);
-          border-color: #BDBDBD;
-        }
-      }
-    }
-    &+label {
-      color: rgba(0,0,0,0.26);
-    }
-  }
-}
-$radio-empty-color: #5a5a5a !default;
-$radio-fill-color: #006db2 !default;
-$input-disabled-color: rgba(0,0,0, .26) !default;
-$radio-border: 2px solid $radio-fill-color !default;
-$input-disabled-color: rgba(0,0,0, .26) !default;
-
-.checkbox-group {
-    margin-bottom: 1rem;
-}
-
-/* Remove default checkbox */
-[type="checkbox"]:not(:checked),
-[type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-}
-
-
-// Checkbox Styles
-[type="checkbox"] {
-  // Text Label Style
-  + label {
+  input.form-select-dropdown {
     position: relative;
-    padding-left: 35px;
     cursor: pointer;
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    font-size: 1rem;
-    margin-right: 10px;
-
-    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
-  }
-
-  /* checkbox aspect */
-  + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    z-index: 0;
-    border: 2px solid $radio-empty-color;
-    border-radius: 1px;
-    margin-top: 2px;
-    transition: .2s;
-  }
-
-  &:not(.filled-in) + label:after {
-    border: 0;
-    transform: scale(0);
-  }
-
-  &:not(:checked):disabled + label:before {
-    border: none;
-    background-color: $input-disabled-color;
-  }
-
-  // Focused styles
-  &.tabbed:focus + label:after {
-    transform: scale(1);
-    border: 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(0,0,0,.1);
-    background-color: rgba(0,0,0,.1);
-  }
-}
-[type="checkbox"]:checked {
-  + label:before {
-    top: -4px;
-    left: -5px;
-    width: 12px;
-    height: 22px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: $radio-border;
-    border-bottom: $radio-border;
-    transform: rotate(40deg);
-    backface-visibility: hidden;
-    transform-origin: 100% 100%;
-  }
-
-  &:disabled + label:before {
-    border-right: 2px solid $input-disabled-color;
-    border-bottom: 2px solid $input-disabled-color;
-  }
-}
-
-/* Indeterminate checkbox */
-[type="checkbox"]:indeterminate {
-  +label:before {
-    top: -11px;
-    left: -12px;
-    width: 10px;
-    height: 22px;
-    border-top: none;
-    border-left: none;
-    border-right: $radio-border;
-    border-bottom: none;
-    transform: rotate(90deg);
-    backface-visibility: hidden;
-    transform-origin: 100% 100%;
-  }
-
-  // Disabled indeterminate
-  &:disabled + label:before {
-    border-right: 2px solid $input-disabled-color;
     background-color: transparent;
+    border: none;
+    border-bottom: $input-border;
+    outline: none;
+    height: $input-height;
+    line-height: $input-height;
+    width: 100%;
+    font-size: $input-font-size;
+    margin: $input-margin;
+    padding: 0;
+    display: block;
+  }
+
+  span.caret {
+    color: initial;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-size: 10px;
+    &.disabled {
+      color: $input-disabled-color;
+    }
+  }
+
+  & + label {
+    position: absolute;
+    top: -14px;
+    font-size: $label-font-size;
   }
 }
 
-<form class="form">
-  <div class="checkbox-group">
-    <input class="input-checkbox" name="group1" type="checkbox" id="test1" />
-    <label for="test1">Red</label>
-  </div>
-  <div class="checkbox-group">
-    <input class="input-checkbox" name="group1" type="checkbox" checked="checked" id="test2" />
-    <label for="test2">Red</label>
-  </div>
+// Disabled styles
+select:disabled {
+  color: rgba(0,0,0,.3);
+}
+
+.form-select-wrapper input.form-select-dropdown:disabled {
+  color: rgba(0,0,0,.3);
+  cursor: default;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -ms-user-select: none; /* IE10+ */
+  border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+.form-select-wrapper i {
+  color: $select-disabled-color;
+}
+
+.form-select-dropdown li.disabled,
+.form-select-dropdown li.disabled > span,
+.form-select-dropdown li.optgroup {
+  color: $select-disabled-color;
+  background-color: transparent;
+}
+
+// Prefix Icons
+.prefix ~ .form-select-wrapper {
+  margin-left: 3rem;
+  width: 92%;
+  width: calc(100% - 3rem);
+}
+
+.prefix ~ label { margin-left: 3rem; }
+
+// Icons
+.form-select-dropdown li {
+  img {
+    height: $dropdown-item-height - 10;
+    width: $dropdown-item-height - 10;
+    margin: 5px 15px;
+    float: right;
+  }
+}
+
+// Optgroup styles
+.form-select-dropdown li {
+  border-top: 1px solid $dropdown-hover-bg-color;
+
+  &.selected > span {
+    color: rgba(0, 0, 0, .7);
+  }
+
+  & > span {
+    color: rgba(0, 0, 0, .4);
+  }
+
+  & ~ li.optgroup-option {
+    padding-left: 1rem;
+  }
+}
 
 
-  <div class="checkbox-group">
-    <input class="input-checkbox" name="group32" type="checkbox" id="testd31" />
-    <label for="testd31">Red</label>
-
-    <input class="input-checkbox" name="group32" type="checkbox" checked="checked" id="testd32" />
-    <label for="testd32">Red</label>
-  </div>
-
-  <div class="radio-group">
-    <input class="input-radio" name="group1" type="radio" id="test1" />
-    <label for="test1">Red</label>
-  </div>
-  <div class="radio-group">
-    <input class="input-radio" name="group1" type="radio" id="test2" />
-    <label for="test2">Red</label>
-  </div>
-
-  <div class="radio-group">
-    <input class="input-radio" name="group22" type="radio" id="test11" />
-    <label for="test11">Red</label>
-
-    <input class="input-radio" name="group22" type="radio" id="test22" />
-    <label for="test22">Red</label>
-
-    <input class="input-radio" name="group22" type="radio" id="test33" />
-    <label for="test33">Red</label>
-  </div>
 
 
-  <div class="form-group">
-    <input type="text" class="form-input" id="email" placeholder="Enter email">
-    <label class="form-label" for="email">Email</label>
-    <small class="form-text-muted">Descrição</small>
-  </div>
-  <div class="form-group">
-    <textarea class="form-input form-input-textarea" id="exampleTextarea" rows="3"></textarea>
-    <label class="form-label" for="exampleTextarea">Example textarea</label>
-  </div>
 
 
-  <!--<div class="radio">-->
-  <!--    <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>-->
-  <!--    <label class="form-label">Option one is this and that&mdash;be sure to include why it's great-->
-  <!--  </label>-->
-  <!--</div>-->
-  <!--<div class="radio">-->
-  <!--    <input type="radio" name="optionsRadios" id="radio2" value="option2">-->
-  <!--    <label class="form-label">-->
-  <!--      Option two can be something else and selecting it will deselect option one-->
-  <!--    </label>-->
-  <!--</div>-->
 
-  <!--<div>-->
+.form-select-dropdown {
+  background-color: $dropdown-bg-color;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
 
-  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">-->
-  <!--  <label class="radio-inline"> 1</label>-->
+  li {
+    clear: both;
+    color: $off-black;
+    cursor: pointer;
+    min-height: $dropdown-item-height;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
 
-  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">-->
-  <!--  <label class="radio-inline"> 2</label>-->
+    &:hover, &.active, &.selected {
+      background-color: $dropdown-hover-bg-color;
+    }
 
-  <!--  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">-->
-  <!--  <label class="radio-inline"> 3</label>-->
-  <!--</div>-->
-  <!--<div class="checkbox">-->
-  <!--  <label>-->
-  <!--    <input type="checkbox"> Check me out-->
-  <!--  </label>-->
-  <!--</div>-->
-  <!--<div class="form-group">-->
-  <!--  <label class="form-label" for="file">File input</label>-->
-  <!--  <input type="file" class="form-input-file" id="file">-->
-  <!--  <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>-->
-  <!--</div>-->
-  <!-- <div class="radio disabled">-->
-  <!--  <label class="form-label">-->
-  <!--    <input type="radio" name="optionsRadios" id="radio3" value="option3" disabled>-->
-  <!--    Option three is disabled-->
-  <!--  </label>-->
-  <!--</div>-->
-  <!--<div>-->
-  <!--  <label class="checkbox-inline">-->
-  <!--    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1-->
-  <!--  </label>-->
-  <!--  <label class="checkbox-inline">-->
-  <!--    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2-->
-  <!--  </label>-->
-  <!--  <label class="checkbox-inline">-->
-  <!--    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3-->
-  <!--  </label>-->
-  <!--</div>-->
-  <!--<button type="submit" class="btn btn-primary">Submit</button>-->
-</form>
+    &.active.selected {
+      background-color: darken($dropdown-hover-bg-color, 5%);
+    }
+
+    &.divider {
+      min-height: 0;
+      height: 1px;
+    }
+
+    & > a, & > span {
+      font-size: 16px;
+      color: $dropdown-color;
+      display: block;
+      line-height: 22px;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+
+    & > span > label {
+      top: 1px;
+      left: 3px;
+      height: 18px;
+    }
+
+    // Icon alignment override
+    & > a > i {
+      height: inherit;
+      line-height: inherit;
+    }
+  }
+}

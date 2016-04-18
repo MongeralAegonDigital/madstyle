@@ -26,13 +26,13 @@ $input-disabled-color: rgba(0,0,0, .26) !default;
     // Text Label Style
     + label {
         position: relative;
-        padding-left: 35px;
+        padding-left: 30px;
         cursor: pointer;
         display: inline-block;
         height: 25px;
         line-height: 25px;
         font-size: 1rem;
-        margin-right: 10px;
+        margin-right: 25px;
 
         -webkit-user-select: none; /* webkit (safari, chrome) browsers */
         -moz-user-select: none; /* mozilla browsers */
