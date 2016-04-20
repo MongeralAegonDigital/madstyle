@@ -305,7 +305,7 @@
       $select.data('select-id', uniqueID);
       var wrapper = $('<div class="form-select-wrapper"></div>');
       wrapper.addClass($select.attr('class'));
-      var options = $('<ul id="data-select-options-' + uniqueID +'" class="form-select-dropdown ' + (multiple ? 'multiple-form-select-dropdown' : '') + '"></ul>'),
+      var options = $('<ul id="data-select-options-' + uniqueID +'" class="dropdown-content form-select-dropdown ' + (multiple ? 'multiple-form-select-dropdown' : '') + '"></ul>'),
           selectChildren = $select.children('option, optgroup'),
           valuesSelected = [],
           optionsHover = false;

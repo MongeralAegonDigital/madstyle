@@ -2,7 +2,7 @@
   $(function(){
 
 
-    $('select').not('.disabled').material_select();
+    $('select, .form-input-select').not('.disabled').material_select();
 
 
   }); // end of document ready
