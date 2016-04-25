@@ -1,8 +1,7 @@
+// --------------------------------------------------------------------------
 /// Icon
-///
-///
-///
-///
+// --------------------------------------------------------------------------
+
 %icon {
   display: inline-block;
   font-family: 'magicons' !important;
@@ -17,18 +16,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@mixin x-icon( $name: "", $position: "left" ) {
+
+@mixin x-icon( $name: "", $position: "left", $margin: 10px, $font-size: 16px ) {
   @if $position == "left" {
     &:before {
       @extend %icon;
       @extend %#{$name};
-      margin-right: 10px;
+      margin-right: $margin;
+      font-size: $font-size;
     }
   } @else if $position == "right" {
     &:after {
       @extend %icon;
       @extend %#{$name};
-      margin-left: 10px;
+      margin-left: $margin;
+      font-size: $font-size;
     }
   }
 }

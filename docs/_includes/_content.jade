@@ -1,23 +1,10 @@
-- var atoms = public.source.style["04-base"]
-- var molecules = public.source.style["05-objects"]
-- var organisms = public.source.style["06-components"]
+- var atoms = public.docs.atoms._contents
 
 main.mad-content
-	section
-		h2.mad-content-heading Átomos
-		each value, key in atoms
-			section.mad-atom(id='#{key}', data-js-module='slider')
-				!=partial("source/style/04-base/"+key+"/"+key)
-
-	section
-		h2.mad-content-heading Moléculas
-		each value, key in molecules
-			section.mad-molecule(id='#{key}')
-				!=partial("source/style/05-objects/"+key+"/"+key)
-
-	section
-		h2.mad-content-heading Organismos
-		each value, key in organisms
-			section.mad-organism(id='#{key}')
-				!=partial("source/style/06-components/"+key+"/"+key)
+    section
+        h2.mad-content-heading Átomos
+        each value, key in atoms
+            - var atom = value.split('.')[0]
+            section.mad-atom(id='#{atom}')
+                !=partial("docs/atoms/"+value)
 

@@ -1,0 +1,55 @@
+// --------------------------------------------------------------------------
+// Variables: Typography
+// --------------------------------------------------------------------------
+
+$headings-font-color :    inherit !default;
+$headings-font-family:    $font-family-primary;
+$headings-font-weight:    500 !default;
+$headings-margin-bottom:  0.5rem !default;
+
+// Heading
+// --------------------------------------------------------------------------
+$headings-h1-font-size  : 48px !default;
+$headings-h1-line-height: 60px;
+
+$headings-h2-font-size  : 36px !default;
+$headings-h2-line-height: 48px;
+
+$headings-h3-font-size  : 24px !default;
+$headings-h3-line-height: 32px;
+
+$headings-h4-font-size  : 18px !default;
+$headings-h4-line-height: 24px;
+
+$headings-h5-font-size  : 16px !default;
+$headings-h5-line-height: 22px;
+
+$headings-h6-font-size  : 14px !default;
+$headings-h6-line-height: 20px;
+
+
+// Base Text
+// --------------------------------------------------------------------------
+$base-text-color : #000;
+$base-font-family: inherit !default;
+$base-font-weight: 500;
+
+$base-text-1-font-size    : 21px;
+$base-text-1-line-height  : 33px;
+
+$base-text-2-font-size    : 16px;
+$base-text-2-line-height  : 22px;
+
+$base-text-3-font-size    : 14px;
+$base-text-3-line-height  : 20px;
+
+$base-text-4-font-size    : 12px;
+$base-text-4-line-height  : 18px;
+
+$base-text-5-font-size    : 10px;
+$base-text-5-line-height  : 16px;
+
+
+// Link Theme Variables
+// --------------------------------------------------------------------------
+$link-color: #006db6;

@@ -2,12 +2,7 @@
 /// Este arquivo não é necessário no projeto.
 
 .icon-shopping111 {
-    &:before{
-        @extend %icon;
-        content: "\e90e";
-        font-size: 50px;
-
-    }
+    @include x-icon( $name: "icon-shopping111", $font-size: 50px );
 }
 .icon-lock8 {
     &:before{

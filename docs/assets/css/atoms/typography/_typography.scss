@@ -1,0 +1,60 @@
+// --------------------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------------------
+
+// Typography - Heading Attr - h1, h2, h3, h4, h5, h6
+// --------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %headings;
+  margin-bottom: $headings-margin-bottom;
+}
+
+//Typography - Headings
+//--------------------------------------------------------------------------
+
+.headings-1 {
+  @extend %headings-1;
+}
+.headings-2 {
+  @extend %headings-2;
+}
+.headings-3 {
+  @extend %headings-3;
+}
+.headings-4 {
+  @extend %headings-4;
+}
+.headings-5 {
+  @extend %headings-5;
+}
+.headings-6 {
+  @extend %headings-6;
+}
+
+
+//Typography - Base Text
+//--------------------------------------------------------------------------
+
+.base-text-1 {
+  @extend %base-text-1;
+}
+.base-text-2 {
+  @extend %base-text-2;
+}
+.base-text-3 {
+  @extend %base-text-3;
+}
+.base-text-4 {
+  @extend %base-text-4;
+}
+.base-text-5 {
+  @extend %base-text-5;
+}
+
+//Typography - Link
+//--------------------------------------------------------------------------
+
+.link-default {
+  @extend %link-default;
+}

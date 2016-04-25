@@ -1,51 +1,112 @@
 // --------------------------------------------------------------------------
-// Typography
+/// Typography
 // --------------------------------------------------------------------------
 
-// Typography - Heading Attr - h1, h2, h3, h4, h5, h6
+@import "_variables";
+
+// Typography - Headings
 // --------------------------------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
-  @extend %headings;
+%headings {
+  color: $headings-font-color;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
   margin-bottom: $headings-margin-bottom;
 }
 
-//Typography - Headings
-//--------------------------------------------------------------------------
-
-.headings-1 {
-  @extend %headings-1;
-}
-.headings-2 {
-  @extend %headings-2;
-}
-.headings-3 {
-  @extend %headings-3;
-}
-.headings-4 {
-  @extend %headings-4;
-}
-.headings-5 {
-  @extend %headings-5;
-}
-.headings-6 {
-  @extend %headings-6;
+%headings-1 {
+  @extend %headings;
+  font-size:   $headings-h1-font-size;
+  line-height: $headings-h1-line-height;
 }
 
-
-//Typography - Base Text
-//--------------------------------------------------------------------------
-
-.base-text-1 {
-  @extend %base-text-1;
-}
-.base-text-2 {
-  @extend %base-text-2;
-}
-.base-text-3 {
-  @extend %base-text-3;
-}
-.base-text-4 {
-  @extend %base-text-4;
+%headings-2 {
+  @extend %headings;
+  font-size:   $headings-h2-font-size;
+  line-height: $headings-h2-line-height;
 }
 
+%headings-3 {
+  @extend %headings;
+  font-size:   $headings-h3-font-size;
+  line-height: $headings-h3-line-height;
+}
+
+%headings-4 {
+  @extend %headings;
+  font-size:   $headings-h4-font-size;
+  line-height: $headings-h4-line-height;
+}
+
+%headings-5 {
+  @extend %headings;
+  font-size:   $headings-h5-font-size;
+  line-height: $headings-h5-line-height;
+}
+
+%headings-6 {
+  @extend %headings;
+  font-size:   $headings-h6-font-size;
+  line-height: $headings-h6-line-height;
+}
+
+// Typography - Base Text
+// --------------------------------------------------------------------------
+
+%base-text {
+  color: $base-text-color ;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+}
+
+%base-text-1 {
+  @extend %base-text;
+  font-size:   $base-text-1-font-size;
+  line-height: $base-text-1-line-height;
+}
+
+%base-text-2 {
+  @extend %base-text;
+  font-size:   $base-text-2-font-size;
+  line-height: $base-text-2-line-height;
+}
+
+%base-text-3 {
+  @extend %base-text;
+  font-size:   $base-text-3-font-size;
+  line-height: $base-text-3-line-height;
+}
+
+%base-text-4 {
+  @extend %base-text;
+  font-size:   $base-text-4-font-size;
+  line-height: $base-text-4-line-height;
+}
+
+%base-text-5 {
+  @extend %base-text;
+  font-size:   $base-text-5-font-size;
+  line-height: $base-text-5-line-height;
+}
+
+// Link
+// --------------------------------------------------------------------------
+
+%link-hover {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%link-color {
+  color: $link-color;
+}
+
+%link-default {
+  @extend %link-color;
+  @extend %link-hover;
+   //para evitar conflito nos outros projetos
+  text-transform: inherit;
+}

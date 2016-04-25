@@ -3,9 +3,7 @@
 
 @import "structure/template";
 
-@import "base/color/color";
-
-@import "objects/card-category/card-category";
-@import "objects/heading-line/heading-line";
-@import "objects/list/_list";
+@import "atoms/color/_color";
+@import "atoms/typography/_typography";
+@import "atoms/icons/_icons";
 
