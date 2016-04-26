@@ -5,6 +5,16 @@ h3.mad-content-sub-title Input Text
 	input.form-input(type="text" id="email" placeholder="Enter email")
 	label.form-label(for="email") Email
 
+h3.mad-content-sub-title Input Text MUTED
+.form-group
+	input.form-text-muted(type="text" id="email" placeholder="Enter email")
+	label.form-label(for="email") Email
+
+h3.mad-content-sub-title Input TextBlock
+.form-group
+	input.form-input-block(type="text" id="email" placeholder="Enter email")
+	label.form-label(for="email") Email
+
 :markdown
 	```
 		<div class="form-group">
@@ -16,7 +26,7 @@ h3.mad-content-sub-title Input Text
 
 h3.mad-content-sub-title Input Textarea
 .form-group
-	input.form-input-textarea(type="text" id="exampleTextarea" placeholder="Example textarea")
+	textarea.form-input-textarea.materialize-textarea(id="exampleTextarea" placeholder="Example textarea" autocomplete="off")
 	label.form-label(for="exampleTextarea") Example textarea
 
 :markdown

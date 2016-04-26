@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------------
+// Icons - Magicons
+// --------------------------------------------------------------------------
+
+$version-fontmagicons: '86wjta';
+
+$path-font: '/source/style/04-base/icons/magicons';
+
+@font-face {
+    font-family: 'magicons';
+    src:    url($path-font+'/magicons.eot?'+$version-fontmagicons);
+    src:    url($path-font+'/magicons.eot?'+$version-fontmagicons+'#iefix') format('embedded-opentype'),
+        url($path-font+'/magicons.ttf?'+$version-fontmagicons) format('truetype'),
+        url($path-font+'/magicons.woff?'+$version-fontmagicons) format('woff'),
+        url($path-font+'/magicons.svg?'+$version-fontmagicons+'#magicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
