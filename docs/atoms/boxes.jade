@@ -1,0 +1,23 @@
+h3.mad-content-title Boxes
+
+.box
+  p box com shadow sem hover
+  p box com shadow sem hover
+  p box com shadow sem hover
+
+.box-hover
+  p box com shadow com hover
+  p box com shadow com hover
+  p box com shadow com hover
+
+:markdown
+  ```
+    .box {
+      @extend %box;
+    }
+
+    .box-hover {
+      @extend %box;
+      @extend %shadow-hover;
+    }
+  ```

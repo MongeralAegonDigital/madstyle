@@ -1,0 +1,7 @@
+// --------------------------------------------------------------------------
+// Transitions
+// --------------------------------------------------------------------------
+
+@mixin transition($transition-property: all, $transition-duration: .2s, $transition-timing-function: ease-in-out, $transition-delay: 0s) {
+	transition: $transition-property $transition-duration $transition-timing-function $transition-delay;
+}

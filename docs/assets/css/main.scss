@@ -8,10 +8,9 @@
 
 @import "source/style/03-tools/_functions";
 @import "source/style/03-tools/_mixins";
+@import "source/style/03-tools/_placeholders";
 
-@import "source/style/04-base/_transitions";
-
-@import "source/style/04-base/color/_variables-color";
+@import "source/style/04-base/color/_variables";
 @import "source/style/04-base/color/_color";
 
 @import "source/style/04-base/fonts/_titillium";
@@ -23,17 +22,13 @@
 
 @import "source/style/04-base/icons/_icons";
 
-@import "source/style/04-base/alerts/_variables-alerts";
+@import "source/style/04-base/alerts/_variables";
 @import "source/style/04-base/alerts/_alerts";
 
-@import "source/style/04-base/buttons/_variables-buttons";
-@import "source/style/04-base/buttons/placeholder/_buttons";
-@import "source/style/04-base/buttons/_buttons-documentation";
+@import "source/style/04-base/buttons/_variables";
 @import "source/style/04-base/buttons/_buttons";
 
-@import "source/style/04-base/boxes/_variables-shadows";
 @import "source/style/04-base/boxes/_boxes";
-@import "source/style/04-base/boxes/_shadows";
 
 // Importing elements from docs
 @import "structure/template";
@@ -42,4 +37,8 @@
 @import "atoms/typography/_typography";
 @import "atoms/icons/_icons";
 @import "atoms/forms/_forms";
+@import "atoms/buttons/_buttons";
+@import "atoms/fonts/_fonts";
+@import "atoms/boxes/_boxes";
+@import "atoms/alerts/_alerts";
 

@@ -1,0 +1,27 @@
+// --------------------------------------------------------------------------
+// Alerts Style
+// --------------------------------------------------------------------------
+
+.alert-default {
+  @extend %alert-default;
+}
+
+.alert-success {
+  @extend %alert-success;
+}
+
+.alert-danger {
+  @extend %alert-danger;
+}
+
+.alert-warning {
+  @extend %alert-warning;
+}
+
+.alert-info {
+  @extend %alert-info;
+}
+
+.alert-dismissible {
+  @extend %alert-dismissible;
+}

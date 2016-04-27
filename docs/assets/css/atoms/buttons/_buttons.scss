@@ -1,0 +1,174 @@
+// --------------------------------------------------------------------------
+// Button Style
+// --------------------------------------------------------------------------
+
+.btn-call-to-action {
+
+  &-icon {
+
+    &--small {
+      @include set-styles("red", "small");
+      @include x-icon( icon-shopping111 );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("red", "small");
+  }
+  
+  &--medium {
+    @include set-styles("red", "medium");
+  }
+  
+  &--large {
+    @include set-styles("red", "large");
+  }
+}
+
+.btn-simulation {
+
+  &-icon {
+
+    &--small {
+      @include set-styles("green", "small");
+      @include x-icon( icon-shopping111, $position: "right" );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("green", "small");
+  }
+  
+  &--medium {
+    @include set-styles("green", "medium");
+  }
+  
+  &--large {
+    @include set-styles("green", "large");
+  }
+}
+
+.btn-call-to-action-two {
+
+  &-icon {
+
+    &--small {
+      @include set-styles("green", "small");
+      @include x-icon( icon-shopping111, $position: "right" );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("orange", "small");
+  }
+  
+  &--medium {
+    @include set-styles("orange", "medium");
+  }
+  
+  &--large {
+    @include set-styles("orange", "large");
+  }
+}
+
+.btn-send {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("blue", "small");
+  }
+  
+  &--medium {
+    @include set-styles("blue", "medium");
+  }
+  
+  &--large {
+    @include set-styles("blue", "large");
+  }
+}
+
+.btn-cancel {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("gray", "small");
+  }
+  
+  &--medium {
+    @include set-styles("gray", "medium");
+  }
+  
+  &--large {
+    @include set-styles("gray", "large");
+  }
+}
+
+.btn-secundary-one {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("ghost", "small");
+  }
+  
+  &--medium {
+    @include set-styles("ghost", "medium");
+  }
+  
+  &--large {
+    @include set-styles("ghost", "large");
+  }
+}
+
+.btn-secundary-two {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include set-styles("gray-white", "small");
+  }
+  
+  &--medium {
+    @include set-styles("gray-white", "medium");
+  }
+  
+  &--large {
+    @include set-styles("gray-white", "large");
+  }
+}
