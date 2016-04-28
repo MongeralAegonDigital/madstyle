@@ -15,7 +15,9 @@
 
 @import "source/style/04-base/fonts/_titillium";
 
-@import "source/style/04-base/forms/_variables-forms";
+@import "source/style/04-base/buttons/_variables";
+@import "source/style/04-base/buttons/_buttons";
+
 @import "source/style/04-base/forms/_forms";
 
 @import "source/style/04-base/typography/_typography";
@@ -25,8 +27,6 @@
 @import "source/style/04-base/alerts/_variables";
 @import "source/style/04-base/alerts/_alerts";
 
-@import "source/style/04-base/buttons/_variables";
-@import "source/style/04-base/buttons/_buttons";
 
 @import "source/style/04-base/boxes/_boxes";
 

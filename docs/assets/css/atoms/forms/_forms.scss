@@ -2,24 +2,24 @@
 // Forms
 // --------------------------------------------------------------------------
 
-label {
-    @extend %label;
-}
+// label {
+//     @extend %label;
+// }
 
-.form-group {
-    @extend %form-group;
-}
+// .form-group {
+//     @extend %form-group;
+// }
 
-.form-input {
-    @extend %form-input-line;
-    height: $input-height;
-    padding: $input-padding;
-}
+// .form-input {
+//     @extend %form-input-line;
+//     height: $input-height;
+//     padding: $input-padding;
+// }
 
-.form-input-block {
-    @extend %form-input-block;
-}
+// .form-input-block {
+//     @extend %form-input-block;
+// }
 
-.form-input-textarea {
-    @extend %form-input-textarea;
-}
+// .form-input-textarea {
+//     @extend %form-input-textarea;
+// }

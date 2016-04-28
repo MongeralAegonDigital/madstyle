@@ -1,27 +1,16 @@
 // --------------------------------------------------------------------------
-/// Forms
+// Label
 // --------------------------------------------------------------------------
+@import "_variables";
 
-::-webkit-input-placeholder {
-    color: #d1d1d1
-}
-:-moz-placeholder {
-    color: #d1d1d1
-}
-::-moz-placeholder {
-    color: #d1d1d1
-}
-:-ms-input-placeholder {
-    color: #d1d1d1
+label {
+  font-size: $label-font-size;
+  color: $input-border-color;
 }
 
-.form {
-  margin-top: 50px;
-}
-
-@import 'forms-types/label';
-@import 'forms-types/input-fields';
-@import 'forms-types/radio-buttons';
-@import 'forms-types/checkboxes';
-@import 'forms-types/select';
-//@import 'forms-types/file-input';
+@import 'fields/input-fields';
+@import 'fields/radio-buttons';
+@import 'fields/checkboxes';
+@import 'fields/switches';
+@import 'fields/select';
+@import 'fields/file-input';

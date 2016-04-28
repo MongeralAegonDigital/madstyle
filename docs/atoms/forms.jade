@@ -1,17 +1,17 @@
 h3.mad-content-title Forms
 
 h3.mad-content-sub-title Input Text
-.form-group
-	input.form-input(type="text" id="email" placeholder="Enter email")
-	label.form-label(for="email") Email
+.input-field
+	input(type="text" id="email")
+	label(for="email") Email
 
 h3.mad-content-sub-title Input Text MUTED
-.form-group
+.input-field
 	input.form-text-muted(type="text" id="email" placeholder="Enter email")
 	label.form-label(for="email") Email
 
 h3.mad-content-sub-title Input TextBlock
-.form-group
+.input-field
 	input.form-input-block(type="text" id="email" placeholder="Enter email")
 	label.form-label(for="email") Email
 
@@ -25,9 +25,9 @@ h3.mad-content-sub-title Input TextBlock
 	```
 
 h3.mad-content-sub-title Input Textarea
-.form-group
-	textarea.form-input-textarea.materialize-textarea(id="exampleTextarea" placeholder="Example textarea" autocomplete="off")
-	label.form-label(for="exampleTextarea") Example textarea
+.input-field
+	textarea.materialize-textarea(id="exampleTextarea" placeholder="Example textarea" autocomplete="off")
+	label(for="exampleTextarea") Example textarea
 
 :markdown
 	```
@@ -217,3 +217,28 @@ h3.mad-content-sub-title Input Select Multiple optgroup
 			<label>Optgroups</label>
 		</div>
 	```
+
+h3.mad-content-sub-title Switches
+
+.switch
+	label
+		| Off
+		input(checked='', type='checkbox')
+		span.lever
+		| On
+
+.switch
+	label
+		| Off
+		input(disabled='', type='checkbox')
+		span.lever
+		| On
+
+
+h3.mad-content-sub-title File Input
+.file-field.input-field
+	.btn-file
+		span Arquivo
+		input(type='file')
+	.file-path-wrapper
+		input.file-path.validate(type='text')
