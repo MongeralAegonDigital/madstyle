@@ -1,11 +1,35 @@
 // Importing elements from source
-@import "source/style/_style";
+@import "source/style/00-grid/neat";
 
+@import "source/style/01-settings/_variables";
+
+@import "source/style/02-generic/_reset";
+@import "source/style/02-generic/color/_color";
+@import "source/style/02-generic/fonts/_titillium";
+@import "source/style/02-generic/_general";
+
+@import "source/style/03-tools/_functions";
+@import "source/style/03-tools/_mixins";
+@import "source/style/03-tools/_placeholders";
+
+@import "source/style/04-base/buttons/_buttons";
+@import "source/style/04-base/forms/_forms";
+@import "source/style/04-base/typography/_typography";
+@import "source/style/04-base/icons/_icons";
+@import "source/style/04-base/alerts/_alerts";
+
+
+@import "source/style/04-base/boxes/_boxes";
+
+// Importing elements from docs
 @import "structure/template";
 
-@import "base/color/color";
-
-@import "objects/card-category/card-category";
-@import "objects/heading-line/heading-line";
-@import "objects/list/_list";
+@import "atoms/color/_color";
+@import "atoms/typography/_typography";
+@import "atoms/icons/_icons";
+@import "atoms/forms/_forms";
+@import "atoms/buttons/_buttons";
+@import "atoms/fonts/_fonts";
+@import "atoms/boxes/_boxes";
+@import "atoms/alerts/_alerts";
 

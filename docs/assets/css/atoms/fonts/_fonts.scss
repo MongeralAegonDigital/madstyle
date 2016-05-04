@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------
+// Font
+// --------------------------------------------------------------------------
+
+.font-title {
+
+  &--light {
+    @extend %headings-1;
+    font-family: $font-light;
+  }
+
+  &--regular {
+    @extend %headings-1;
+    font-family: $font-regular;
+  }
+
+  &--semibold {
+    @extend %headings-1;
+    font-family: $font-semibold;
+  }
+
+  &--bold {
+    @extend %headings-1;
+    font-family: $font-bold;
+  }
+}

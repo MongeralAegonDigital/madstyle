@@ -1,26 +1,11 @@
-- var atoms = public.source.style["04-base"]
-- var molecules = public.source.style["05-objects"]
-- var organisms = public.source.style["06-components"]
+- var atoms = public.docs.atoms._contents
 
 aside.mad-sidebar
-	nav
-		p.list-sidebar__title Átomos
-		ul.list-sidebar
-			each value, key in atoms
-				li.list-sidebar__item
-					a.list-sidebar__link(href="##{key}")=key
-
-	nav
-		p.list-sidebar__title Moléculas
-		ul.list-sidebar
-			each value, key in molecules
-				li.list-sidebar__item
-					a.list-sidebar__link(href="##{key}")=key
-
-	nav
-		p.list-sidebar__title Organismos
-		ul.list-sidebar
-			each value, key in organisms
-				li.list-sidebar__item
-					a.list-sidebar__link(href="##{key}")=key
+    nav
+        p.list-sidebar__title Átomos
+        ul.list-sidebar
+            each value, key in atoms
+                - var atom = value.split('.')[0]
+                li.list-sidebar__item
+                    a.list-sidebar__link(href="##{atom}")=atom
 

@@ -1,0 +1,45 @@
+h3.mad-content-title Alerts
+
+h4.mad-content-sub-success Parâmetros
+.mad-content-paraments
+	p "%alert-default" / "%alert-success" / "%alert-info" / "%alert-warning" / "%alert-danger"
+
+h3.mad-content-sub-title Alerts Text Close
+.alert-warning.alert-dismissible
+	button.close(type="button" data-dismiss="alert" aria-label="Close")
+		span &times;
+	strong Warning!
+	| Better check yourself, you're not looking too good.
+
+h3.mad-content-sub-title Alerts Text
+.alert-default
+	| default...
+.alert-success
+	| success...
+.alert-info
+	| info...
+.alert-warning
+	| warning...
+.alert-danger
+	| danger...
+
+//- h3.mad-content-sub-title Alert Link
+//- .alert-success
+//- 	a.alert-link success...
+
+//- .alert-info
+//- 	a.alert-link info...
+
+//- .alert-warning
+//- 	a.alert-link warning...
+
+//- .alert-danger
+//- 	a.alert-link danger...
+
+:markdown
+	```
+		.alert-default {
+			@extend %alert-default;
+		}
+	```
+

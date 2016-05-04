@@ -42,9 +42,9 @@
         });
 
         // Reset select
-        formReset.find('select.input-select-initialized').each(function () {
+        formReset.find('select.initialized').each(function () {
           var reset_text = formReset.find('option[selected]').text();
-          formReset.siblings('input.form-select-dropdown').val(reset_text);
+          formReset.siblings('input.select-dropdown').val(reset_text);
         });
       }
     });
@@ -100,7 +100,7 @@
         $(this).addClass('tabbed');
         var $this = $(this);
         $this.one('blur', function(e) {
-
+          
           $(this).removeClass('tabbed');
         });
         return;
@@ -292,20 +292,20 @@
         $select.parent().find('input').remove();
 
         $select.unwrap();
-        $('ul#data-select-options-'+lastID).remove();
+        $('ul#select-options-'+lastID).remove();
       }
 
       // If destroying the select, remove the selelct-id and reset it to it's uninitialized state.
       if(callback === 'destroy') {
-        $select.data('select-id', null).removeClass('input-select-initialized');
+        $select.data('select-id', null).removeClass('initialized');
         return;
       }
 
       var uniqueID = Materialize.guid();
       $select.data('select-id', uniqueID);
-      var wrapper = $('<div class="form-select-wrapper"></div>');
+      var wrapper = $('<div class="select-wrapper"></div>');
       wrapper.addClass($select.attr('class'));
-      var options = $('<ul id="data-select-options-' + uniqueID +'" class="dropdown-content form-select-dropdown ' + (multiple ? 'multiple-form-select-dropdown' : '') + '"></ul>'),
+      var options = $('<ul id="select-options-' + uniqueID +'" class="dropdown-content select-dropdown ' + (multiple ? 'multiple-select-dropdown' : '') + '"></ul>'),
           selectChildren = $select.children('option, optgroup'),
           valuesSelected = [],
           optionsHover = false;
@@ -403,7 +403,7 @@
       // escape double quotes
       var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
 
-      var $newSelect = $('<input type="text" class="form-select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="data-select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
+      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
       $select.before($newSelect);
       $newSelect.before(dropdownIcon);
 
@@ -418,12 +418,12 @@
         $($newSelect[0]).attr('tabindex', $select.attr('tabindex'));
       }
 
-      $select.addClass('input-select-initialized');
+      $select.addClass('initialized');
 
       $newSelect.on({
         'focus': function (){
-          if ($('ul.form-select-dropdown').not(options[0]).is(':visible')) {
-            $('input.form-select-dropdown').trigger('close');
+          if ($('ul.select-dropdown').not(options[0]).is(':visible')) {
+            $('input.select-dropdown').trigger('close');
           }
           if (!options.is(':visible')) {
             $(this).trigger('open', ['focus']);
@@ -589,7 +589,7 @@
         value = select.find('option:disabled').eq(0).text();
       }
 
-      select.siblings('input.form-select-dropdown').val(value);
+      select.siblings('input.select-dropdown').val(value);
     }
   };
 

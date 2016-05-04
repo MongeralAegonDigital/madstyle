@@ -1,0 +1,174 @@
+// --------------------------------------------------------------------------
+// Button Style
+// --------------------------------------------------------------------------
+
+.btn-call-to-action {
+
+  &-icon {
+
+    &--small {
+      @include buttons("red", "small");
+      @include x-icon( icon-shopping111 );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("red", "small");
+  }
+  
+  &--medium {
+    @include buttons("red", "medium");
+  }
+  
+  &--large {
+    @include buttons("red", "large");
+  }
+}
+
+.btn-simulation {
+
+  &-icon {
+
+    &--small {
+      @include buttons("green", "small");
+      @include x-icon( icon-shopping111, $position: "right" );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("green", "small");
+  }
+  
+  &--medium {
+    @include buttons("green", "medium");
+  }
+  
+  &--large {
+    @include buttons("green", "large");
+  }
+}
+
+.btn-call-to-action-two {
+
+  &-icon {
+
+    &--small {
+      @include buttons("green", "small");
+      @include x-icon( icon-shopping111, $position: "right" );
+    }
+  }
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("orange", "small");
+  }
+  
+  &--medium {
+    @include buttons("orange", "medium");
+  }
+  
+  &--large {
+    @include buttons("orange", "large");
+  }
+}
+
+.btn-send {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("blue", "small");
+  }
+  
+  &--medium {
+    @include buttons("blue", "medium");
+  }
+  
+  &--large {
+    @include buttons("blue", "large");
+  }
+}
+
+.btn-cancel {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("gray", "small");
+  }
+  
+  &--medium {
+    @include buttons("gray", "medium");
+  }
+  
+  &--large {
+    @include buttons("gray", "large");
+  }
+}
+
+.btn-secundary-one {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("ghost", "small");
+  }
+  
+  &--medium {
+    @include buttons("ghost", "medium");
+  }
+  
+  &--large {
+    @include buttons("ghost", "large");
+  }
+}
+
+.btn-secundary-two {
+
+  &--small,
+  &--medium,
+  &--large {
+    margin-right: 15px;
+  }
+  
+  &--small {
+    @include buttons("gray-white", "small");
+  }
+  
+  &--medium {
+    @include buttons("gray-white", "medium");
+  }
+  
+  &--large {
+    @include buttons("gray-white", "large");
+  }
+}

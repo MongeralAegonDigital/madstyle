@@ -1,12 +1,83 @@
 // --------------------------------------------------------------------------
 //Button Style
 // --------------------------------------------------------------------------
+@import "source/style/04-base/buttons/_variables";
+
+%btn {
+    @extend %shadow;
+    border: $button-border-width solid transparent;
+    border-radius: $button-border-radius;
+    font-weight: $button-font-weight;
+    font-family: $button-font-family;
+    line-height: $button-height;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+@each $btn-types, $btn-type in $btn-types {
+    $border: map-get($btn-type, border);
+
+    %btn-#{$btn-types} {
+        @extend %btn;
+        background-color:  map-get($btn-type, background-color);
+        color: map-get($btn-type, color);
+        
+        // Somente se o botão tiver uma borda
+        @if $border {
+            border: map-get($btn-type, border);
+        }
+
+        &:hover{
+            background-color: map-get($btn-type, background-color-hover);
+            color: map-get($btn-type, color-hover);
+        }
+        &:active{
+            background-color: map-get($btn-type, background-color-active);
+            color: map-get($btn-type, color-active);
+        }
+    }
+}
+
+@mixin buttons($btn-types, $btn-width: "medium") {
+    @extend %btn-#{$btn-types};
+
+    @if $btn-width == "large" {
+        $button-padding-y: $button-padding-large-y;
+        $button-padding-x: $button-padding-large-x;
+        $button-font-size: $button-font-size-large;
+    } @else if ($btn-width == "small") {
+        $button-padding-y: $button-padding-small-y;
+        $button-padding-x: $button-padding-small-x;
+        $button-font-size: $button-font-size-small;
+    } @else {
+        $button-padding-y: $button-padding-medium-y;
+        $button-padding-x: $button-padding-medium-x;
+        $button-font-size: $button-font-size-medium;
+    }
+    padding: $button-padding-y $button-padding-x;
+    font-size: $button-font-size;
+}
+
 //---------------------------------------------------------------------
-// HTML
+// Block button
 //---------------------------------------------------------------------
-// .nome-card {
-//   @include set-styles("blue");
-// }
-// .nome-card {
-//   @include set-styles("blue","large");
-// }
+%btn-block {
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+    // Vertically space out multiple block buttons
+    .btn-block + .btn-block {
+        margin-top: 5px;
+    }
+}
+
