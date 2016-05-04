@@ -1,9 +1,7 @@
 // --------------------------------------------------------------------------
 // Color
 // --------------------------------------------------------------------------
-// background-color: core-color('aux-five');
-// background-color: core-color('aux-five', $opacity: 'light');
-// background-color: core-color('aux-five', 'aux-10');
+@import "source/style/02-generic/color/_variables";
 
 @function core-color($name: 'primary', $variant: $core-color-key, $opacity: 1) {
   $color: null;

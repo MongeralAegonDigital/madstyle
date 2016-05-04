@@ -1,10 +1,6 @@
 // --------------------------------------------------------------------------
 // Color
 // --------------------------------------------------------------------------
-// background-color: core-color('aux-five');
-// background-color: core-color('aux-five', $opacity: 'light');
-// background-color: core-color('aux-five', 'aux-10');
-
 $color-primary: #006db2;
 $aux-one:   #00a7e5; //blue light
 $aux-two:   #f44336; //red
@@ -26,15 +22,11 @@ $btn-four :   $aux-four; //green
 $btn-five :   $aux-five; //gray
 $btn-six  :   $aux-seven; //gray white light
 
-
-
 $core-opacity: (
   'light': 0.8, // opacity used with lighter colors
   'dark': 0.4,  // opacity used with darker colors
   // ... etc.
 );
-
-
 
 $core-color-key: 'base' !default;
 $core-colors: (

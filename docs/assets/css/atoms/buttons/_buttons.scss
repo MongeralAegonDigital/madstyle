@@ -7,7 +7,7 @@
   &-icon {
 
     &--small {
-      @include set-styles("red", "small");
+      @include buttons("red", "small");
       @include x-icon( icon-shopping111 );
     }
   }
@@ -19,15 +19,15 @@
   }
   
   &--small {
-    @include set-styles("red", "small");
+    @include buttons("red", "small");
   }
   
   &--medium {
-    @include set-styles("red", "medium");
+    @include buttons("red", "medium");
   }
   
   &--large {
-    @include set-styles("red", "large");
+    @include buttons("red", "large");
   }
 }
 
@@ -36,7 +36,7 @@
   &-icon {
 
     &--small {
-      @include set-styles("green", "small");
+      @include buttons("green", "small");
       @include x-icon( icon-shopping111, $position: "right" );
     }
   }
@@ -48,15 +48,15 @@
   }
   
   &--small {
-    @include set-styles("green", "small");
+    @include buttons("green", "small");
   }
   
   &--medium {
-    @include set-styles("green", "medium");
+    @include buttons("green", "medium");
   }
   
   &--large {
-    @include set-styles("green", "large");
+    @include buttons("green", "large");
   }
 }
 
@@ -65,7 +65,7 @@
   &-icon {
 
     &--small {
-      @include set-styles("green", "small");
+      @include buttons("green", "small");
       @include x-icon( icon-shopping111, $position: "right" );
     }
   }
@@ -77,15 +77,15 @@
   }
   
   &--small {
-    @include set-styles("orange", "small");
+    @include buttons("orange", "small");
   }
   
   &--medium {
-    @include set-styles("orange", "medium");
+    @include buttons("orange", "medium");
   }
   
   &--large {
-    @include set-styles("orange", "large");
+    @include buttons("orange", "large");
   }
 }
 
@@ -98,15 +98,15 @@
   }
   
   &--small {
-    @include set-styles("blue", "small");
+    @include buttons("blue", "small");
   }
   
   &--medium {
-    @include set-styles("blue", "medium");
+    @include buttons("blue", "medium");
   }
   
   &--large {
-    @include set-styles("blue", "large");
+    @include buttons("blue", "large");
   }
 }
 
@@ -119,15 +119,15 @@
   }
   
   &--small {
-    @include set-styles("gray", "small");
+    @include buttons("gray", "small");
   }
   
   &--medium {
-    @include set-styles("gray", "medium");
+    @include buttons("gray", "medium");
   }
   
   &--large {
-    @include set-styles("gray", "large");
+    @include buttons("gray", "large");
   }
 }
 
@@ -140,15 +140,15 @@
   }
   
   &--small {
-    @include set-styles("ghost", "small");
+    @include buttons("ghost", "small");
   }
   
   &--medium {
-    @include set-styles("ghost", "medium");
+    @include buttons("ghost", "medium");
   }
   
   &--large {
-    @include set-styles("ghost", "large");
+    @include buttons("ghost", "large");
   }
 }
 
@@ -161,14 +161,14 @@
   }
   
   &--small {
-    @include set-styles("gray-white", "small");
+    @include buttons("gray-white", "small");
   }
   
   &--medium {
-    @include set-styles("gray-white", "medium");
+    @include buttons("gray-white", "medium");
   }
   
   &--large {
-    @include set-styles("gray-white", "large");
+    @include buttons("gray-white", "large");
   }
 }

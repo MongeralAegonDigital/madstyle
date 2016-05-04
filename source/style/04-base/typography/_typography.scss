@@ -6,10 +6,13 @@
 
 // Typography - Headings
 // --------------------------------------------------------------------------
+@mixin headings($size, $font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings-#{$size};
+  font-family: $font-family;
+  color: $color;
+}
 
 %headings {
-  color: $headings-font-color;
-  font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   margin-bottom: $headings-margin-bottom;
 }
@@ -52,10 +55,13 @@
 
 // Typography - Base Text
 // --------------------------------------------------------------------------
+@mixin base-text($size, $font-family: $base-font-family, $color: $base-text-color) {
+  @extend %base-text-#{$size};
+  font-family: $font-family;
+  color: $color;
+}
 
 %base-text {
-  color: $base-text-color ;
-  font-family: $base-font-family;
   font-weight: $base-font-weight;
 }
 
@@ -91,22 +97,23 @@
 
 // Link
 // --------------------------------------------------------------------------
+@mixin link($color: $link-color, $color-hover: null) {
+  @extend %link;
+  color: $color;
 
-%link-hover {
+  @if $color-hover {
+    &:hover {
+      color: $color-hover;
+    }  
+  }
+}
+
+%link {
   text-decoration: none;
+  //para evitar conflito nos outros projetos
+  text-transform: inherit;
 
   &:hover {
     text-decoration: underline;
   }
-}
-
-%link-color {
-  color: $link-color;
-}
-
-%link-default {
-  @extend %link-color;
-  @extend %link-hover;
-   //para evitar conflito nos outros projetos
-  text-transform: inherit;
 }

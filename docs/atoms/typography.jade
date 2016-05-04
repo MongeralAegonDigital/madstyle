@@ -9,6 +9,14 @@ h1.headings-4 Mag Style title 4
 h1.headings-5 Mag Style title 5
 h1.headings-6 Mag Style title 6
 
+:markdown
+  ```
+    .headings-1 {
+      @include headings("1", $font-family: "Arial", $color: red);
+    }
+  ```
+
+
 h3.mad-content-sub-title Base Text
 
 p.base-text-1  Mag Style text 1
@@ -17,6 +25,33 @@ p.base-text-3  Mag Style text 3
 p.base-text-4  Mag Style text 4
 p.base-text-5  Mag Style text 5
 
+:markdown
+  ```
+    .base-text-1 {
+      @include base-text("1", $font-family: "Arial", $color: red);
+    }
+  ```
+
 h3.mad-content-sub-title Link
 
-a.link-default(href='#') Mag link
+p
+    a.link-default(href='#') Mag link
+p
+    a.link-custom(href='#') Mag Custom
+p
+    a.link-custom2(href='#') Mag Custom2
+
+:markdown
+  ```
+    .link-default {
+      @include link();
+    }
+
+    .link-custom {
+      @include link($color: red);
+    }
+
+    .link-custom2 {
+      @include link($color: green, $color-hover: blue);
+    }
+  ```

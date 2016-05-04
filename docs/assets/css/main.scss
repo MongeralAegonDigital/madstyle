@@ -4,27 +4,18 @@
 @import "source/style/01-settings/_variables";
 
 @import "source/style/02-generic/_reset";
+@import "source/style/02-generic/color/_color";
+@import "source/style/02-generic/fonts/_titillium";
 @import "source/style/02-generic/_general";
 
 @import "source/style/03-tools/_functions";
 @import "source/style/03-tools/_mixins";
 @import "source/style/03-tools/_placeholders";
 
-@import "source/style/04-base/color/_variables";
-@import "source/style/04-base/color/_color";
-
-@import "source/style/04-base/fonts/_titillium";
-
-@import "source/style/04-base/buttons/_variables";
 @import "source/style/04-base/buttons/_buttons";
-
 @import "source/style/04-base/forms/_forms";
-
 @import "source/style/04-base/typography/_typography";
-
 @import "source/style/04-base/icons/_icons";
-
-@import "source/style/04-base/alerts/_variables";
 @import "source/style/04-base/alerts/_alerts";
 
 

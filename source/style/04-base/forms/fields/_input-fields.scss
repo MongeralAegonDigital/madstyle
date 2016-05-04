@@ -4,19 +4,19 @@
 /* Style Placeholders */
 
 ::-webkit-input-placeholder {
-  color: $placeholder-text-color;
+  color:  core-color('aux-six');
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: $placeholder-text-color;
+  color:  core-color('aux-six');
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: $placeholder-text-color;
+  color:  core-color('aux-six');
 }
 
 :-ms-input-placeholder {
-  color: $placeholder-text-color;
+  color:  core-color('aux-six');
 }
 
 /* Text inputs */
@@ -142,7 +142,7 @@ textarea.materialize-textarea {
     color: $input-border-color;
     position: absolute;
     left: 0;
-    top: 0.6rem;
+    top: 0;
     font-size: 1rem;
     cursor: text;
     transition: .2s ease-out;
@@ -236,6 +236,7 @@ textarea {
   width: 100%;
   height: $input-height;
   background-color: transparent;
+  font-family: $font-family-primary;
 
   &.materialize-textarea {
     overflow-y: hidden; /* prevents scroll bar flash */

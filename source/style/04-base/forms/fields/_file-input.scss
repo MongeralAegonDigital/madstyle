@@ -13,7 +13,7 @@
   input.file-path { width: 100%; }
 
   .btn-file {
-    @include set-styles("green", "small");
+    @include buttons("green", "small");
     float: left;
     cursor: pointer;
   }

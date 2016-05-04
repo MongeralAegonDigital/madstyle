@@ -15,10 +15,11 @@ button.btn-call-to-action-icon--small(type='button') red - small
 :markdown
   ```
     .btn-call-to-action--large {
-      @include set-styles("red", "large");
+      @include buttons("red", "large");
     }
     
     .btn-call-to-action-icon--small {
+      @include buttons("red", "small");
       @include x-icon( icon-shopping111 );
     }
   ```
@@ -33,11 +34,11 @@ button.btn-simulation-icon--small(type='button') green - small
 :markdown
   ```
     .btn-simulation--large {
-      @include set-styles("green", "large");
+      @include buttons("green", "large");
     }
 
     .btn-simulation-icon--large {
-      @include set-styles("green", "small");
+      @include buttons("green", "small");
       @include x-icon( icon-shopping111, $position: "right" );
     }
   ```
@@ -51,7 +52,7 @@ button.btn-call-to-action-two--small(type='button') orange - small
 :markdown
   ```
     .btn-call-to-action-two--large {
-      @include set-styles("orange", "large");
+      @include buttons("orange", "large");
     }
   ```
 
@@ -64,7 +65,7 @@ button.btn-send--large(type='button') blue - large
 :markdown
   ```
     .btn-send--large {
-      @include set-styles("blue", "large");
+      @include buttons("blue", "large");
     }
   ```
 
@@ -77,7 +78,7 @@ button.btn-cancel--small(type='button') gray - small
 :markdown
   ```
     .btn-cancel--large {
-      @include set-styles("gray", "large");
+      @include buttons("gray", "large");
     }
   ```
 
@@ -90,7 +91,7 @@ button.btn-secundary-one--large(type='button') ghost - large
 :markdown
   ```
     .btn-secundary-one--small {
-      @include set-styles("ghost", "small");
+      @include buttons("ghost", "small");
     }
   ```
 
@@ -103,6 +104,6 @@ button.btn-secundary-two--small(type='button') gray-white - small
 :markdown
   ```
     .btn-secundary-two--large {
-      @include set-styles("gray-white", "large");
+      @include buttons("gray-white", "large");
     }
   ```

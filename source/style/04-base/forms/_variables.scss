@@ -150,7 +150,7 @@ $input-background: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
 $input-focus-color: $secondary-color !default;
-$input-font-size: 15px !default;
+$input-font-size: 16px !default;
 $input-margin: 0 0 15px 0 !default;
 $input-padding: 0 !default;
 $input-transition: all .3s !default;
@@ -159,7 +159,6 @@ $input-disabled-color: rgba(0,0,0, .26) !default;
 $input-disabled-solid-color: #BDBDBD !default;
 $input-disabled-border: 1px dotted $input-disabled-color !default;
 $input-invalid-border: 1px solid $input-error-color !default;
-$placeholder-text-color: lighten($input-border-color, 20%) !default;
 
 // Radio Buttons
 $radio-fill-color: $secondary-color !default;

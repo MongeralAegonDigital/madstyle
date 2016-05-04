@@ -1,13 +1,20 @@
 h3.mad-content-title Icons
 :markdown
   ```
-  .nome-da-sua-classe {
-    @include x-icon( insira-nome-icone-aqui );
+  .icon-assistencia-personal-care2 {
+    @include x-icon( icon-assistencia-personal-care2 );
   }
 
-  Exemplo:
   .meu-icon-shopping {
-    @include x-icon( icon-shopping111 );
+    @include x-icon( icon-shopping111, $position: right );
+  }
+
+  .meu-icon-shopping {
+    @include x-icon( icon-shopping111, $position: right, $margin: 20px );
+  }
+
+  .meu-icon-shopping {
+    @include x-icon( icon-shopping111, $position: right, $margin: 20px, $font-size: 50px );
   }
 
   ```

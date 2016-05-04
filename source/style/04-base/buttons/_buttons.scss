@@ -1,6 +1,7 @@
 // --------------------------------------------------------------------------
 //Button Style
 // --------------------------------------------------------------------------
+@import "source/style/04-base/buttons/_variables";
 
 %btn {
     @extend %shadow;
@@ -46,7 +47,7 @@
     }
 }
 
-@mixin set-styles($btn-types, $btn-width: "medium") {
+@mixin buttons($btn-types, $btn-width: "medium") {
     @extend %btn-#{$btn-types};
 
     @if $btn-width == "large" {
