@@ -9,6 +9,8 @@ $font-titillium-light:   'titilliumlight';
 
 $path-font: '/source/style/02-generic/fonts/titillium';
 
+$font-family-primary: $font-titillium-regular;
+
 @font-face {
     font-family: $font-titillium-bold;
     src: url($path-font+'/titillium-bold-webfont.eot');
