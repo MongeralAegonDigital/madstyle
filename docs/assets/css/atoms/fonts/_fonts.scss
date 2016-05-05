@@ -2,25 +2,48 @@
 // Font
 // --------------------------------------------------------------------------
 
-.font-title {
+.font-titillium-title {
 
   &--light {
     @extend %headings-1;
-    font-family: $font-light;
+    font-family: $font-titillium-light;
   }
 
   &--regular {
     @extend %headings-1;
-    font-family: $font-regular;
+    font-family: $font-titillium-regular;
   }
 
   &--semibold {
     @extend %headings-1;
-    font-family: $font-semibold;
+    font-family: $font-titillium-semibold;
   }
 
   &--bold {
     @extend %headings-1;
-    font-family: $font-bold;
+    font-family: $font-titillium-bold;
+  }
+}
+
+.font-opensans-title {
+
+  &--light {
+    @extend %headings-1;
+    font-family: $font-opensans-light;
+  }
+
+  &--regular {
+    @extend %headings-1;
+    font-family: $font-opensans-regular;
+  }
+
+  &--semibold {
+    @extend %headings-1;
+    font-family: $font-opensans-semibold;
+  }
+
+  &--bold {
+    @extend %headings-1;
+    font-family: $font-opensans-bold;
   }
 }

@@ -2,15 +2,15 @@
 // Fonts
 // --------------------------------------------------------------------------
 
-$font-bold:  'titillium_bdbold';
-$font-semibold:    'titilliumbold';
-$font-regular: 'titilliumregular';
-$font-light:   'titilliumlight';
+$font-titillium-bold:  'titillium_bdbold';
+$font-titillium-semibold:    'titilliumbold';
+$font-titillium-regular: 'titilliumregular';
+$font-titillium-light:   'titilliumlight';
 
 $path-font: '/source/style/02-generic/fonts/titillium';
 
 @font-face {
-    font-family: $font-bold;
+    font-family: $font-titillium-bold;
     src: url($path-font+'/titillium-bold-webfont.eot');
     src: url($path-font+'/titillium-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url($path-font+'/titillium-bold-webfont.woff2') format('woff2'),
@@ -23,7 +23,7 @@ $path-font: '/source/style/02-generic/fonts/titillium';
 }
 
 @font-face {
-    font-family: $font-semibold;
+    font-family: $font-titillium-semibold;
     src: url($path-font+'/titillium-semibold-webfont.eot');
     src: url($path-font+'/titillium-semibold-webfont.eot?#iefix') format('embedded-opentype'),
          url($path-font+'/titillium-semibold-webfont.woff2') format('woff2'),
@@ -36,7 +36,7 @@ $path-font: '/source/style/02-generic/fonts/titillium';
 }
 
 @font-face {
-    font-family: $font-regular;
+    font-family: $font-titillium-regular;
     src: url($path-font+'/titillium-regular-webfont.eot');
     src: url($path-font+'/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url($path-font+'/titillium-regular-webfont.woff2') format('woff2'),
@@ -49,7 +49,7 @@ $path-font: '/source/style/02-generic/fonts/titillium';
 }
 
 @font-face {
-    font-family: $font-light;
+    font-family: $font-titillium-light;
     src: url($path-font+'/titillium-light-webfont.eot');
     src: url($path-font+'/titillium-light-webfont.eot?#iefix') format('embedded-opentype'),
          url($path-font+'/titillium-light-webfont.woff2') format('woff2'),
@@ -64,25 +64,25 @@ $path-font: '/source/style/02-generic/fonts/titillium';
 
 @media screen and (-webkit-min-device-pixel-ratio:0){
     @font-face {
-        font-family: $font-bold;
+        font-family: $font-titillium-bold;
         src: url($path-font+'/titillium-bold-webfont.svg#titillium_bdbold') format('svg');
         font-weight:400;
     }
 
     @font-face {
-        font-family: $font-semibold;
+        font-family: $font-titillium-semibold;
         src: url($path-font+'/titillium-semibold-webfont.svg#titilliumbold') format('svg');
         font-weight:400;
     }
 
     @font-face {
-        font-family: $font-regular;
+        font-family: $font-titillium-regular;
         src: url($path-font+'/titillium-regular-webfont.svg#titilliumregular') format('svg');
         font-weight:400;
     }
 
     @font-face {
-        font-family: $font-light;
+        font-family: $font-titillium-light;
         src: url($path-font+'/titillium-light-webfont.svg#titilliumlight') format('svg');
         font-weight:700;
     }
