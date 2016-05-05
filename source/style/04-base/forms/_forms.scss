@@ -1,0 +1,16 @@
+// --------------------------------------------------------------------------
+// Label
+// --------------------------------------------------------------------------
+@import "_variables";
+
+label {
+  font-size: $label-font-size;
+  color: $input-border-color;
+}
+
+@import 'fields/input-fields';
+@import 'fields/radio-buttons';
+@import 'fields/checkboxes';
+@import 'fields/switches';
+@import 'fields/select';
+@import 'fields/file-input';

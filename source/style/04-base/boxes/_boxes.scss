@@ -5,7 +5,7 @@
 // Boxes
 // --------------------------------------------------------------------------
 
-%box-default {
-	@extend %shadow-default;
-	padding: 16px;  
+%box {
+	@extend %shadow;
+	padding: 16px;
 }

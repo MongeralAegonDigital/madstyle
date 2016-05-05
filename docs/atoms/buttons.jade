@@ -1,0 +1,109 @@
+h3.mad-content-title Buttons
+
+h4.mad-content-sub-title Parâmetros
+.mad-content-paraments
+  p Primeiro Parâmetro - "red" / "blue" / "orange" / "gray" / "green" / "disabled" / "gray-white" / "ghost"
+  p Segundo Parâmetro - "small" / "medium" / "large"
+
+h4.mad-content-sub-title Call to action 1
+
+button.btn-call-to-action--large(type='button') red - large
+button.btn-call-to-action--medium(type='button') red - medium
+button.btn-call-to-action--small(type='button') red - small
+button.btn-call-to-action-icon--small(type='button') red - small
+
+:markdown
+  ```
+    .btn-call-to-action--large {
+      @include buttons("red", "large");
+    }
+    
+    .btn-call-to-action-icon--small {
+      @include buttons("red", "small");
+      @include x-icon( icon-shopping111 );
+    }
+  ```
+
+h4.mad-content-sub-title Comprar, Simular
+
+button.btn-simulation--small(type='button') green - small
+button.btn-simulation--medium(type='button') green - medium 
+button.btn-simulation--large(type='button') green - large
+button.btn-simulation-icon--small(type='button') green - small
+
+:markdown
+  ```
+    .btn-simulation--large {
+      @include buttons("green", "large");
+    }
+
+    .btn-simulation-icon--large {
+      @include buttons("green", "small");
+      @include x-icon( icon-shopping111, $position: "right" );
+    }
+  ```
+
+h4.mad-content-sub-title Call to action 2
+
+button.btn-call-to-action-two--large(type='button') orange - large
+button.btn-call-to-action-two--medium(type='button') orange - medium
+button.btn-call-to-action-two--small(type='button') orange - small
+
+:markdown
+  ```
+    .btn-call-to-action-two--large {
+      @include buttons("orange", "large");
+    }
+  ```
+
+h4.mad-content-sub-title Enviar, Salvar, Cadastrar
+
+button.btn-send--small(type='button') blue - small
+button.btn-send--medium(type='button') blue - medium
+button.btn-send--large(type='button') blue - large
+
+:markdown
+  ```
+    .btn-send--large {
+      @include buttons("blue", "large");
+    }
+  ```
+
+h4.mad-content-sub-title Cancelar, Voltar
+
+button.btn-cancel--large(type='button') gray - large
+button.btn-cancel--medium(type='button') gray - medium
+button.btn-cancel--small(type='button') gray - small
+
+:markdown
+  ```
+    .btn-cancel--large {
+      @include buttons("gray", "large");
+    }
+  ```
+
+h4.mad-content-sub-title Secundário - Ghost
+
+button.btn-secundary-one--small(type='button') ghost - small 
+button.btn-secundary-one--medium(type='button') ghost - medium 
+button.btn-secundary-one--large(type='button') ghost - large
+
+:markdown
+  ```
+    .btn-secundary-one--small {
+      @include buttons("ghost", "small");
+    }
+  ```
+
+h4.mad-content-sub-title Secundário - Gray-White
+
+button.btn-secundary-two--large(type='button') gray-white - large
+button.btn-secundary-two--medium(type='button') gray-white - medium
+button.btn-secundary-two--small(type='button') gray-white - small
+
+:markdown
+  ```
+    .btn-secundary-two--large {
+      @include buttons("gray-white", "large");
+    }
+  ```

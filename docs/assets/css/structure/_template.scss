@@ -1,3 +1,8 @@
+// 
+body {
+  font-family: $font-opensans-regular;
+}
+
 // Header
 .mad-header {
 	padding: 2%;
@@ -19,10 +24,6 @@
 	@include span-columns(9);
 	@include shift(3);
 	padding: 2%;
-  p {
-    @extend %base-text-1;
-    color: core-color('aux-seven', 'aux-b60');
-  }
   pre {
     background: core-color('color-text-secundary', 'aux-10');
     color: #fff;
@@ -54,4 +55,42 @@
   border-bottom: 2px solid core-color('color-text-secundary', 'aux-b5');
   margin-bottom: 40px;
   padding-bottom: 70px;
+}
+.mad-atom-icon-ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  &:before,
+  &:after{
+    display: table;
+    content: " ";
+  }
+  &:after{
+    clear: both;
+  }
+}
+.mad-atom-icon-ul li {
+  float: left;
+  margin-bottom: 20px;
+  width: 10%;
+  height: 70px;
+  span {
+    font-size: 6px;
+    color: #757575;
+  }
+}
+
+.mad-content-paraments {
+  background-color: #FAF8F2;
+  border: 1px solid #efe8d5;
+  border-radius: .4rem;
+  padding: 10px;
+
+  p {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

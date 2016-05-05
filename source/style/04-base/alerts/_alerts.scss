@@ -1,16 +1,19 @@
 // --------------------------------------------------------------------------
 /// 04-base: Alerts
 // --------------------------------------------------------------------------
+@import "source/style/04-base/alerts/_variables";
 
 %alert {
+  @extend %shadow;
   border: $alert-border;
   border-radius: $alert-border-radius;
   padding: $alert-padding;
   margin-bottom: $alert-margin-bottom;
-  box-shadow: 2px 2px 1px -1px #ccc;
 }
+
 %alert-dismissible {
   padding-right: 35px;
+
   button.close{
     -webkit-appearance: none;
     padding: 0;
@@ -18,6 +21,7 @@
     background: 0 0;
     border: 0
   }
+
   .close {
     float: right;
     font-size: 21px;
@@ -30,6 +34,7 @@
     text-shadow: 0 1px 0 #fff;
     filter: alpha(opacity=20);
     opacity: .2;
+
     &:focus,
     &:hover {
       color: #000;

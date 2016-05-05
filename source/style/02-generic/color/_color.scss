@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------
+// Color
+// --------------------------------------------------------------------------
+@import "source/style/02-generic/color/_variables";
+
+@function core-color($name: 'primary', $variant: $core-color-key, $opacity: 1) {
+  $color: null;
+
+  // Get the color spectrum
+  $color-spectrum: map-get($core-colors, $name);
+
+  // Get the color variant
+  @if $color-spectrum {
+    $color: map-get($color-spectrum, $variant);
+  }
+
+  // Get the alpha setting
+  $alpha: if(type-of($opacity) == 'number', $opacity, map-get($core-opacity, $opacity));
+
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $alpha);
+  }
+
+  @return $color;
+}
