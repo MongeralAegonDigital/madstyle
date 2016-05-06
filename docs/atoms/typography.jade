@@ -12,7 +12,11 @@ h1.headings-6 Mag Style title 6
 :markdown
   ```
     .headings-1 {
-      @include headings("1", $font-family: "Arial", $color: red);
+      @include headings-1();
+    }
+
+    .headings-1 {
+      @include headings-1($font-family: "Arial", $color: red);
     }
   ```
 
@@ -28,7 +32,11 @@ p.base-text-5  Mag Style text 5
 :markdown
   ```
     .base-text-1 {
-      @include base-text("1", $font-family: "Arial", $color: red);
+      @include base-text-1();
+    }
+
+    .base-text-1 {
+      @include base-text-1($font-family: "Arial", $color: red);
     }
   ```
 
