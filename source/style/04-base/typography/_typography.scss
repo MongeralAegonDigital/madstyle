@@ -6,93 +6,103 @@
 
 // Typography - Headings
 // --------------------------------------------------------------------------
-@mixin headings($size, $font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings-#{$size};
-  font-family: $font-family;
-  color: $color;
-}
-
 %headings {
   font-weight: $headings-font-weight;
   margin-bottom: $headings-margin-bottom;
 }
 
-%headings-1 {
+@mixin headings-1($font-family: $headings-font-family, $color: $headings-font-color) {
   @extend %headings;
   font-size:   $headings-h1-font-size;
   line-height: $headings-h1-line-height;
-}
-
-%headings-2 {
-  @extend %headings;
-  font-size:   $headings-h2-font-size;
-  line-height: $headings-h2-line-height;
-}
-
-%headings-3 {
-  @extend %headings;
-  font-size:   $headings-h3-font-size;
-  line-height: $headings-h3-line-height;
-}
-
-%headings-4 {
-  @extend %headings;
-  font-size:   $headings-h4-font-size;
-  line-height: $headings-h4-line-height;
-}
-
-%headings-5 {
-  @extend %headings;
-  font-size:   $headings-h5-font-size;
-  line-height: $headings-h5-line-height;
-}
-
-%headings-6 {
-  @extend %headings;
-  font-size:   $headings-h6-font-size;
-  line-height: $headings-h6-line-height;
-}
-
-// Typography - Base Text
-// --------------------------------------------------------------------------
-@mixin base-text($size, $font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text-#{$size};
   font-family: $font-family;
   color: $color;
 }
 
+@mixin headings-2($font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings;
+  font-size:   $headings-h2-font-size;
+  line-height: $headings-h2-line-height;
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin headings-3($font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings;
+  font-size:   $headings-h3-font-size;
+  line-height: $headings-h3-line-height;
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin headings-4($font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings;
+  font-size:   $headings-h4-font-size;
+  line-height: $headings-h4-line-height;
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin headings-5($font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings;
+  font-size:   $headings-h5-font-size;
+  line-height: $headings-h5-line-height;
+  font-family: $font-family;
+  color: $color;
+}
+
+@mixin headings-6($font-family: $headings-font-family, $color: $headings-font-color) {
+  @extend %headings;
+  font-size:   $headings-h6-font-size;
+  line-height: $headings-h6-line-height;
+  font-family: $font-family;
+  color: $color;
+}
+
+// Typography - Base Text
+// --------------------------------------------------------------------------
 %base-text {
   font-weight: $base-font-weight;
 }
 
-%base-text-1 {
+@mixin base-text-1($font-family: $base-font-family, $color: $base-text-color) {
   @extend %base-text;
   font-size:   $base-text-1-font-size;
   line-height: $base-text-1-line-height;
+  font-family: $font-family;
+  color: $color;
 }
 
-%base-text-2 {
+@mixin base-text-2($font-family: $base-font-family, $color: $base-text-color) {
   @extend %base-text;
   font-size:   $base-text-2-font-size;
   line-height: $base-text-2-line-height;
+  font-family: $font-family;
+  color: $color;
 }
 
-%base-text-3 {
+@mixin base-text-3($font-family: $base-font-family, $color: $base-text-color) {
   @extend %base-text;
   font-size:   $base-text-3-font-size;
   line-height: $base-text-3-line-height;
+  font-family: $font-family;
+  color: $color;
 }
 
-%base-text-4 {
+@mixin base-text-4($font-family: $base-font-family, $color: $base-text-color) {
   @extend %base-text;
   font-size:   $base-text-4-font-size;
   line-height: $base-text-4-line-height;
+  font-family: $font-family;
+  color: $color;
 }
 
-%base-text-5 {
+@mixin base-text-5($font-family: $base-font-family, $color: $base-text-color) {
   @extend %base-text;
   font-size:   $base-text-5-font-size;
   line-height: $base-text-5-line-height;
+  font-family: $font-family;
+  color: $color;
 }
 
 // Link

@@ -14,22 +14,22 @@ h1, h2, h3, h4, h5, h6 {
 //--------------------------------------------------------------------------
 
 .headings-1 {
-  @include headings("1");
+  @include headings-1();
 }
 .headings-2 {
-  @include headings("2");
+  @include headings-2();
 }
 .headings-3 {
-  @include headings("3");
+  @include headings-3();
 }
 .headings-4 {
-  @include headings("4");
+  @include headings-4();
 }
 .headings-5 {
-  @include headings("5");
+  @include headings-5();
 }
 .headings-6 {
-  @include headings("6", $font-family: "Arial", $color: red);
+  @include headings-6($font-family: "Arial", $color: red);
 }
 
 
@@ -37,19 +37,19 @@ h1, h2, h3, h4, h5, h6 {
 //--------------------------------------------------------------------------
 
 .base-text-1 {
-  @include base-text("1");
+  @include base-text-1();
 }
 .base-text-2 {
-  @include base-text("2");
+  @include base-text-2();
 }
 .base-text-3 {
-  @include base-text("3");
+  @include base-text-3();
 }
 .base-text-4 {
-  @include base-text("4");
+  @include base-text-4();
 }
 .base-text-5 {
-  @include base-text("5", $font-family: "Arial", $color: red);
+  @include base-text-5($font-family: "Arial", $color: red);
 }
 
 //Typography - Link
