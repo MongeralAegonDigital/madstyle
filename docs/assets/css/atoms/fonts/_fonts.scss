@@ -5,45 +5,37 @@
 .font-titillium-title {
 
   &--light {
-    @extend %headings-1;
-    font-family: $font-titillium-light;
+    @include headings-1($font-family: $font-titillium-light);
   }
 
   &--regular {
-    @extend %headings-1;
-    font-family: $font-titillium-regular;
+    @include headings-1($font-family: $font-titillium-regular);
   }
 
   &--semibold {
-    @extend %headings-1;
-    font-family: $font-titillium-semibold;
+    @include headings-1($font-family: $font-titillium-semibold);
   }
 
   &--bold {
-    @extend %headings-1;
-    font-family: $font-titillium-bold;
+    @include headings-1($font-family: $font-titillium-bold);
   }
 }
 
 .font-opensans-title {
 
   &--light {
-    @extend %headings-1;
-    font-family: $font-opensans-light;
+    @include headings-1($font-family: $font-opensans-light);
   }
 
   &--regular {
-    @extend %headings-1;
-    font-family: $font-opensans-regular;
+    @include headings-1($font-family: $font-opensans-regular);
   }
 
   &--semibold {
-    @extend %headings-1;
-    font-family: $font-opensans-semibold;
+    @include headings-1($font-family: $font-opensans-semibold);
   }
 
   &--bold {
-    @extend %headings-1;
-    font-family: $font-opensans-bold;
+    @include headings-1($font-family: $font-opensans-bold);
   }
 }
