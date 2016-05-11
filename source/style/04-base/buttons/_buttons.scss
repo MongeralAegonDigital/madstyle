@@ -48,6 +48,9 @@
 }
 
 @mixin buttons($btn-types, $btn-width: "medium") {
+    $button-padding-y: null;
+    $button-padding-x: null;
+    $button-font-size: null;
     @extend %btn-#{$btn-types};
 
     @if $btn-width == "large" {
