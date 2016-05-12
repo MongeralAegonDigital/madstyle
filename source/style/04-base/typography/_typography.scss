@@ -6,13 +6,9 @@
 
 // Typography - Headings
 // --------------------------------------------------------------------------
-%headings {
+@mixin headings-1($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
   margin-bottom: $headings-margin-bottom;
-}
-
-@mixin headings-1($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
   font-size:   $headings-h1-font-size;
   line-height: $headings-h1-line-height;
   font-family: $font-family;
@@ -20,7 +16,8 @@
 }
 
 @mixin headings-2($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
+  font-weight: $headings-font-weight;
+  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h2-font-size;
   line-height: $headings-h2-line-height;
   font-family: $font-family;
@@ -28,7 +25,8 @@
 }
 
 @mixin headings-3($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
+  font-weight: $headings-font-weight;
+  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h3-font-size;
   line-height: $headings-h3-line-height;
   font-family: $font-family;
@@ -36,7 +34,8 @@
 }
 
 @mixin headings-4($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
+  font-weight: $headings-font-weight;
+  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h4-font-size;
   line-height: $headings-h4-line-height;
   font-family: $font-family;
@@ -44,7 +43,8 @@
 }
 
 @mixin headings-5($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
+  font-weight: $headings-font-weight;
+  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h5-font-size;
   line-height: $headings-h5-line-height;
   font-family: $font-family;
@@ -52,7 +52,8 @@
 }
 
 @mixin headings-6($font-family: $headings-font-family, $color: $headings-font-color) {
-  @extend %headings;
+  font-weight: $headings-font-weight;
+  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h6-font-size;
   line-height: $headings-h6-line-height;
   font-family: $font-family;
@@ -61,12 +62,8 @@
 
 // Typography - Base Text
 // --------------------------------------------------------------------------
-%base-text {
-  font-weight: $base-font-weight;
-}
-
 @mixin base-text-1($font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text;
+  font-weight: $base-font-weight;
   font-size:   $base-text-1-font-size;
   line-height: $base-text-1-line-height;
   font-family: $font-family;
@@ -74,7 +71,7 @@
 }
 
 @mixin base-text-2($font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text;
+  font-weight: $base-font-weight;
   font-size:   $base-text-2-font-size;
   line-height: $base-text-2-line-height;
   font-family: $font-family;
@@ -82,7 +79,7 @@
 }
 
 @mixin base-text-3($font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text;
+  font-weight: $base-font-weight;
   font-size:   $base-text-3-font-size;
   line-height: $base-text-3-line-height;
   font-family: $font-family;
@@ -90,7 +87,7 @@
 }
 
 @mixin base-text-4($font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text;
+  font-weight: $base-font-weight;
   font-size:   $base-text-4-font-size;
   line-height: $base-text-4-line-height;
   font-family: $font-family;
@@ -98,7 +95,7 @@
 }
 
 @mixin base-text-5($font-family: $base-font-family, $color: $base-text-color) {
-  @extend %base-text;
+  font-weight: $base-font-weight;
   font-size:   $base-text-5-font-size;
   line-height: $base-text-5-line-height;
   font-family: $font-family;
@@ -108,22 +105,18 @@
 // Link
 // --------------------------------------------------------------------------
 @mixin link($color: $link-color, $color-hover: null) {
-  @extend %link;
+  text-decoration: none;
+  //para evitar conflito nos outros projetos
+  text-transform: inherit;
   color: $color;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   @if $color-hover {
     &:hover {
       color: $color-hover;
     }  
-  }
-}
-
-%link {
-  text-decoration: none;
-  //para evitar conflito nos outros projetos
-  text-transform: inherit;
-
-  &:hover {
-    text-decoration: underline;
   }
 }
