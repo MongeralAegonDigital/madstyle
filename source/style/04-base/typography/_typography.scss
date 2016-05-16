@@ -8,7 +8,6 @@
 // --------------------------------------------------------------------------
 @mixin headings-1($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h1-font-size;
   line-height: $headings-h1-line-height;
   font-family: $font-family;
@@ -17,7 +16,6 @@
 
 @mixin headings-2($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h2-font-size;
   line-height: $headings-h2-line-height;
   font-family: $font-family;
@@ -26,7 +24,6 @@
 
 @mixin headings-3($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h3-font-size;
   line-height: $headings-h3-line-height;
   font-family: $font-family;
@@ -35,7 +32,6 @@
 
 @mixin headings-4($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h4-font-size;
   line-height: $headings-h4-line-height;
   font-family: $font-family;
@@ -44,7 +40,6 @@
 
 @mixin headings-5($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h5-font-size;
   line-height: $headings-h5-line-height;
   font-family: $font-family;
@@ -53,7 +48,6 @@
 
 @mixin headings-6($font-family: $headings-font-family, $color: $headings-font-color) {
   font-weight: $headings-font-weight;
-  margin-bottom: $headings-margin-bottom;
   font-size:   $headings-h6-font-size;
   line-height: $headings-h6-line-height;
   font-family: $font-family;
