@@ -25,7 +25,7 @@ Mask.prototype.cep = function() {
 }
 
 Mask.prototype.cpf = function() {
-    this.element.mask('000.000.000-00', {reverse: true});
+    this.element.mask('000.000.000-00');
 }
 
 Mask.prototype.phone = function() {
