@@ -1,2 +1,4 @@
 // Application dependencies
-// MAD.Slider = require('./vendor/slider/_index');
+require('jquery-mask-plugin');
+
+MAD.Mask = require('./vendor/_mask');

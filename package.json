@@ -7,8 +7,9 @@
     "mediator-js": "^0.9.9"
   },
   "devDependencies": {
-    "livereload": "^0.3.6",
     "browserify": "^13.0.0",
+    "jquery-mask-plugin": "^1.14.0",
+    "livereload": "^0.3.6",
     "watchify": "^3.7.0"
   },
   "author": "Mongeral Aegon Team"
