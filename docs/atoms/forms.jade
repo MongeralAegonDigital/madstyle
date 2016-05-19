@@ -87,29 +87,54 @@ h3.mad-content-sub-title Input Checkbox Inline
 	```
 
 h3.mad-content-sub-title Input Radio
-.radio-group
-	input.input-radio(type="radio" id="radio1" name="group-1")
-	label.form-label(for="radio1") radio 1
+.radio-group(data-js-module="toggle-input" data-js-target="teste")
+	input.input-radio.with-gap(type="radio" value="1" id="radio1" name="group-1")
+	label.form-label(for="radio1") sim
+
+	input.input-radio.with-gap(type="radio" value="0" id="radio2" name="group-1")
+	label.form-label(for="radio2") não
+
+	.input-group.teste
+		input(placeholder="Digite aqui" type="text" id="example" name="example")
+		label(for="example") Example
+:markdown
+	```
+		<div class="radio-group">
+			<input class="input-radio" name="group1" value="1" type="radio" id="radio1" />
+			<label for="radio1">sim</label>
+
+			<input class="input-radio" name="group1" value="0" type="radio" id="radio2" />
+			<label for="radio2">não</label>
+
+			<div class="input-field">
+				<input placeholder="Digite aqui" id="example" type="text" name="example">
+				<label for="example">Example</label>
+			</div>
+		</div>
+	```
 
 .radio-group
-	input.input-radio(type="radio" id="radio2" name="group-1")
-	label.form-label(for="radio2") radio 2
+	.input-field
+		input.input-radio.with-gap(type="radio" id="radio1" name="group-1")
+		label.form-label(for="radio1") radio 1
+	
+	.input-field
+		input.input-radio.with-gap(type="radio" id="radio2" name="group-1")
+		label.form-label(for="radio2") radio 2
 
-.radio-group
-	input.input-radio(type="radio" id="radio3" name="group-1" checked="checked")
-	label.form-label(for="radio3") radio checked 3
+	.input-field
+		input.input-radio.with-gap(type="radio" id="radio3" name="group-1" checked="checked")
+		label.form-label(for="radio3") radio checked 3
 
 :markdown
 	```
 		<div class="radio-group">
 			<input class="input-radio" name="group1" type="radio" id="radio1" />
 			<label for="radio1">radio 1</label>
-		</div>
-		<div class="radio-group">
+
 			<input class="input-radio" name="group1" type="radio" id="radio2" />
 			<label for="radio2">radio 2</label>
-		</div>
-		<div class="radio-group">
+
 			<input class="input-radio" name="group1" type="radio" id="radio3" />
 			<label for="radio3">radio 3</label>
 		</div>
