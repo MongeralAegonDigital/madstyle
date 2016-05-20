@@ -12,7 +12,7 @@
 [type="radio"]:not(:checked) + label,
 [type="radio"]:checked + label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 30px;
   cursor: pointer;
   display: inline-block;
   height: 25px;
@@ -116,4 +116,15 @@
 [type="radio"]:disabled:checked + label:after {
   background-color: $input-disabled-color;
   border-color: $input-disabled-solid-color;
+}
+
+.radio-group {
+
+  label {
+    margin-right: 20px;
+  }
+
+  .input-group {
+    padding-top: 20px;
+  }
 }

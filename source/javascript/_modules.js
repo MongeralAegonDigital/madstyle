@@ -2,4 +2,4 @@
 require('jquery-mask-plugin');
 
 MAD.Mask = require('./vendor/_mask');
-MAD.ToggleInput = require('./modules/_toggle-input');
+MAD.ToggleInputYesOrNo = require('./modules/_toggle-input-yes-or-no');

@@ -1,17 +1,17 @@
-var ToggleInput = MAD.ToggleInput;
+var ToggleInputYesOrNo = MAD.ToggleInputYesOrNo;
 
-ToggleInput = function(element, container){
+ToggleInputYesOrNo = function(element, container){
     this.element = element;
     this.container = container;
 }
 
-ToggleInput.prototype.init = function() {
+ToggleInputYesOrNo.prototype.init = function() {
     this.target = this.element.find(".input-group");
     
     this.element.find('input[type="radio"]').on("click", this.verifyTarget.bind(this));
 }
 
-ToggleInput.prototype.verifyTarget = function() {
+ToggleInputYesOrNo.prototype.verifyTarget = function() {
     var target = this.element.data("js-target");
 
     if (target) {
@@ -21,7 +21,7 @@ ToggleInput.prototype.verifyTarget = function() {
     this.showHide();
 }
 
-ToggleInput.prototype.showHide = function() {
+ToggleInputYesOrNo.prototype.showHide = function() {
     var answer = event.target.value;
 
     if (answer === "1") {
@@ -31,4 +31,4 @@ ToggleInput.prototype.showHide = function() {
     }
 }
 
-module.exports = ToggleInput;
+module.exports = ToggleInputYesOrNo;
