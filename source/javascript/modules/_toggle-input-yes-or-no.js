@@ -6,7 +6,7 @@ ToggleInputYesOrNo = function(element, container){
 }
 
 ToggleInputYesOrNo.prototype.init = function() {
-    this.target = this.element.find(".input-group");
+    this.target = this.element.find(".input-group").first();
     
     this.element.find('input[type="radio"]').on("click", this.verifyTarget.bind(this));
 }

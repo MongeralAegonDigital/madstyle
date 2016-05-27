@@ -144,7 +144,7 @@ $roboto-font-path: "../fonts/roboto/" !default;
 
 // Text Inputs + Textarea
 $input-height: 3rem !default;
-$input-border-color: color("grey", "base") !default;
+$input-border-color: #757575 !default;
 $input-border: 1px solid $input-border-color !default;
 $input-background: #fff !default;
 $input-error-color: $error-color !default;
@@ -271,7 +271,7 @@ $toast-text-color: #fff !default;
 /* 20. Typography
    ========================================================================== */
 
-$off-black: rgba(0, 0, 0, 0.87) !default;
+$off-black: #757575 !default;
 // Header Styles
 $h1-fontsize: 4.2rem !default;
 $h2-fontsize: 3.56rem !default;
