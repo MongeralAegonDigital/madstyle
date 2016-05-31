@@ -11,14 +11,14 @@ ToggleInputYesOrNo.prototype.init = function() {
     this.element.find('input[type="radio"]').on("click", this.verifyTarget.bind(this));
 }
 
-ToggleInputYesOrNo.prototype.verifyTarget = function() {
+ToggleInputYesOrNo.prototype.verifyTarget = function(event) {
     var target = this.element.data("js-target");
 
     if (target) {
         this.target = $(this.container.find("."+target));
     }
 
-    this.showHide();
+    this.showHide(event);
 }
 
 ToggleInputYesOrNo.prototype.showHide = function(event) {
