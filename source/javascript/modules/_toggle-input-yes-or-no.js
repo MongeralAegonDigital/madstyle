@@ -21,7 +21,7 @@ ToggleInputYesOrNo.prototype.verifyTarget = function() {
     this.showHide();
 }
 
-ToggleInputYesOrNo.prototype.showHide = function() {
+ToggleInputYesOrNo.prototype.showHide = function(event) {
     var answer = event.target.value;
 
     if (answer === "1") {
