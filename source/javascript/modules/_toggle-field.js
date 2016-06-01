@@ -6,12 +6,12 @@ ToggleField = function(element, container){
 }
 
 ToggleField.prototype.init = function() {
-    this.element.find('[data-parent-name]').closest('.form-input-select').on("change", this.showHide.bind(this));
+    this.element.find('[data-parent-name]').parent().on("change", this.showHide.bind(this));
 }
 
 ToggleField.prototype.showHide = function(event) {
     var target = this.element.find('[data-name]');
-    target.toggle();
+    target.slideToggle();
 }
 
 module.exports = ToggleField;

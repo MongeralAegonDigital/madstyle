@@ -87,14 +87,14 @@ h3.mad-content-sub-title Input Checkbox Inline
 	```
 
 h3.mad-content-sub-title Input Radio
-.radio-group(data-js-module="toggle-input-yes-or-no" data-js-target="teste")
-	input.input-radio.with-gap(type="radio" value="1" id="radio1" name="group-1")
+.radio-group(data-js-module="toggle-field")
+	input.input-radio.with-gap(type="radio" value="1" id="radio1" name="group-1" data-parent-name="teste")
 	label.form-label(for="radio1") sim
 
 	input.input-radio.with-gap(type="radio" value="0" id="radio2" name="group-1")
 	label.form-label(for="radio2") não
 
-	.input-group.teste
+	.input-group(data-name="teste")
 		.input-field
 			input(placeholder="Digite aqui" type="text" id="example" name="example")
 			label(for="example") Example
