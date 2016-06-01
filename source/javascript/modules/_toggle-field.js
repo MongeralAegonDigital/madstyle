@@ -6,11 +6,15 @@ ToggleField = function(element, container){
 }
 
 ToggleField.prototype.init = function() {
-    this.element.find('[data-parent-name]').parent().on("change", this.showHide.bind(this));
+    this.actionButton = this.element.find('[data-parent-name]');
+
+    this.actionButton.parent().on("change", this.showHide.bind(this));
 }
 
 ToggleField.prototype.showHide = function(event) {
-    var target = this.element.find('[data-name]');
+    var actionValue = this.actionButton.data(),
+        target = this.element.find('[data-name="'+actionValue.parentName+'"]');
+
     target.slideToggle();
 }
 

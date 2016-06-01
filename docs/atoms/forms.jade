@@ -116,6 +116,37 @@ h3.mad-content-sub-title Input Radio
 		</div>
 	```
 
+h3.mad-content-sub-title Select Toggle
+.input-field(data-js-module="toggle-field")
+	select.form-input-select(name='teste')
+		option(value='teste') teste
+		option(value='teste') teste
+		option(value='teste') teste
+		option(value='teste') teste
+		option(value='teste' data-parent-name="parent") parent
+
+	.input-group(data-name="parent")
+		.input-field
+			input(placeholder="Digite aqui" type="text" id="example" name="example")
+			label(for="example") Example
+:markdown
+	```
+		<div class="radio-group" data-js-module="toggle-input-yes-or-no" data-js-target="teste">
+			<input class="input-radio" name="group1" value="1" type="radio" id="radio1" />
+			<label for="radio1">sim</label>
+
+			<input class="input-radio" name="group1" value="0" type="radio" id="radio2" />
+			<label for="radio2">não</label>
+
+			<div class="input-group teste">
+				<div class="input-field">
+					<input placeholder="Digite aqui" id="example" type="text" name="example">
+					<label for="example">Example</label>
+				</div>
+			</div>
+		</div>
+	```
+
 .radio-group
 	.input-field
 		input.input-radio.with-gap(type="radio" id="radio1" name="group-1")

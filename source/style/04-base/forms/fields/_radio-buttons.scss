@@ -123,8 +123,9 @@
   label {
     margin-right: 20px;
   }
+}
 
-  .input-group {
-    padding-top: 20px;
-  }
+[data-name] {
+  display: none;
+  padding-top: 20px;
 }
