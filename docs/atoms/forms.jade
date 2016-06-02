@@ -147,6 +147,51 @@ h3.mad-content-sub-title Select Toggle
 		</div>
 	```
 
+h3.mad-content-sub-title Checkbox inside Toggle
+.input-field
+	.radio-group(data-js-module='toggle-field.radio')
+		p.form-text-label Utiliza algum dispositivo digital?
+		input#teste001.with-gap(data-parent-name='mobile-user', name='teste', type='radio', value='')
+		label(for='teste001') sim
+		input#teste002.with-gap(name='teste', type='radio', value='')
+		label(for='teste002') não
+		.input-group(data-name='mobile-user')
+			.checkbox-group--children(data-js-module='toggle-field.checkbox')
+				p.form-text-label Qual?
+				.input-group
+					input#teste0001.input-checkbox(name='', type='checkbox', value='')
+					label.form-label(for='teste0001') teste check 1
+				.input-group
+					input#teste0002.input-checkbox(name='', type='checkbox', value='')
+					label.form-label(for='teste0002') teste check 2
+				.input-group
+					input#teste0003.input-checkbox(name='', type='checkbox', value='')
+					label.form-label(for='teste0003') teste check 3
+				.input-group
+					input#teste0004.input-checkbox(data-parent-name='teste-check4', name='', type='checkbox', value='')
+					label.form-label(for='teste0004') teste check 4
+				.input-group(data-name='teste-check4')
+					.input-field
+						input#device-specification.validate(placeholder='Especifique aqui o dispositivo', type='text', name='')
+						label(for='device-specification') Especifique
+:markdown
+	```
+		<div class="radio-group" data-js-module="toggle-input-yes-or-no" data-js-target="teste">
+			<input class="input-radio" name="group1" value="1" type="radio" id="radio1" />
+			<label for="radio1">sim</label>
+
+			<input class="input-radio" name="group1" value="0" type="radio" id="radio2" />
+			<label for="radio2">não</label>
+
+			<div class="input-group teste">
+				<div class="input-field">
+					<input placeholder="Digite aqui" id="example" type="text" name="example">
+					<label for="example">Example</label>
+				</div>
+			</div>
+		</div>
+	```
+
 .radio-group
 	.input-field
 		input.input-radio.with-gap(type="radio" id="radio1" name="group-1")

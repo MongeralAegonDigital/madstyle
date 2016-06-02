@@ -31,10 +31,37 @@ ToggleField.prototype.select = function(event) {
 }
 
 ToggleField.prototype.radio = function(event) {
-    var actionValue = this.actionButton.data(),
-        target = this.element.find('[data-name="'+actionValue.parentName+'"]');
+    var parentName = $(event.target).data().parentName,
+        target;
 
-    target.slideToggle();
+    event.stopPropagation();
+    
+    if (typeof parentName !== 'undefined') {
+        target = this.element.find('[data-name="'+parentName+'"]');
+        target.slideDown();
+    } else {
+        $(event.target).siblings().each(function(event){
+            var dataVerify = $(this).data().parentName;
+
+            if (typeof dataVerify !== 'undefined') {
+                target = $('[data-name="'+dataVerify+'"]');
+                target.slideUp();
+            }
+        });
+    }
+}
+
+ToggleField.prototype.checkbox = function(event) {
+    var parentName = $(event.target).data().parentName,
+        target = this.element.find('[data-name="'+parentName+'"]');
+
+    if (typeof parentName !== 'undefined') {
+        if ($(event.target).is(':checked')) {
+            target.slideDown();
+        } else {
+            target.slideUp();
+        }
+    }
 }
 
 module.exports = ToggleField;
