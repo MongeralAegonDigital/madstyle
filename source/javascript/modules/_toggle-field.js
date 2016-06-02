@@ -39,10 +39,6 @@ ToggleField.prototype.radio = function(event) {
     if (typeof parentName !== 'undefined') {
         target = this.element.find('[data-name="'+parentName+'"]');
 
-        // garante que somente o conteudo
-        // selecionado estará aberto
-        this.element.find('[data-name]').slideUp().removeClass('show');
-
         target.slideDown();
     } else {
         $(event.target).siblings().each(function(event){
